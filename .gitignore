@@ -1,0 +1,13 @@
+public
+node_modules
+static/css
+static/js
+static/images-theme
+themes/cantoneri/static
+.DS_Store
+.env
+config.dev.local.toml
+config.dev.toml
+config.prod.toml
+content
+package-lock.json
