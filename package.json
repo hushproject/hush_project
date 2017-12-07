@@ -1,0 +1,25 @@
+{
+  "name": "clients-hush",
+  "version": "1.0.0",
+  "description": "https://app.activecollab.com/128587/projects/92",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LumoSpark/clients-hush.git"
+  },
+  "keywords": [
+    "hugo",
+    "datoCMS",
+    "netlify",
+    "HUSH"
+  ],
+  "author": "Vladimir Gutorov / \"LumoSpark\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LumoSpark/clients-hush/issues"
+  },
+  "homepage": "https://github.com/LumoSpark/clients-hush#readme"
+}
