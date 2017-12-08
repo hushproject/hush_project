@@ -1,0 +1,37 @@
+.siteHeader
+  position: fixed
+  top: 55px
+  right: 0px
+  left: 0px
+  width: 100%
+  box-sizing: border-box
+  z-index: 100
+  display: flex
+  justify-content: flex-end
+  &__burgerMenu
+    +font($main_400, 16px, 16px, $white, normal, none, uppercase)
+    &__burger
+      display: inline-block
+      width: 24px
+      height: 16px
+      position: relative
+      top: 2px
+      margin-left: 10px
+      &::after,
+      &::before,
+      span
+        content: ""
+        display: block
+        height: 2px
+        width: 100%
+        position: absolute
+        left: 0px
+      span
+        top: 7px
+        background: $white url("/images-theme/burger_pattern.png") no-repeat 50% 50%
+      &::before
+        top: 0px
+        background: $white url("/images-theme/burger_pattern.png") no-repeat 0% 100%
+      &::after
+        bottom: 0px
+        background: $white url("/images-theme/burger_pattern.png") no-repeat 100% 100%
