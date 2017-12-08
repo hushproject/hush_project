@@ -13,6 +13,7 @@
   display: flex
   flex-flow: row wrap
   position: relative
+  align-content: flex-end
   &::after
     content: ""
     position: absolute
@@ -30,9 +31,12 @@
     z-index: 2
     text-align: center
     width: 100%
-    align-self: flex-end
+    margin-bottom: 25vh
   &__cta
     width: 100%
-    align-self: flex-end
+    text-align: center
+    position: relative
+    z-index: 2
+    padding-bottom: 5vh
     .button
-      display: inline-block
+      margin-bottom: 10px
