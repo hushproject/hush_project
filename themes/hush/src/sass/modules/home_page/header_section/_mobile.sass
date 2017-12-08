@@ -1,0 +1,38 @@
+.siteLogo
+  display: block
+  max-width: 229px
+  width: 100%
+  margin: 0px auto
+  img
+    width: 100%
+.homeHeader
+  min-height: 100vh
+  background-repeat: no-repeat
+  background-size: 100% auto
+  background-position: 50% 50%
+  display: flex
+  flex-flow: row wrap
+  position: relative
+  &::after
+    content: ""
+    position: absolute
+    display: block
+    z-index: 1
+    background: $blackBottom2TopGradient
+    +resetForAbsoluteCentering()
+  &__title
+    +font($main_300, 40px, 54px, $white, normal, none, none)
+    display: block
+    width: 100%
+    text-align: center
+  &__description
+    position: relative
+    z-index: 2
+    text-align: center
+    width: 100%
+    align-self: flex-end
+  &__cta
+    width: 100%
+    align-self: flex-end
+    .button
+      display: inline-block
