@@ -10,8 +10,7 @@
   },
   "scripts": {
     "start": "npm-run-all --parallel webpack-watch hugo-server",
-    "hugo-build": "rm -rf public content config.toml && dato dump && hugo",
-    "hugo-server": "dato dump && hugo server",
+    "hugo-server": "hugo server",
     "webpack-watch": "webpack --watch --config webpack.conf.js",
     "build": "rm -rf public && webpack --config webpack.conf.js && hugo"
   },
