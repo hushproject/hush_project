@@ -17,6 +17,7 @@
       width: 100%
       justify-content: flex-end
       align-items: center
+      +transition(300ms, linear)
       a
         display: none
     &__burger
@@ -34,6 +35,7 @@
         width: 100%
         position: absolute
         left: 0px
+        +transition(300ms, linear)
       span
         top: 7px
         background: $white url("/images-theme/burger_pattern.png") no-repeat 50% 50%
@@ -68,12 +70,15 @@
   height: 100vh
   overflow-y: scroll
   width: 100%
-  top: 0px
-  left: -100%
+  top: -100%
+  left: 0%
   background: $white url('/images-theme/burger-menu-background-pattern.png') no-repeat 63% 0%
   z-index: 80
+  opacity: 0
+  +transition(300ms, linear)
   &.active
-    left: 0px
+    top: 0px
+    opacity: 1
   &__inner
     text-align: center
     padding-top: 110px
