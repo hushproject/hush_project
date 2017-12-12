@@ -7,8 +7,8 @@ import ScrollMagic from "scrollmagic";
         triggerElement: ".homeHeader__description",
         offset: jQuery(window).height() / 2 - 200
       });
-      scene.setClassToggle(".homeHeader__description .siteLogo","fixedTop")
-      .addTo(controller);
+      scene.setClassToggle(".homeHeader__description .siteLogo, .siteHeader__burgerMenu__button","fixedTop");
+      scene.addTo(controller);
   }
 
   function showHideSidebar() {
