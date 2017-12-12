@@ -1,2 +1,9 @@
 .homePageContentSection
   min-height: 100vh
+  position: relative
+  &::before
+    content: ""
+    display: block
+    position: absolute
+    +resetForAbsoluteCentering()
+    background: $blackTop2BottomGradient
