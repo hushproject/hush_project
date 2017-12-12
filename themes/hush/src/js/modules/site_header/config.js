@@ -1,5 +1,5 @@
-// import ScrollMagic from "scrollmagic";
-// import debug from "plugins/debug.addIndicators.js"
+import ScrollMagic from "scrollmagic";
+
 {
   function pinSiteLogo(logo) {
     let controller = new ScrollMagic.Controller(),
