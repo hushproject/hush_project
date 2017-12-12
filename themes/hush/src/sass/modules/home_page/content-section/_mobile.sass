@@ -7,3 +7,21 @@
     position: absolute
     +resetForAbsoluteCentering()
     background: $blackTop2BottomGradient
+    z-index: 1
+  &__content
+    position: relative
+    z-index: 2
+    padding-top: 150px
+    text-align: center
+  &__title
+    +font($main_400, 46px, 48px, $white, normal, none, none)
+    max-width: 300px
+    width: 100%
+    margin: 0px auto 40px
+  &__description
+    +font($main_400, 23px, 31px, $white, normal, none, none)
+    max-width: 300px
+    width: 100%
+    margin: 0px auto
+    i
+      font-family: $main_400_italic
