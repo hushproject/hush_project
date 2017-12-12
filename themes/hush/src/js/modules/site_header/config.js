@@ -1,13 +1,15 @@
+// import ScrollMagic from "scrollmagic";
+// import debug from "plugins/debug.addIndicators.js"
 {
   function pinSiteLogo(logo) {
-    jQuery(window).scroll(() => {
-      let scrollPosition = jQuery(document).scrollTop();
-      if (scrollPosition > logo.offset().top) {
-        logo.addClass('fixedTop');
-      } else {
-        logo.removeClass('fixedTop');
-      }
-    });
+    let controller = new ScrollMagic.Controller(),
+      scene = new ScrollMagic.Scene({
+        triggerElement: ".homeHeader__description",
+        offset: jQuery(window).height() / 2 - 200
+      });
+      scene.setClassToggle(".homeHeader__description .siteLogo","fixedTop")
+      .addTo(controller)
+      .addIndicators();
   }
 
   function showHideSidebar() {
@@ -23,7 +25,7 @@
   if (jQuery('.siteSidebarMenu')) {
     showHideSidebar();
   }
-  if (jQuery('.homeHeader__description .siteLogo')) {
+  if (jQuery('.homeHeader__description')) {
     pinSiteLogo(jQuery('.homeHeader__description .siteLogo'));
   }
 }
