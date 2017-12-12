@@ -8,6 +8,10 @@
     +resetForAbsoluteCentering()
     background: $blackTop2BottomGradient
     z-index: 1
+  &--disableMask
+    &::before
+      display: none
+.homePageContentSection
   &__content
     position: relative
     z-index: 2
@@ -25,3 +29,5 @@
     margin: 0px auto
     i
       font-family: $main_400_italic
+  &__cta
+    padding-top: 80px

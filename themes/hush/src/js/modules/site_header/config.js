@@ -8,8 +8,7 @@ import ScrollMagic from "scrollmagic";
         offset: jQuery(window).height() / 2 - 200
       });
       scene.setClassToggle(".homeHeader__description .siteLogo","fixedTop")
-      .addTo(controller)
-      .addIndicators();
+      .addTo(controller);
   }
 
   function showHideSidebar() {
