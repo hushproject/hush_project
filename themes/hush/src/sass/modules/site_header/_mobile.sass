@@ -25,6 +25,16 @@
       &.fixedTop
         i
           opacity: 0
+      &.noLogo
+        .siteHeader__burgerMenu__burger:after,
+        .siteHeader__burgerMenu__burger:before,
+        .siteHeader__burgerMenu__burger span
+          background: $white
+      &.darkThere
+        .siteHeader__burgerMenu__burger:after,
+        .siteHeader__burgerMenu__burger:before,
+        .siteHeader__burgerMenu__burger span
+          background: $brown-1   
     &__burger
       display: inline-block
       width: 24px
