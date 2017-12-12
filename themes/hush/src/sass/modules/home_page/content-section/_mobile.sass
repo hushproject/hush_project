@@ -16,6 +16,7 @@
     position: relative
     z-index: 2
     padding-top: 150px
+    padding-bottom: 150px
     text-align: center
   &__title
     +font($main_400, 46px, 48px, $white, normal, none, none)
@@ -27,7 +28,26 @@
     max-width: 300px
     width: 100%
     margin: 0px auto
+    p
+      margin-bottom: 31px
     i
       font-family: $main_400_italic
   &__cta
-    padding-top: 80px
+    padding-top: 50px
+.homePageContentSection--brownFont
+  &::before
+    display: none
+  .homePageContentSection__title,
+  .homePageContentSection__description
+    color: $brown-4
+.homePageContentSection__pattern
+  position: absolute
+  width: 100%
+  height: 100%
+  +resetForAbsoluteCentering()
+  background-repeat: no-repeat
+  background-size: 100% auto
+  &--top
+    background-position: 0 0
+  &--bottom
+    background-position: 0 100%
