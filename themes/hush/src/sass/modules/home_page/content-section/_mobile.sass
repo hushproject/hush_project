@@ -1,16 +1,14 @@
 .homePageContentSection
   min-height: 100vh
   position: relative
-  &::before
-    content: ""
-    display: block
-    position: absolute
-    +resetForAbsoluteCentering()
-    background: $blackTop2BottomGradient
-    z-index: 1
-  &--disableMask
+  &--wDarkMask
     &::before
-      display: none
+      content: ""
+      display: block
+      position: absolute
+      +resetForAbsoluteCentering()
+      background: $blackTop2BottomGradient
+      z-index: 1
 .homePageContentSection
   &__content
     position: relative
