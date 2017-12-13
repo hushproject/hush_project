@@ -1,0 +1,34 @@
+.contentPage__header
+  min-height: 100vh
+  position: relative
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  background-repeat: no-repeat
+  background-size: 100% auto
+  background-position: 50% 50%
+  &::after
+    content: ""
+    position: absolute
+    display: block
+    z-index: 1
+    background: $blackBottom2TopGradient
+    +resetForAbsoluteCentering()
+.contentPage__header
+  &__text
+    padding-bottom: 120px
+    width: 100%
+    position: relative
+    z-index: 2
+    text-align: center
+  &__title,
+  &__tagline
+    width: 100%
+    margin: 0px auto
+  &__title
+    max-width: 295px
+    margin-bottom: 35px
+    +font($main_400, 46px, 48px, $white, normal, none, none)
+  &__tagline
+    max-width: 275px
+    +font($main_400_italic, 23px, 31px, $white, normal, none, none)
