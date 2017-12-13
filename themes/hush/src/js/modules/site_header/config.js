@@ -1,5 +1,4 @@
-import ScrollMagic from "scrollmagic";
-{
+import ScrollMagic from "scrollmagic"; {
   function pinSiteLogo(logo) {
     let controller = new ScrollMagic.Controller(),
       controller2 = new ScrollMagic.Controller(),
@@ -8,23 +7,24 @@ import ScrollMagic from "scrollmagic";
         offset: jQuery(window).height() / 2 - 200
       }),
       trigeredClasses = ".homeHeader__description .siteLogo, .siteHeader__burgerMenu__button";
-      jQuery('.hideLogoOnThisSection').each(function() {
-        let el = `#${jQuery(this).attr('id')}`;
-        new ScrollMagic.Scene({
-          triggerElement: el,
-          duration: jQuery(this).height()
-        }).setClassToggle(trigeredClasses,"noLogo").addTo(controller);
-      });
-      jQuery('.darkMenu').each(function() {
-        let el = `#${jQuery(this).attr('id')}`;
-        new ScrollMagic.Scene({
-          triggerElement: el,
-          duration: jQuery(this).height()
-        }).setClassToggle(trigeredClasses,"darkThere").addTo(controller);
-      });
-      scene.setClassToggle(trigeredClasses,"fixedTop");
-      scene.addTo(controller);
+    jQuery('.hideLogoOnThisSection').each(function() {
+      let el = `#${jQuery(this).attr('id')}`;
+      new ScrollMagic.Scene({
+        triggerElement: el,
+        duration: jQuery(this).height()
+      }).setClassToggle(trigeredClasses, "noLogo").addTo(controller);
+    });
+    jQuery('.darkMenu').each(function() {
+      let el = `#${jQuery(this).attr('id')}`;
+      new ScrollMagic.Scene({
+        triggerElement: el,
+        duration: jQuery(this).height()
+      }).setClassToggle(trigeredClasses, "darkThere").addTo(controller);
+    });
+    scene.setClassToggle(trigeredClasses, "fixedTop");
+    scene.addTo(controller);
   }
+
   function showHideSidebar() {
     jQuery('.siteHeader__burgerMenu__button').click(function() {
       let elements = jQuery('.siteSidebarMenu, .siteHeader__burgerMenu__button');
@@ -33,6 +33,9 @@ import ScrollMagic from "scrollmagic";
       } else {
         elements.addClass('active');
       }
+      $(".stick").toggleClass(function() {
+        return $(this).is('.open, .close') ? 'open close' : 'open';
+      });
     });
   }
   if (jQuery('.siteSidebarMenu')) {

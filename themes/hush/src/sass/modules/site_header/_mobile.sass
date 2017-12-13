@@ -17,6 +17,12 @@
       width: 100%
       justify-content: flex-end
       align-items: center
+      position: relative
+      padding-right: 34px
+      .stick
+        background: $white
+        &.open
+          background: $brown-1
       +transition(300ms, linear)
       a
         display: none
@@ -33,33 +39,19 @@
       &.darkThere
         .siteHeader__burgerMenu__burger:after,
         .siteHeader__burgerMenu__burger:before,
-        .siteHeader__burgerMenu__burger span
-          background: $brown-1   
+        .siteHeader__burgerMenu__burger .stick
+          background: $brown-1
     &__burger
-      display: inline-block
-      width: 24px
-      height: 16px
-      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      width: 80px
+      height: 80px
+      right: 0px
+      position: absolute
       margin-left: 10px
-      &::after,
-      &::before,
-      span
-        content: ""
-        display: block
-        height: 2px
-        width: 100%
-        position: absolute
-        left: 0px
-        +transition(300ms, linear)
-      span
-        top: 7px
-        background: $white url("/images-theme/burger_pattern.png") no-repeat 50% 50%
-      &::before
-        top: 0px
-        background: $white url("/images-theme/burger_pattern.png") no-repeat 0% 100%
-      &::after
-        top: 14px
-        background: $white url("/images-theme/burger_pattern.png") no-repeat 100% 100%
+      transform: scale(0.3) translate(84px, 0px)
 .siteHeader__burgerMenu__button.active
   justify-content: space-between
   i
@@ -67,19 +59,6 @@
   a
     display: block
     +font($main_400, 19px, 19px, $brown-1, normal, none, capitalize)
-  .siteHeader__burgerMenu__burger
-    span
-      opacity: 0
-    &::after,
-    &::before
-      background: $brown-2 url("/images-theme/burger_pattern.png") no-repeat 0% 0%
-      background-size: cover
-    &::before
-      transform: rotate(-45deg)
-      top: 8px
-    &::after
-      transform: rotate(45deg)
-      top: 8px
 .siteSidebarMenu
   position: fixed
   height: 100vh
@@ -114,3 +93,89 @@
       margin-bottom: 40px
       &::after
         display: none
+.stick
+  width: 80px
+  height: 8px
+  border-radius: 4px
+  margin-bottom: 15px
+  display: inline-block
+  &:last-child
+    margin-bottom: 0px
+.stick-1.open
+  animation: stick-1-open .6s ease-out forwards
+.stick-2.open
+  animation: stick-2-open .6s linear forwards
+.stick-3.open
+  animation: stick-3-open .6s linear forwards
+@keyframes stick-1-open
+  0%
+    width: 80px
+  40%
+    width: 8px
+    transform: translate(40px, 0px)
+  75%, 80%
+    width: 8px
+    transform: translate(40px, -50px)
+    animation-timing-function: cubic-bezier(0, 1, 1, 1)
+  100%
+    width: 8px
+    transform: translate(35px, 46px)
+@keyframes stick-2-open
+  80%
+    transform: translate(0px, 0px) rotate(0deg)
+  100%
+    transform: translate(8px, 0px) rotate(40deg)
+@keyframes stick-3-open
+  80%
+    transform: translate(0px, 0px) rotate(0deg)
+  100%
+    transform: translate(8px, -23px) rotate(-40deg)
+.stick-1.close
+  width: 8px
+  transform: translate(27px, 26px)
+  animation: stick-1-close .6s ease-out forwards
+.stick-2.close
+  transform: translate(0px, 0px) rotate(40deg)
+  animation: stick-2-close .6s ease-out forwards
+.stick-3.close
+  transform: translate(0px, -23px) rotate(-40deg)
+  animation: stick-3-close .6s ease-out forwards
+@keyframes stick-1-close
+  0%, 70%
+    width: 0px
+  100%
+    width: 80px
+    transform: translate(0, 0)
+@keyframes stick-2-close
+  0%
+    width: 80px
+  20%
+    width: 8px
+    transform: translate(0, 0px) rotate(40deg)
+  40%
+    width: 0px
+  65%
+    transform: translate(0, -70px)
+    animation-timing-function: cubic-bezier(0, 1, 1, 1)
+  80%
+    width: 0px
+
+  100%
+    width: 80px
+    transform: translate(0, 0px)
+@keyframes stick-3-close
+  0%
+    width: 80px
+
+  20%
+    width: 8px
+    transform: translate(0, -23px) rotate(-40deg)
+  65%
+    transform: translate(0, -93px)
+    animation-timing-function: cubic-bezier(0, 1, 1, 1)
+
+  90%
+    width: 8px
+  100%
+    width: 80px
+    transform: translate(0, 0px)
