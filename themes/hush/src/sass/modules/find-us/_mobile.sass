@@ -1,0 +1,64 @@
+.findUsPage
+  background: $white url('/images-theme/find-us-background.png') no-repeat
+  background-size: 100% cover
+  padding-top: 128px
+  &__title
+    text-align: center
+    +font($main_400, 38px, 48px, $brown-4, normal, none, none)
+    margin-bottom: 47px
+  &__contactInformation
+    text-align: center
+    &__text
+      max-width: 180px
+      width: 100%
+      margin: 0px auto
+      +font($main_300, 20px, 30px, $brown-4, normal, none, none)
+      letter-spacing: 0.4px
+      margin-bottom: 30px
+    &__links
+      max-width: 250px
+      width: 100%
+      margin: 0px auto
+      padding-bottom: 45px
+      a
+        +font($main_300, 20px, 30px, $brown-4, normal, none, none)
+        letter-spacing: 0.4px
+        display: inline-block
+        margin-bottom: 20px
+        position: relative
+        &:first-child
+          &::after
+            display: block
+            content: ""
+            width: 100%
+            height: 1px
+            background: $brown-4
+            position: relative
+            top: -2px
+.findUsPage__socialNetworks
+  text-align: center
+  padding-bottom: 65px
+  ul
+    display: flex
+    justify-content: center
+    li
+      padding: 0px 7px
+.findUsPage__additionalDescription
+  max-width: 282px
+  width: 100%
+  margin: 0px auto 58px
+  text-align: center
+  +font($main_300, 21px, 30px, $brown-4, normal, none, none)
+.findUsPage__googleDirection
+  letter-spacing: 2.73px
+  +font($main_300, 21px, 30px, $orange, normal, underline, none)
+  max-width: 198px
+  width: 100%
+  margin: 0px auto 80px
+  display: block
+  text-align: center
+.findUsPage__map
+  width: 100%
+  img
+    width: 100%
+    margin-bottom: -4px
