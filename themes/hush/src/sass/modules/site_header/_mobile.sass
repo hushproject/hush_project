@@ -69,10 +69,9 @@
   background: $white url('/images-theme/burger-menu-background-pattern.png') no-repeat 63% 0%
   z-index: 80
   opacity: 0
-  +transition(300ms, linear)
   &.active
     top: 0px
-    opacity: 1
+    animation: showMenu .6s ease-out forwards
   &__inner
     text-align: center
     padding-top: 110px
@@ -93,6 +92,15 @@
       margin-bottom: 40px
       &::after
         display: none
+@keyframes showMenu
+  0%
+    opacity: 0
+  25%
+    opacity: .5
+  80%
+    opacity: .95
+  100%
+    opacity: 1
 .stick
   width: 80px
   height: 8px
