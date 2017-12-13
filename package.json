@@ -12,7 +12,7 @@
     "start": "npm-run-all --parallel webpack-watch hugo-server",
     "hugo-server": "hugo server",
     "webpack-watch": "webpack --watch --config webpack.conf.js",
-    "build": "rm -rf public content && mkdir content && touch content/_index.md && webpack --config webpack.conf.js && hugo"
+    "build": "webpack --config webpack.conf.js && hugo"
   },
   "repository": {
     "type": "git",
