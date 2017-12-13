@@ -1,0 +1,29 @@
+.testimonialsPage
+  background: $blue
+  &__title
+    +font($main_400, 38px, 48px, $white, normal, none, none)
+    text-align: center
+    margin-bottom: 70px
+  &__list
+    padding-top: 128px
+    padding-bottom: 20px
+    width: 100%
+  &__item
+    text-align: center
+    margin-bottom: 50px
+    &__title
+      +font($crimmson, 28px, 48px, $white, normal, none, none)
+      font-weight: 400
+      position: relative
+      &::after
+        content: ""
+        display: block
+        width: 100%
+        max-width: 158px
+        height: 1px
+        background-color: $yellow
+        margin: 25px auto 30px
+    &__quote
+      +font($crimmson, 17px, 28px, $white, normal, none, none)
+      letter-spacing: 0.34px
+      margin-bottom: 32px
