@@ -1,4 +1,4 @@
-// import ScrollMagic from "scrollmagic";
+import ScrollMagic from "scrollmagic";
 
 {
   function pinSiteLogo(logo) {
@@ -21,7 +21,7 @@
         new ScrollMagic.Scene({
           triggerElement: el,
           duration: jQuery(this).height()
-        }).addIndicators().setClassToggle(trigeredClasses,"darkThere").addTo(controller);
+        }).setClassToggle(trigeredClasses,"darkThere").addTo(controller);
       });
       scene.setClassToggle(trigeredClasses,"fixedTop");
       scene.addTo(controller);
