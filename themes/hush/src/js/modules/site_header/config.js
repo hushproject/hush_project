@@ -1,5 +1,4 @@
 import ScrollMagic from "scrollmagic";
-
 {
   function pinSiteLogo(logo) {
     let controller = new ScrollMagic.Controller(),
