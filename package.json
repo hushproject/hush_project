@@ -9,10 +9,9 @@
     "prodServer": "//hush.com"
   },
   "scripts": {
-    "start": "npm-run-all --parallel webpack-watch hugo-server",
-    "hugo-server": "hugo server",
-    "webpack-watch": "webpack --watch --config webpack.conf.js",
-    "build": "webpack --config webpack.conf.js && hugo"
+    "start": "npm run dato && npm-run-all --parallel && webpack --watch --config webpack.conf.js && hugo server",
+    "build": "npm run dato && webpack --config webpack.conf.js && hugo",
+    "dato": "rm -rf config.toml && dato dump"
   },
   "repository": {
     "type": "git",
@@ -38,7 +37,7 @@
     "compass-sass-mixins": "^0.12.7",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.4",
-    "datocms-client": "^0.3.25",
+    "datocms-client": "^0.3.41",
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.2",
     "fluidable": "git+https://github.com/andri/fluidable.git",

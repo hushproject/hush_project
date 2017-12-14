@@ -7,3 +7,5 @@ themes/hush/static
 .DS_Store
 .env
 package-lock.json
+.env
+config.toml
