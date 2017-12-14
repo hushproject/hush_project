@@ -52,6 +52,8 @@
       text-align: center
       +font($main_400, 38px, 39px, $brown-4, normal, none, none)
       margin-bottom: 35px
+    &__subTitle
+      +font($main_400_italic, 23px, 30px, $brown-4, normal, none, none)
     &__description
       text-align: center
       letter-spacing: 0.36px
@@ -136,3 +138,17 @@
   +font($main_300, 15px, 16px, $brown-4, normal, none, none)
   a
     +font($main_300, 15px, 16px, $brown-4, normal, underline, none)
+.sitePopup__content__thankU
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  align-content: center
+  flex-flow: row wrap
+  box-sizing: border-box
+  height: calc(100vh - 200px)
+  p
+    display: block
+    width: 100%
+  .sitePopup__content__subTitle
+    margin-bottom: 85px
