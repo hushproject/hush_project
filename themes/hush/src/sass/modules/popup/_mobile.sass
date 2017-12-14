@@ -140,15 +140,20 @@
     +font($main_300, 15px, 16px, $brown-4, normal, underline, none)
 .sitePopup__content__thankU
   text-align: center
-  display: flex
   align-items: center
   justify-content: center
   align-content: center
   flex-flow: row wrap
   box-sizing: border-box
   height: calc(100vh - 200px)
+  display: none
+  &.active
+    display: flex
   p
     display: block
     width: 100%
   .sitePopup__content__subTitle
     margin-bottom: 85px
+.formSending
+  text-align: center
+  display: none

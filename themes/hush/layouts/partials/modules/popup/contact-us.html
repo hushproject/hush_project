@@ -1,10 +1,12 @@
 <div class="sitePopup active contactUs">
   <div class="container">
     <div class="sitePopup__header">
-      <div class="sitePopup__close">
+      <div class="sitePopup__close closePopup">
       </div>
     </div>
     <div class="sitePopup__content">
+      {{partial "modules/popup/form"}}
+      {{partial "modules/popup/sending"}}
       {{partial "modules/popup/thanks"}}
     </div>
   </div>
