@@ -1,0 +1,42 @@
+.pageNotFound
+  min-height: 100vh
+  width: 100%
+  background-repeat: no-repeat
+  background-size: 100% auto
+  background-position: 50% 50%
+  position: relative
+  &::after
+    content: ""
+    position: absolute
+    display: block
+    z-index: 1
+    background: $blackBottom2TopGradient
+    +resetForAbsoluteCentering()
+  .homeHeader__description
+    position: absolute
+    top: -100%
+.pageNotFound__content
+  position: relative
+  z-index: 2
+  text-align: center
+  padding-top: 185px
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  align-items: flex-end
+  min-height: 100vh
+  box-sizing: border-box
+  &__bottom
+    padding-bottom: 7vh
+    .button
+      margin-bottom: 10vh
+.pageNotFound__content
+  &__textRegular
+    +font($crimmson, 26px, 32px, $white, normal, none, none)
+    display: block
+    max-width: 240px
+    width: 100%
+    margin: 0px auto 30px
+  &__textHuge
+    +font($main_700, 16vh, 12vh, $white, normal, none, none)
+    margin-bottom: 20px
