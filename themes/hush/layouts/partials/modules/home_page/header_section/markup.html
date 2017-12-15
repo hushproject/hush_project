@@ -11,16 +11,16 @@
     {{with $headerSection.enquirebuttontext}}
       <div class="button button--white button--bordered">{{.}}</div>
     {{end}}
+    {{with $headerSection.nextSectionId}}
+      <div class="container--fluid">
+        <a href="{{.}}" class="button button--white scrollToAnchor">
+          {{if $headerSection.explorebuttontext}}
+              {{$headerSection.explorebuttontext}}
+            {{else}}
+              <img src="/images-theme/scrollToNext.svg" alt="">
+          {{end}}
+        </a>
+      </div>
+    {{end}}
   </div>
-  {{with $headerSection.nextSectionId}}
-    <div class="container--fluid">
-      <a href="{{.}}" class="button button--white scrollToAnchor">
-        {{if $headerSection.explorebuttontext "null"}}
-            {{$headerSection.explorebuttontext}}
-          {{else}}
-            <img src="/images-theme/scrollToNext.svg" alt="">
-        {{end}}
-      </a>
-    </div>
-  {{end}}
 </div>
