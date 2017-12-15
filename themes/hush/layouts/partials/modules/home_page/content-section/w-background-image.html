@@ -1,16 +1,27 @@
-<div class="container homePageContentSection   homePageContentSection--wDarkMask
-  homePageContentSection--whiteFont" id="valley"
-  style="background-image: url('/images-theme/yare-valley.jpg')">
+{{if .backgroundimagemobile}}
+  <style>
+    #{{.sectionid}} {
+      background-image: url('{{.backgroundimagemobile.url}}?auto=compress');
+    }
+  </style>
+{{end}}
+<div class="container homePageContentSection homePageContentSection--wDarkMask
+  homePageContentSection--whiteFont" id="{{.sectionid}}">
   <div class="homePageContentSection__content">
-    <div class="homePageContentSection__title">
-      <p>Breathtaking Views of the Yare Valley</p>
-    </div>
+    {{with .title}}
+      <div class="homePageContentSection__title">
+        <p>{{.}}</p>
+      </div>
+    {{end}}
+    {{with .description}}
     <div class="homePageContentSection__description">
-      <p><i>An area of outstanding beauty. Meadows, a secluded wood, a clearing
-        surrounded by lush ferns – all yours.</i></p>
+      {{. | markdownify}}
     </div>
+    {{end}}
   </div>
-  <div class="scrollToNext buttonToAnchor" data-href="#exclusive-use">
-    <img src="/images-theme/scrollToNext.svg" alt="">
-  </div>
+  {{if .nextsectionid}}
+    <div class="scrollToNext buttonToAnchor" data-href="{{.nextsectionid}}">
+      <img src="/images-theme/scrollToNext.svg" alt="">
+    </div>
+  {{end}}
 </div>

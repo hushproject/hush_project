@@ -1,9 +1,16 @@
 {{partial "modules/site_header/markup" .}}
 {{partial "modules/home_page/header_section/markup" .}}
-{{partial "modules/home_page/content-section/w-background-image"}}
-{{partial "modules/home_page/content-section/w-background-image-2"}}
+{{range .Params.homepagesections}}
+  {{if .backgroundimagemobile}}
+    {{partial "modules/home_page/content-section/w-background-image" .}}
+  {{else}}
+    {{partial "modules/home_page/content-section/w-background-solid-color-and-2-background-patterns" .}}
+  {{end}}
+{{end}}
+----
+
 {{partial "modules/home_page/content-section/w-background-image-3"}}
-{{partial "modules/home_page/content-section/w-background-solid-color-and-2-background-patterns"}}
+
 {{partial "modules/home_page/content-section/w-background-solid-color-and-2-background-patterns-2"}}
 {{partial "modules/home_page/content-section/testimonials"}}
 {{partial "modules/footer/markup"}}
