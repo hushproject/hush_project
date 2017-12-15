@@ -1,10 +1,9 @@
 module.exports = {
   create: function(dato, root, i18n, locale) {
-    root.createPost(`content/_index.${locale}.md`, 'yaml', {
+    root.createPost(`content/_index.md`, 'yaml', {
       frontmatter: {
-        title: `title`
-      },
-      content: ''
+        homepageheadersection: dato.homepageheadersection.toMap()
+      }
     });
   }
 }

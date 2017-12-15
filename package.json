@@ -9,8 +9,10 @@
     "prodServer": "//hush.com"
   },
   "scripts": {
-    "start": "npm run dato && npm-run-all --parallel && webpack --watch --config webpack.conf.js && hugo server",
-    "build": "npm run dato && webpack --config webpack.conf.js && hugo",
+    "start": "npm-run-all --parallel webpack-watch hugo-server",
+    "hugo-server": "npm run dato && hugo server",
+    "webpack-watch": "webpack --watch",
+    "build": "webpack && npm run dato &&  hugo",
     "dato": "rm -rf config.toml && dato dump"
   },
   "repository": {
@@ -30,12 +32,12 @@
   },
   "homepage": "https://github.com/LumoSpark/clients-hush#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.1",
+    "autoprefixer": "^7.2.3",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "babel-preset-es2015-webpack": "^6.4.3",
     "compass-sass-mixins": "^0.12.7",
-    "copy-webpack-plugin": "^4.0.1",
+    "copy-webpack-plugin": "^4.3.0",
     "css-loader": "^0.28.4",
     "datocms-client": "^0.3.41",
     "extract-text-webpack-plugin": "^2.1.2",
@@ -50,7 +52,7 @@
     "imagemin-webpack-plugin": "^1.5.0-beta.0",
     "json-loader": "^0.5.4",
     "node-sass": "^4.5.3",
-    "normalize.sass": "^3.0.3-2",
+    "normalize.sass": "^3.0.3",
     "npm-run-all": "^4.0.2",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "postcss-loader": "^2.0.6",
