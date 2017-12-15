@@ -18,6 +18,13 @@
       {{. | markdownify}}
     </div>
     {{end}}
+    {{if .buttons}}
+    <div class="homePageContentSection__cta">
+      {{range .buttons}}
+        <a href="{{.url}}" class="button button--white button--bordered">{{.title}}</a>
+      {{end}}
+    </div>
+    {{end}}
   </div>
   {{if .nextsectionid}}
     <div class="scrollToNext buttonToAnchor" data-href="{{.nextsectionid}}">

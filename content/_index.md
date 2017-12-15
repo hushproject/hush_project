@@ -40,10 +40,10 @@ homepagesections:
     title: Breathtaking Views of the Yare Valley
   - id: '144912'
     itemType: homepagesection
-    updatedAt: '2017-12-15T13:20:44.477Z'
+    updatedAt: '2017-12-15T13:35:44.293Z'
     createdAt: '2017-12-15T13:04:06.364Z'
     position: 2
-    nextsectionid: null
+    nextsectionid: '#your-ceremony'
     sectionid: exclusive-use
     colorbackgroundbottompattern: null
     colorbackgroundtoppattern: null
@@ -59,5 +59,32 @@ homepagesections:
     buttons: []
     description: '*An experience to savour. Yours and your guest''s own woodland world for three nights. No need to rush – it''s all yours.*'
     title: 3 Nights Exclusive Use
+  - id: '144957'
+    itemType: homepagesection
+    updatedAt: '2017-12-15T13:35:38.091Z'
+    createdAt: '2017-12-15T13:35:38.040Z'
+    position: 3
+    nextsectionid: null
+    sectionid: your-ceremony
+    colorbackgroundbottompattern: null
+    colorbackgroundtoppattern: null
+    backgroundcolor: null
+    backgroundimagemobile:
+      format: jpg
+      size: 248084
+      width: 374
+      height: 812
+      title: null
+      alt: null
+      url: 'https://www.datocms-assets.com/4204/1513344905-your-ceremony.jpg'
+    buttons:
+      - id: '144956'
+        itemType: link
+        updatedAt: '2017-12-15T13:34:56.963Z'
+        createdAt: '2017-12-15T13:34:56.963Z'
+        url: '#link-from-3th-section'
+        title: MORE
+    description: '*The Olde Woodshood under a canopy of beech, the drawing room at Colt''s Lodge, All Saints Church. The ceremony of your choice, a moment that is all yours.*'
+    title: Your Ceremony
 ---
 
