@@ -1,5 +1,13 @@
 {{$headerSection := .Params.homepageheadersection}}
-<div class="container homeHeader" style="background-image: url('/images-theme/home-1st-section.jpg')">
+
+{{with $headerSection.backgroundimagemobile}}
+  <style>
+    .homeHeader {
+      background-image: url('{{.url}}?auto=compress');
+    }
+  </style>
+{{end}}
+<div class="container homeHeader" id="home">
   <div class="homeHeader__description">
     <a href="" class="siteLogo"><img src="/images-theme/logo.svg" alt=""></a>
     <a href="" class="siteLogo--mask"><img src="/images-theme/logo.svg" alt=""></a>
