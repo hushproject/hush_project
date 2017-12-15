@@ -1,0 +1,31 @@
+<div class="container homePageContentSection
+  {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}"
+  id="the-vibe" style="background-color: {{.backgroundcolor.hex}}">
+  {{if .colorbackgroundtoppattern}}
+  <div class="homePageContentSection__pattern homePageContentSection__pattern--top"
+    style="background-image: url('{{.colorbackgroundtoppattern.url}}?auto=compress')"></div>
+  {{end}}
+  {{if .colorbackgroundbottompattern}}
+  <div class="homePageContentSection__pattern homePageContentSection__pattern--bottom"
+    style="background-image: url('{{.colorbackgroundbottompattern.url}}?auto=compress')"></div>
+  {{end}}
+    <div class="homePageContentSection__content">
+      {{with .title}}
+        <div class="homePageContentSection__title">
+          <p>{{.}}</p>
+        </div>
+      {{end}}
+      {{with .description}}
+      <div class="homePageContentSection__description">
+        {{. | markdownify}}
+      </div>
+      {{end}}
+      {{if .buttons}}
+      <div class="homePageContentSection__cta">
+        {{range .buttons}}
+          <a href="{{.url}}" class="button {{range .buttonstyle}}{{.class}} {{end}}">{{.title}}</a>
+        {{end}}
+      </div>
+      {{end}}
+    </div>
+</div>

@@ -19,7 +19,7 @@ homepageheadersection:
 homepagesections:
   - id: '144897'
     itemType: homepagesection
-    updatedAt: '2017-12-15T13:26:03.627Z'
+    updatedAt: '2017-12-15T14:42:24.530Z'
     createdAt: '2017-12-15T12:36:57.545Z'
     position: 1
     nextsectionid: '#exclusive-use'
@@ -38,9 +38,22 @@ homepagesections:
     buttons: []
     description: '*An area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yours.*'
     title: Breathtaking Views of the Yare Valley
+    visualpreferences:
+      - id: '145009'
+        itemType: homepagesectionpreference
+        updatedAt: '2017-12-15T14:42:07.418Z'
+        createdAt: '2017-12-15T14:42:07.418Z'
+        class: homePageContentSection--wDarkMask
+        title: Use gradient mask for section
+      - id: '144991'
+        itemType: homepagesectionpreference
+        updatedAt: '2017-12-15T14:07:19.309Z'
+        createdAt: '2017-12-15T14:07:19.309Z'
+        class: homePageContentSection--whiteFont
+        title: Use white text color
   - id: '144912'
     itemType: homepagesection
-    updatedAt: '2017-12-15T13:35:44.293Z'
+    updatedAt: '2017-12-15T14:42:34.145Z'
     createdAt: '2017-12-15T13:04:06.364Z'
     position: 2
     nextsectionid: '#your-ceremony'
@@ -59,9 +72,22 @@ homepagesections:
     buttons: []
     description: '*An experience to savour. Yours and your guest''s own woodland world for three nights. No need to rush – it''s all yours.*'
     title: 3 Nights Exclusive Use
+    visualpreferences:
+      - id: '145009'
+        itemType: homepagesectionpreference
+        updatedAt: '2017-12-15T14:42:07.418Z'
+        createdAt: '2017-12-15T14:42:07.418Z'
+        class: homePageContentSection--wDarkMask
+        title: Use gradient mask for section
+      - id: '144991'
+        itemType: homepagesectionpreference
+        updatedAt: '2017-12-15T14:07:19.309Z'
+        createdAt: '2017-12-15T14:07:19.309Z'
+        class: homePageContentSection--whiteFont
+        title: Use white text color
   - id: '144957'
     itemType: homepagesection
-    updatedAt: '2017-12-15T13:35:38.091Z'
+    updatedAt: '2017-12-15T14:42:42.720Z'
     createdAt: '2017-12-15T13:35:38.040Z'
     position: 3
     nextsectionid: null
@@ -80,11 +106,191 @@ homepagesections:
     buttons:
       - id: '144956'
         itemType: link
-        updatedAt: '2017-12-15T13:34:56.963Z'
+        updatedAt: '2017-12-15T14:29:33.341Z'
         createdAt: '2017-12-15T13:34:56.963Z'
+        buttonstyle:
+          - id: '145000'
+            itemType: buttonsprefence
+            updatedAt: '2017-12-15T14:28:18.987Z'
+            createdAt: '2017-12-15T14:28:18.987Z'
+            class: button--white
+            title: White
+          - id: '144999'
+            itemType: buttonsprefence
+            updatedAt: '2017-12-15T14:28:02.845Z'
+            createdAt: '2017-12-15T14:28:02.845Z'
+            class: button--bordered
+            title: Bordered button
         url: '#link-from-3th-section'
         title: MORE
     description: '*The Olde Woodshood under a canopy of beech, the drawing room at Colt''s Lodge, All Saints Church. The ceremony of your choice, a moment that is all yours.*'
     title: Your Ceremony
+    visualpreferences:
+      - id: '144991'
+        itemType: homepagesectionpreference
+        updatedAt: '2017-12-15T14:07:19.309Z'
+        createdAt: '2017-12-15T14:07:19.309Z'
+        class: homePageContentSection--whiteFont
+        title: Use white text color
+  - id: '144975'
+    itemType: homepagesection
+    updatedAt: '2017-12-15T14:33:13.133Z'
+    createdAt: '2017-12-15T13:51:18.672Z'
+    position: 4
+    nextsectionid: null
+    sectionid: the-vibe
+    colorbackgroundbottompattern:
+      format: png
+      size: 3935
+      width: 374
+      height: 822
+      title: null
+      alt: null
+      url: 'https://www.datocms-assets.com/4204/1513345799-content-bottom-pattern.png'
+    colorbackgroundtoppattern:
+      format: png
+      size: 8813
+      width: 374
+      height: 822
+      title: null
+      alt: null
+      url: 'https://www.datocms-assets.com/4204/1513345774-section-4-top-pattern.png'
+    backgroundcolor:
+      red: 225
+      green: 178
+      blue: 36
+      rgb: 'rgb(225, 178, 36)'
+      hex: '#e1b224'
+    backgroundimagemobile: null
+    buttons:
+      - id: '145005'
+        itemType: link
+        updatedAt: '2017-12-15T14:32:52.127Z'
+        createdAt: '2017-12-15T14:32:52.127Z'
+        buttonstyle:
+          - id: '145001'
+            itemType: buttonsprefence
+            updatedAt: '2017-12-15T14:28:56.718Z'
+            createdAt: '2017-12-15T14:28:56.718Z'
+            class: button--brown
+            title: Brown
+          - id: '144999'
+            itemType: buttonsprefence
+            updatedAt: '2017-12-15T14:28:02.845Z'
+            createdAt: '2017-12-15T14:28:02.845Z'
+            class: button--bordered
+            title: Bordered button
+        url: /more-the-vibe
+        title: MORE
+    description: |-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+
+      Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    title: The Vibe
+    visualpreferences:
+      - id: '144992'
+        itemType: homepagesectionpreference
+        updatedAt: '2017-12-15T14:07:59.435Z'
+        createdAt: '2017-12-15T14:07:59.435Z'
+        class: hideLogoOnThisSection
+        title: Don`t show show logo on this section
+      - id: '144993'
+        itemType: homepagesectionpreference
+        updatedAt: '2017-12-15T14:09:13.234Z'
+        createdAt: '2017-12-15T14:08:41.158Z'
+        class: homePageContentSection--brownFont
+        title: Use brown text color
+  - id: '144998'
+    itemType: homepagesection
+    updatedAt: '2017-12-15T14:31:09.915Z'
+    createdAt: '2017-12-15T14:17:03.430Z'
+    position: 5
+    nextsectionid: null
+    sectionid: vibe2
+    colorbackgroundbottompattern:
+      format: png
+      size: 22148
+      width: 374
+      height: 762
+      title: null
+      alt: null
+      url: 'https://www.datocms-assets.com/4204/1513347419-section-5-bottom-pattern.png'
+    colorbackgroundtoppattern: null
+    backgroundcolor:
+      red: 23
+      green: 23
+      blue: 47
+      rgb: 'rgb(23, 23, 47)'
+      hex: '#17172f'
+    backgroundimagemobile: null
+    buttons:
+      - id: '144997'
+        itemType: link
+        updatedAt: '2017-12-15T14:29:47.687Z'
+        createdAt: '2017-12-15T14:16:21.630Z'
+        buttonstyle:
+          - id: '145000'
+            itemType: buttonsprefence
+            updatedAt: '2017-12-15T14:28:18.987Z'
+            createdAt: '2017-12-15T14:28:18.987Z'
+            class: button--white
+            title: White
+          - id: '144999'
+            itemType: buttonsprefence
+            updatedAt: '2017-12-15T14:28:02.845Z'
+            createdAt: '2017-12-15T14:28:02.845Z'
+            class: button--bordered
+            title: Bordered button
+          - id: '145002'
+            itemType: buttonsprefence
+            updatedAt: '2017-12-15T14:29:18.722Z'
+            createdAt: '2017-12-15T14:29:18.722Z'
+            class: button--md
+            title: Middle size
+        url: /ColtsLodge
+        title: Colts Lodge
+      - id: '145004'
+        itemType: link
+        updatedAt: '2017-12-15T14:31:05.236Z'
+        createdAt: '2017-12-15T14:31:05.236Z'
+        buttonstyle:
+          - id: '145002'
+            itemType: buttonsprefence
+            updatedAt: '2017-12-15T14:29:18.722Z'
+            createdAt: '2017-12-15T14:29:18.722Z'
+            class: button--md
+            title: Middle size
+          - id: '145000'
+            itemType: buttonsprefence
+            updatedAt: '2017-12-15T14:28:18.987Z'
+            createdAt: '2017-12-15T14:28:18.987Z'
+            class: button--white
+            title: White
+          - id: '144999'
+            itemType: buttonsprefence
+            updatedAt: '2017-12-15T14:28:02.845Z'
+            createdAt: '2017-12-15T14:28:02.845Z'
+            class: button--bordered
+            title: Bordered button
+        url: /Glamping
+        title: Glamping
+    description: |-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+
+      Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    title: The Vibe
+    visualpreferences:
+      - id: '144992'
+        itemType: homepagesectionpreference
+        updatedAt: '2017-12-15T14:07:59.435Z'
+        createdAt: '2017-12-15T14:07:59.435Z'
+        class: hideLogoOnThisSection
+        title: Don`t show show logo on this section
+      - id: '144991'
+        itemType: homepagesectionpreference
+        updatedAt: '2017-12-15T14:07:19.309Z'
+        createdAt: '2017-12-15T14:07:19.309Z'
+        class: homePageContentSection--whiteFont
+        title: Use white text color
 ---
 
