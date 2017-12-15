@@ -9,3 +9,5 @@ themes/hush/static
 package-lock.json
 .env
 config.toml
+content/_index.md
+content/_index.en.md
