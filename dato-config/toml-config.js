@@ -1,7 +1,7 @@
 module.exports = {
   create: function(dato, root, i18n, locale) {
-    ['config.toml'].forEach(file => {
-      root.addToDataFile(file, 'toml', {
+    ['config.yaml'].forEach(file => {
+      root.addToDataFile(file, 'yaml', {
         baseURL: 'https://hush.netlify.com',
         languageCode: "en-us",
         title: "HUSH",
@@ -11,7 +11,10 @@ module.exports = {
           priority: 0.5,
           filename: "sitemap.xml"
         },
-        enableRobotsTXT: true
+        enableRobotsTXT: true,
+        params: {
+          footer: dato.sitefooter.toMap()
+        }
       });
     });
   }

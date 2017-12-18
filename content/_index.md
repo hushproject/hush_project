@@ -2,7 +2,7 @@
 homepageheadersection:
   id: '144704'
   itemType: homepageheadersection
-  updatedAt: '2017-12-15T09:39:20.073Z'
+  updatedAt: '2017-12-16T16:26:45.207Z'
   createdAt: '2017-12-15T08:33:35.174Z'
   backgroundimagemobile:
     format: jpg
@@ -15,7 +15,7 @@ homepageheadersection:
   nextsectionid: '#valley'
   explorebuttontext: null
   enquirebuttontext: Enquire
-  tagline: Be Yourself Together
+  tagline: Be Yourself  Together
 homepagesections:
   - id: '144897'
     itemType: homepagesection

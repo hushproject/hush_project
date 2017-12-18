@@ -13,7 +13,7 @@
     "hugo-server": "npm run dato && hugo server",
     "webpack-watch": "webpack --watch",
     "build": "webpack && npm run dato &&  hugo",
-    "dato": "rm -rf config.toml && dato dump"
+    "dato": "rm -rf config.toml config.yaml && dato dump"
   },
   "repository": {
     "type": "git",

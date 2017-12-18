@@ -8,6 +8,6 @@ themes/hush/static
 .env
 package-lock.json
 .env
-config.toml
+config.yaml
 content/_index.md
 content/_index.en.md
