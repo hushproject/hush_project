@@ -2,8 +2,16 @@
 homepageheadersection:
   id: '144704'
   itemType: homepageheadersection
-  updatedAt: '2017-12-16T16:26:45.207Z'
+  updatedAt: '2017-12-18T13:39:46.575Z'
   createdAt: '2017-12-15T08:33:35.174Z'
+  backgroundimagedesktop:
+    format: jpg
+    size: 1611485
+    width: 1540
+    height: 930
+    title: null
+    alt: null
+    url: 'https://www.datocms-assets.com/4204/1513604379-desktophomepage.jpg'
   backgroundimagemobile:
     format: jpg
     size: 135809

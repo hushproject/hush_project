@@ -1,11 +1,22 @@
 {{partial "modules/site_header/markup" .}}
-{{partial "modules/home_page/header_section/markup" .}}
-{{range .Params.homepagesections}}
-  {{if .backgroundimagemobile}}
-    {{partial "modules/home_page/content-section/w-background-image" .}}
-  {{else}}
-    {{partial "modules/home_page/content-section/w-background-solid-color" .}}
+<div id="fullPage">
+<div class="section active">
+  {{partial "modules/home_page/header_section/markup" .}}
+</div>
+  {{range .Params.homepagesections}}
+    {{if .backgroundimagemobile}}
+    <div class="section">
+      {{partial "modules/home_page/content-section/w-background-image" .}}
+    </div>
+    {{end}}
   {{end}}
-{{end}}
-{{partial "modules/home_page/content-section/testimonials" .}}
-{{partial "modules/footer/markup" .}}
+<div class="section section__innerHalfs">
+  {{range .Params.homepagesections}}
+    {{if .backgroundimagemobile}}{{else}}
+      {{partial "modules/home_page/content-section/w-background-solid-color" .}}
+    {{end}}
+  {{end}}
+  {{partial "modules/home_page/content-section/testimonials" .}}
+  {{partial "modules/footer/markup" .}}
+</div>
+</div>
