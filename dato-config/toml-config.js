@@ -13,7 +13,8 @@ module.exports = {
         },
         enableRobotsTXT: true,
         params: {
-          footer: dato.sitefooter.toMap()
+          footer: dato.sitefooter.toMap(),
+          siteMenu: dato.sitemenu.toMap()
         }
       });
     });
