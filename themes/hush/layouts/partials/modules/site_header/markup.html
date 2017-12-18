@@ -1,8 +1,9 @@
+{{$siteMenu := .Site.Params.siteMenu}}
 <div class="container siteHeader">
   <div class="siteHeader__burgerMenu">
     <div class="siteHeader__burgerMenu__button">
-      <i>MENU</i>
-      <a href="#">Home</a><span class="siteHeader__burgerMenu__burger">
+      <i>{{$siteMenu.stringmenu}}</i>
+      <a href="/">Home</a><span class="siteHeader__burgerMenu__burger">
         <div class="stick stick-1"></div>
         <div class="stick stick-2"></div>
         <div class="stick stick-3"></div>
