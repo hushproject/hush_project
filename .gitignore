@@ -1,8 +1,8 @@
 public
 node_modules
-static/css
-static/js
-static/images-theme
+themes/hush/static/css
+themes/hush/static/js
+themes/hush/static/images-theme
 themes/hush/static
 .DS_Store
 .env
