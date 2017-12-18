@@ -58,6 +58,7 @@
     "postcss-loader": "^2.0.6",
     "sass-loader": "^6.0.6",
     "sass-resources-loader": "^1.2.1",
+    "slick-carousel": "^1.8.1",
     "stringify-object": "^3.2.0",
     "style-loader": "^0.18.2",
     "transfer-webpack-plugin": "^0.1.4",

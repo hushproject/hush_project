@@ -14,7 +14,11 @@ module.exports = {
         enableRobotsTXT: true,
         params: {
           footer: dato.sitefooter.toMap(),
-          siteMenu: dato.sitemenu.toMap()
+          siteMenu: dato.sitemenu.toMap(),
+          testimonials: {
+            list: dato.testimonials.map(t => t.toMap()),
+            settings: dato.testimonialspreference.toMap()
+          }
         }
       });
     });
