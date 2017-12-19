@@ -1,0 +1,26 @@
+@media screen and (min-width : 1024px)
+  .siteSidebarMenu
+    background: $white url("/images-theme/burger-menu-background-pattern-desktop.png") no-repeat 50% 50%
+  .siteSidebarMenu__inner ul span
+    display: inline-block
+    width: 100%
+  .siteSidebarMenu__inner ul li
+    display: inline-block
+    &::after
+      content: ""
+      display: inline-block
+      width: 5px
+      height: 5px
+      background: $brown-3
+      border-radius: 5px
+      position: relative
+      top: -5px
+      margin: 0px 17px 0px 20px
+    &:last-of-type::after
+      display: none
+  .siteSidebarMenu__inner ul
+    margin-bottom: 86px
+  .siteSidebarMenu__inner ul li a
+    +font($main_300, 27px, 48px, $brown-1, normal, none, capitalize)
+  .siteSidebarMenu__inner ul:after
+  display: none

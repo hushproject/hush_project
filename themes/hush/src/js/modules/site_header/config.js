@@ -25,23 +25,34 @@ import ScrollMagic from "scrollmagic"; {
     scene.addTo(controller);
   }
 
-  function showHideSidebar() {
+  function showHideSidebar(scrollPosition) {
     jQuery('.siteHeader__burgerMenu__button').click(function() {
       let elements = jQuery('.siteSidebarMenu, .siteHeader__burgerMenu__button');
+      if (!scrollPosition || scrollPosition === 0) {
+        scrollPosition = jQuery(window).scrollTop();
+      }
       if (jQuery(this).hasClass('active')) {
-        elements.removeClass('active');
+        jQuery("body").removeClass('noScroll');
+        $("html, body").animate({
+          scrollTop: scrollPosition
+        }, 0, function functionName() {
+          elements.removeClass('active');
+          scrollPosition = 0;
+        });
       } else {
         elements.addClass('active');
+        jQuery("body").addClass('noScroll');
+        jQuery("body").css("top", scrollPosition * -1);
       }
       $(".stick").toggleClass(function() {
         return $(this).is('.open, .close') ? 'open close' : 'open';
       });
     });
   }
-  if (jQuery('.siteSidebarMenu')) {
+  if (jQuery('.siteSidebarMenu').length) {
     showHideSidebar();
   }
-  if (jQuery('.homeHeader__description')) {
+  if (jQuery('.homeHeader__description').length) {
     pinSiteLogo(jQuery('.homeHeader__description .siteLogo'));
   }
 }

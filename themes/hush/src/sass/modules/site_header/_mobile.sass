@@ -19,6 +19,7 @@
       align-items: center
       position: relative
       padding-right: 34px
+      cursor: pointer
       .stick
         background: $white
         &.open
@@ -65,13 +66,13 @@
   overflow-y: scroll
   width: 100%
   top: -100%
-  left: 0%
   background: $white url('/images-theme/burger-menu-background-pattern.png') no-repeat 63% 0%
   z-index: 80
   opacity: 0
+  animation: hideMenu .5s ease-out forwards
   &.active
     top: 0px
-    animation: showMenu .6s ease-out forwards
+    animation: showMenu .5s ease-out forwards
   &__inner
     text-align: center
     padding-top: 110px
@@ -95,12 +96,17 @@
 @keyframes showMenu
   0%
     opacity: 0
-  25%
-    opacity: .5
   80%
     opacity: .95
   100%
     opacity: 1
+@keyframes hideMenu
+  0%
+    opacity: 1
+  80%
+    opacity: .95
+  100%
+    opacity: 0
 .stick
   width: 80px
   height: 8px
