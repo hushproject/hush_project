@@ -1,7 +1,6 @@
 import ScrollMagic from "scrollmagic"; {
   function pinSiteLogo(logo) {
     let controller = new ScrollMagic.Controller(),
-      controller2 = new ScrollMagic.Controller(),
       scene = new ScrollMagic.Scene({
         triggerElement: ".homeHeader__description",
         offset: jQuery(window).height() / 2 - 200
@@ -52,7 +51,5 @@ import ScrollMagic from "scrollmagic"; {
   if (jQuery('.siteSidebarMenu').length) {
     showHideSidebar();
   }
-  if (jQuery('.homeHeader__description').length) {
-    pinSiteLogo(jQuery('.homeHeader__description .siteLogo'));
-  }
+  pinSiteLogo(jQuery('.homeHeader__description .siteLogo'));
 }
