@@ -1,13 +1,15 @@
+{{$page := .Params}}
 <div class="testimonialsPage">
   <div class="testimonialsPage__list">
     <div class="testimonialsPage__title">
-      <h1>Kind Words</h1>
+      <h1>{{$page.title}}</h1>
     </div>
-    {{partial "modules/testimonials/list/item" .}}
-    {{partial "modules/testimonials/list/item-1" .}}
-    {{partial "modules/testimonials/list/item" .}}
-    {{partial "modules/testimonials/list/item-1" .}}
-    {{partial "modules/testimonials/list/item" .}}
-    {{partial "modules/testimonials/list/item-1" .}}
+    <div class="container testimonialsPage__list__container">
+      {{with .Site.Params.testimonials.list}}
+        {{range .}}
+          {{partial "modules/testimonials/list/item" .}}
+        {{end}}
+      {{end}}
+    </div>
   </div>
 </div>

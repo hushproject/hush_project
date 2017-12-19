@@ -1,0 +1,25 @@
+@media screen and (min-width : 1024px)
+  .testimonialsPage
+    &__title
+      +font($main_400, 48px, initial, $white, normal, none, none)
+      margin-bottom: 160px
+    &__list
+      padding-top: 160px
+      padding-bottom: 140px
+      width: 100%
+    &__item
+      margin-bottom: 110px
+  .testimonialsPage__list__container
+    display: flex
+    flex-flow: row wrap
+  .testimonialsPage__item
+    width: 50%
+    box-sizing: border-box
+    padding: 0px 60px
+    &__title
+      +font($crimmson, 38px, 48px, $white, normal, none, none)
+    &__quote
+      text-align: justify
+      +font($crimmson, 23px, 35px, $white, normal, none, none)
+      letter-spacing: 0.46px
+      margin-bottom: 55px
