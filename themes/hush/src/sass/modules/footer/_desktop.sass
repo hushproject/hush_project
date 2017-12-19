@@ -1,0 +1,66 @@
+@media screen and (min-width : 1024px)
+  .siteFooter
+    min-height: inherit
+    padding-top: 60px
+    padding-bottom: 55px
+    &::after
+      background: url('/images-theme/footer-patern-left-desktop.png') no-repeat 0% 100%
+    &::before
+      background: url('/images-theme/footer-patern-right-desktop.png') no-repeat calc(100% - 50px) 50%
+    &__container
+      display: flex
+      justify-content: space-between
+  .siteFooter
+    &__contactInformation
+      width: calc(100% / 3 * 2)
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-between
+      .siteFooter__contactInformation__text,
+      .siteFooter__cta
+        width: 50%
+      .siteFooter__contactInformation__text
+        text-align: left
+    &__copyright
+      width: calc(100% / 3)
+      text-align: right
+  .siteFooter__menu ul
+    justify-content: flex-end
+    margin-right: -15px
+  .siteFooter__logo
+    display: block
+    width: 101px
+    margin: 0px auto 90px
+    img
+      width: 100%
+  .siteFooter__contactInformation__text,
+  .siteFooter__contactInformation__text p
+    max-width: 100%
+    margin-bottom: 0px
+  .siteFooter__contactInformation__links,
+  .siteFooter__contactInformation__text
+    margin-bottom: 0px
+  .siteFooter__cta,
+  .siteFooter__copyright
+    align-self: flex-start
+  .siteFooter__menu
+    margin-bottom: 20px
+  .siteFooter__contactInformation__text,
+  .siteFooter__contactInformation__links a
+    font-size: 17px
+    line-height: 23px
+    letter-spacing: 0.34px
+  .siteFooter__contactInformation__links
+    padding-top: 20px
+  .siteFooter__contactInformation__links a
+    margin-bottom: 5px
+  .siteFooter__contactInformation__links a:last-child
+    display: block
+    width: 100%
+  .siteFooter__copyright__text
+    display: flex
+    flex-flow: row wrap
+    flex-direction: column-reverse
+    p
+      display: block
+      width: 100%

@@ -1,5 +1,5 @@
 .siteFooter
-  background: $brown-1 url('/images-theme/footer-patern.png') no-repeat
+  background: $brown-1
   padding-top: 120px
   padding-bottom: 35px
   text-align: center
@@ -8,14 +8,28 @@
   flex-flow: row wrap
   justify-content: center
   align-items: flex-end
+  position: relative
+  &::after,
+  &::before
+    content: ""
+    display: block
+    +resetForAbsoluteCentering()
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: 1
+  &::after
+    background: url('/images-theme/footer-patern-left-mobile.png') no-repeat 0% 50%
+  &::before
+    background: url('/images-theme/footer-patern-right-mobile.png') no-repeat 100% 50%
   &__contactInformation
     &__text
-      max-width: 180px
-      width: 100%
-      margin: 0px auto
       +font($main_300, 20px, 30px, $white, normal, none, none)
       letter-spacing: 0.4px
-      margin-bottom: 30px
+      p
+        margin: 0px auto 30px
+        max-width: 180px
+        width: 100%
     &__links
       margin-bottom: 50px
       a
@@ -33,9 +47,12 @@
             background: $orange
             position: relative
             top: -2px
+        &:last-child
+          width: 100%
   &__cta
     margin-bottom: 20px
     align-self: flex-end
+    padding-bottom: 12vh
   &__menu
     margin-bottom: 50px
     align-self: flex-end
