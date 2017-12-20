@@ -1,22 +1,47 @@
 {{partial "modules/site_header/markup" .}}
-<div class="pageNotFound" style="background-image: url('/images-theme/not-found-background.jpg')">
+{{$notFound := .Params.settings}}
+{{with $notFound.backgroundimagemobile}}
+  <style>
+    #pageNotFound {
+      background-image: url('{{.url}}?auto=compress');
+    }
+  </style>
+{{end}}
+{{with $notFound.backgroundimagedesktop}}
+  <style>
+    @media screen and (min-width : 640px) {
+      #pageNotFound {
+        background-image: url('{{.url}}?auto=compress');
+      }
+    }
+  </style>
+{{end}}
+<div class="pageNotFound" id="pageNotFound">
   <div class="homeHeader__description">
     <a href="" class="siteLogo"><img src="/images-theme/logo.svg" alt=""></a>
   </div>
   <div class="pageNotFound__content">
     <div class="pageNotFound__content__top">
-      <p class="pageNotFound__content__textRegular">
-        This page has vanished into the stars.
-      </p>
-      <p class="pageNotFound__content__textHuge">
-        404
-      </p>
-      <p class="pageNotFound__content__textRegular">
-        Page cannot be found
-      </p>
+      {{with $notFound.before404text}}
+        <p class="pageNotFound__content__textRegular">
+          {{.}}
+        </p>
+      {{end}}
+      {{with $notFound.text404}}
+        <p class="pageNotFound__content__textHuge">
+          {{.}}
+        </p>
+      {{end}}
+      {{with $notFound.after404text}}
+        <p class="pageNotFound__content__textRegular">
+          {{.}}
+        </p>
+      {{end}}
     </div>
     <div class="pageNotFound__content__bottom">
-      <a href="" class="button button--white button--bordered">TAKE ME HOME</a>
+      {{with $notFound.buttontext}}
+        <a href="{{$notFound.buttonhref}}" class="button button--white button--bordered">{{.}}</a>
+      {{end}}
       <div class="siteFooter__copyright">
         <p>Copyright © 2017. All Rights Reserved</p>
         <p><a href="#">Privacy Policy</a></p>
