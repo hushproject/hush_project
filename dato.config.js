@@ -1,7 +1,8 @@
 var homePage = require("./dato-config/home-page.js"),
   toml = require("./dato-config/toml-config.js"),
   testimonials = require("./dato-config/testimonials.js"),
-  notFound = require("./dato-config/not-found.js");
+  notFound = require("./dato-config/not-found.js"),
+  findUs = require("./dato-config/find-us.js");
 
 module.exports = (dato, root, i18n) => {
   i18n.availableLocales.forEach((locale) => {
@@ -10,6 +11,7 @@ module.exports = (dato, root, i18n) => {
       toml.create(dato, root, i18n, locale);
       testimonials.create(dato, root, i18n, locale);
       notFound.create(dato, root, i18n, locale);
+      findUs.create(dato, root, i18n, locale);
     });
   });
 }
