@@ -24,12 +24,19 @@
     event.preventDefault();
     jQuery('.sendRequest__wrapper').fadeOut(300);
     jQuery('.formSending').fadeIn(300);
-    let send = jQuery.ajax({
+    let formValues = {
+      name: jQuery('input[name=name]').val(),
+      whenAreYouThink: jQuery('select[name=whenareyouthinkingstring]').val(),
+      howManyPeople: jQuery('select[name=howmanypeoplestring]').val(),
+      email: jQuery('input[name=email]').val(),
+      sendBrochure: jQuery('input[name=pleasesendmeabrochurestring]').val(),
+      message: jQuery('textarea[name=message]').val(),
+      addToMailList: jQuery('input[name=pleaseaddmetoyourmailingliststring]').val()
+    },
+    send = jQuery.ajax({
       url: "https://formspree.io/vlgutv@gmail.com",
       method: "POST",
-      data: {
-        message: "hello Chris it`s Vova)!"
-      },
+      data: formValues,
       dataType: "json"
     });
     send.then((result) => {
