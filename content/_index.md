@@ -116,6 +116,7 @@ homepagesections:
         itemType: link
         updatedAt: '2017-12-15T14:29:33.341Z'
         createdAt: '2017-12-15T13:34:56.963Z'
+        additionalclasse: null
         buttonstyle:
           - id: '145000'
             itemType: buttonsprefence
@@ -175,6 +176,7 @@ homepagesections:
         itemType: link
         updatedAt: '2017-12-15T14:32:52.127Z'
         createdAt: '2017-12-15T14:32:52.127Z'
+        additionalclasse: null
         buttonstyle:
           - id: '145001'
             itemType: buttonsprefence
@@ -236,6 +238,7 @@ homepagesections:
         itemType: link
         updatedAt: '2017-12-15T14:29:47.687Z'
         createdAt: '2017-12-15T14:16:21.630Z'
+        additionalclasse: null
         buttonstyle:
           - id: '145000'
             itemType: buttonsprefence
@@ -261,6 +264,7 @@ homepagesections:
         itemType: link
         updatedAt: '2017-12-15T14:31:05.236Z'
         createdAt: '2017-12-15T14:31:05.236Z'
+        additionalclasse: null
         buttonstyle:
           - id: '145002'
             itemType: buttonsprefence

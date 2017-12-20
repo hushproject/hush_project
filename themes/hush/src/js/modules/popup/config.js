@@ -1,7 +1,25 @@
 {
-  jQuery('.closePopup').click(() => {
-    jQuery('.sitePopup').removeClass('active');
-  });
+  function showHideForm(scrollPosition) {
+    if (!scrollPosition) {
+      scrollPosition = jQuery(window).scrollTop();
+    }
+    jQuery('.enquireCallForm').click(() => {
+      scrollPosition = jQuery(window).scrollTop();
+      jQuery('.sitePopup').addClass('active');
+      jQuery("body").addClass('noScroll');
+      jQuery("body").css("top", scrollPosition * -1);
+    });
+    jQuery('.closePopup').click(() => {
+      jQuery("body").removeClass('noScroll');
+      $("html, body").animate({
+        scrollTop: scrollPosition
+      }, 0, function functionName() {
+        jQuery('.sitePopup').removeClass('active');
+        scrollPosition = 0;
+      });
+    });
+  };
+  showHideForm();
   jQuery('#sendRequest').submit(function(event) {
     event.preventDefault();
     jQuery('.sendRequest__wrapper').fadeOut(300);
