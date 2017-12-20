@@ -1,41 +1,64 @@
+{{$formSettings := .Site.Params.formSetting}}
 <div class="sendRequest__wrapper">
-  <div class="sitePopup__content__title">
-    <p>Viewing By Appointment Only</p>
-  </div>
+  {{with $formSettings.formtitle}}
+    <div class="sitePopup__content__title">
+      <p>{{.}}</p>
+    </div>
+  {{end}}
+  {{with $formSettings.formdescription}}
   <div class="sitePopup__content__description">
-    <p>We would love to see you. Please use the form below, call or write,
-      to arrange a viewing or receive a brochure.</p>
+    <p>{{.}}</p>
   </div>
+  {{end}}
   <form class="sendRequest" id="sendRequest" action="/" method="post">
-    <input type="text" name="" class="sendRequest__input" value="" placeholder="Your Name">
-    <select name="" class="sendRequest__input" required>
-      <option value="" disabled selected hidden>When are you thinking</option>
-      <option value="10-15">10-15</option>
-      <option value="15-20">15-20</option>
-      <option value="20-50">20-50</option>
-      <option value="over 50">over 50</option>
-    </select>
-    <select name="" class="sendRequest__input" required>
-      <option value="" disabled selected hidden>How many people</option>
-      <option value="10-15">10-15</option>
-      <option value="15-20">15-20</option>
-      <option value="20-50">20-50</option>
-      <option value="over 50">over 50</option>
-    </select>
-    <input type="text" name="" class="sendRequest__input" value="" placeholder="Email">
-    <div class="sendRequest__radio">
-      <input type="checkbox" name="" value="">
-      <label><p>Send me a brochure</p>
-      <div></div></label>
-    </div>
-    <textarea name="name" class="sendRequest__input" placeholder="Message"></textarea>
-    <div class="sendRequest__radio">
-      <input type="checkbox" name="" checked="checked">
-      <label><p>Send me a brochure</p>
-      <div></div></label>
-    </div>
-    <button type="submit" name="button" class="sendRequest__submit">OKAY</button>
-    <div class="closePopup">Close</div>
-    <p class="sendRequest__copyright">Your privacy is key. Read our <a href="">privacy policy</a></p>
+    {{with $formSettings.yourname}}
+      <input type="text" name="name" class="sendRequest__input" value="" placeholder="{{.}}">
+    {{end}}
+    {{with $formSettings.whenareyouthinkingstring}}
+      <select name="whenareyouthinkingstring" class="sendRequest__input" required>
+        <option value="" disabled selected hidden>{{.}}</option>
+        {{range $formSettings.optionswayth}}
+          <option value="{{.value}}">{{.text}}</option>
+        {{end}}
+      </select>
+    {{end}}
+    {{with $formSettings.howmanypeoplestring}}
+      <select name="howmanypeoplestring" class="sendRequest__input" required>
+        <option value="" disabled selected hidden>{{.}}</option>
+        {{range $formSettings.optionsforhowmanypeople}}
+          <option value="{{.value}}">{{.text}}</option>
+        {{end}}
+      </select>
+    {{end}}
+    {{with $formSettings.emailstring}}
+      <input type="text" name="email" class="sendRequest__input" value="" placeholder="{{.}}">
+    {{end}}
+    {{with $formSettings.pleasesendmeabrochurestring}}
+      <div class="sendRequest__radio">
+        <input type="checkbox" name="pleasesendmeabrochurestring" value="">
+        <label><p>{{.}}</p>
+        <div></div></label>
+      </div>
+    {{end}}
+    {{with $formSettings.message}}
+      <textarea name="message" class="sendRequest__input" placeholder="{{.}}"></textarea>
+    {{end}}
+    {{with $formSettings.pleaseaddmetoyourmailingliststring}}
+      <div class="sendRequest__radio">
+        <input type="checkbox" name="pleaseaddmetoyourmailingliststring" checked="checked">
+        <label><p>{{.}}</p>
+        <div></div></label>
+      </div>
+    {{end}}
+    {{with $formSettings.okaystring}}
+      <button type="submit" name="button" class="sendRequest__submit">{{.}}</button>
+    {{end}}
+    {{with $formSettings.closestring}}
+      <div class="closePopup">{{.}}</div>
+    {{end}}
+    {{with $formSettings.privacypolicystring}}
+      <p class="sendRequest__copyright">{{$formSettings.yourprivacyiskeystring}}
+        <a href="{{$formSettings.privacypolicylink}}" target="_blank">{{.}}</a></p>
+    {{end}}
   </form>
 </div>

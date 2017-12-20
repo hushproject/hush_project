@@ -1,5 +1,8 @@
+{{$formSettings := .Site.Params.formSetting}}
 <div class="sitePopup__content__thankU">
-  <p class="sitePopup__content__title">Thank you</p>
-  <p class="sitePopup__content__subTitle">We will be in touch.</p>
-  <div class="button button--bordered button--brown closeAfterSending closePopup">CLOSE</div>
+  <p class="sitePopup__content__title">{{$formSettings.thankyoutite}}</p>
+  <p class="sitePopup__content__subTitle">{{$formSettings.thankyoudescription}}</p>
+  <div class="button button--bordered button--brown closeAfterSending closePopup">
+    {{$formSettings.thankyouclose}}
+  </div>
 </div>

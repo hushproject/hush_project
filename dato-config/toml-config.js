@@ -17,8 +17,9 @@ module.exports = {
           siteMenu: dato.sitemenu.toMap(),
           testimonials: {
             list: dato.testimonials.map(t => t.toMap()),
-            settings: dato.testimonialspreference.toMap()
-          }
+            settings: dato.testimonialspreference.toMap(),
+          },
+          formSetting: dato.formseting.toMap()
         }
       });
     });
