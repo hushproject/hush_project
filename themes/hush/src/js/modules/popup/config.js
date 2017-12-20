@@ -37,4 +37,8 @@
       jQuery('.sitePopup__content__thankU').addClass('active');
     });
   });
+  jQuery('.closeAfterSending').click(() => {
+    jQuery('.sitePopup__content__thankU').removeClass('active');
+    jQuery('.sendRequest__wrapper').show();
+  });
 }

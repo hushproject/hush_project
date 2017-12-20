@@ -1,0 +1,52 @@
+@media screen and (min-width : 768px)
+  .sitePopup
+    background: $white url('/images-theme/contact-form-desktop-background.png') no-repeat 50% 55px
+  .sendRequest
+    max-width: 400px
+    width: 100%
+    margin: 0px auto
+    .closePopup
+      text-align: center
+      +font($main_400, 18px, 18px, $brown-4, normal, underline, none)
+      margin-bottom: 60px
+  .sendRequest__wrapper
+    max-width: 550px
+    margin: 0px auto
+    width: 100%
+    padding-top: 80px
+  .sendRequest__radio label
+    justify-content: flex-start
+  .sendRequest__radio label div
+    border: 2px solid $brown-5
+    position: relative
+    top: 2px
+    margin-left: 15px
+  .sendRequest__radio label div,
+  .sendRequest__radio input[type=checkbox]:checked+label div
+    background: transparent
+    box-shadow: none
+    width: 19px
+    height: 19px
+  .sendRequest__radio input[type=checkbox]:checked+label div
+    border-color: $brown-4
+  .sendRequest__radio label div:after,
+  .sendRequest__radio input[type=checkbox]:checked+label div:after
+    width: 10px
+    height: 10px
+    left: 2px
+    top: 2px
+    box-shadow: none
+    background: url('/images-theme/checked-desktop.svg') no-repeat 50% 50%
+    overflow: hidden
+    background-size: 22px
+    opacity: 0
+  .sendRequest__radio input[type=checkbox]:checked+label div:after
+    opacity: 1
+  .sendRequest select
+    padding: 14px 18px 12px
+  .sitePopup__content__description
+    font-size: 18px
+    line-height: 27px
+    margin-bottom: 50px
+  .sendRequest__radio
+    margin-bottom: 20px

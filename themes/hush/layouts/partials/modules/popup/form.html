@@ -8,14 +8,14 @@
   </div>
   <form class="sendRequest" id="sendRequest" action="/" method="post">
     <input type="text" name="" class="sendRequest__input" value="" placeholder="Your Name">
-    <select name="" class="sendRequest__input">
+    <select name="" class="sendRequest__input" required>
       <option value="" disabled selected hidden>When are you thinking</option>
       <option value="10-15">10-15</option>
       <option value="15-20">15-20</option>
       <option value="20-50">20-50</option>
       <option value="over 50">over 50</option>
     </select>
-    <select name="" class="sendRequest__input">
+    <select name="" class="sendRequest__input" required>
       <option value="" disabled selected hidden>How many people</option>
       <option value="10-15">10-15</option>
       <option value="15-20">15-20</option>
@@ -35,6 +35,7 @@
       <div></div></label>
     </div>
     <button type="submit" name="button" class="sendRequest__submit">OKAY</button>
+    <div class="closePopup">Close</div>
     <p class="sendRequest__copyright">Your privacy is key. Read our <a href="">privacy policy</a></p>
   </form>
 </div>

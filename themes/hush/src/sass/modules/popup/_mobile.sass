@@ -8,6 +8,7 @@
   top: 0px
   left: -9999px
   opacity: 0
+  overflow-y: scroll
   &.active
     left: 0px
     animation: showPopup .6s ease-out forwards
@@ -21,6 +22,7 @@
     width: 18px
     height: 18px
     position: relative
+    cursor: pointer
     &::after,
     &::before
       content: ""
@@ -76,6 +78,12 @@
   select
     background: transparent url('/images-theme/select-drop-arrow.svg') no-repeat calc(100% - 15px) 50%
     padding-right: 35px
+    -webkit-appearance: none
+    -moz-appearance: none
+    cursor: pointer
+    color: rgba(67, 52, 7, .5)
+    &:valid
+      color: rgba(67, 52, 7, 1)
   textarea
     min-height: 85px
 .sendRequest__radio
@@ -147,8 +155,19 @@
   box-sizing: border-box
   height: calc(100vh - 200px)
   display: none
+  position: absolute
+  margin: auto
+  max-width: 600px
+  width: 100%
+  left: 0px
+  right: 0px
+  top: 0px
+  opacity: 0
+  +transition(300ms, linear)
   &.active
     display: flex
+    animation: showPopup .6s ease-out forwards
+    animation-delay: 500ms
   p
     display: block
     width: 100%
@@ -157,3 +176,7 @@
 .formSending
   text-align: center
   display: none
+  position: absolute
+  left: 0
+  right: 0
+  top: 20vh
