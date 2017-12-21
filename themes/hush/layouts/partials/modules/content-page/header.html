@@ -1,11 +1,33 @@
-<div class="container contentPage__header"
-  style="background-image: url('/images-theme/content-page-header.jpg')">
-  <div class="contentPage__header__text">
-    <div class="contentPage__header__title">
-      <h1>A Beautiful Outdoor Wedding Venue</h1>
-    </div>
-    <div class="contentPage__header__tagline">
-      <p>Unique, outdoor weddings in the heart of rural Norfolk</p>
+{{$headerSection := .Params.settings}}
+{{with $headerSection.headerbackgroundimagemobile}}
+  <style>
+    .contentPage__header {
+      background-image: url('{{.url}}?auto=compress');
+    }
+  </style>
+{{end}}
+{{with $headerSection.headerbackgroundimagedesktop}}
+  <style>
+    @media screen and (min-width : 640px) {
+      .contentPage__header {
+        background-image: url('{{.url}}?auto=compress');
+      }
+    }
+  </style>
+{{end}}
+<div class="container--fluid contentPage__header">
+  <div class="container">
+    <div class="contentPage__header__text">
+      {{with $headerSection.headertitle}}
+      <div class="contentPage__header__title">
+        <h1>{{.}}</h1>
+      </div>
+      {{end}}
+      {{with $headerSection.headerdescription}}
+      <div class="contentPage__header__tagline">
+        <p>{{.}}</p>
+      </div>
+      {{end}}
     </div>
   </div>
 </div>

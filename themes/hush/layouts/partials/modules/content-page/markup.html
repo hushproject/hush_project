@@ -1,10 +1,15 @@
 {{partial "modules/site_header/markup" .}}
 {{partial "modules/content-page/header" .}}
-{{partial "modules/content-page/section-w-solid-color-and-2-patterns" .}}
-{{partial "modules/content-page/presentation-section" .}}
-{{partial "modules/content-page/short-items/markup" .}}
-{{partial "modules/content-page/presentation-section" .}}
-{{partial "modules/content-page/section-w-solid-color-and-2-patterns-2" .}}
-{{partial "modules/content-page/short-items/markup" .}}
+{{range .Params.settings.pagebloks}}
+  {{if eq .itemType "patternedsection"}}
+    {{partial "modules/content-page/section-w-solid-color-and-2-patterns" .}}
+  {{end}}
+  {{if eq .itemType "presentationsection"}}
+    {{partial "modules/content-page/presentation-section" .}}
+  {{end}}
+  {{if eq .itemType "itemsection"}}
+    {{partial "modules/content-page/short-items/markup" .}}
+  {{end}}
+{{end}}
 {{partial "modules/content-page/testimonials-content" .}}
 {{partial "modules/footer/markup" .}}
