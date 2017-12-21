@@ -35,17 +35,21 @@
     +font($main_400_italic, 23px, 31px, $white, normal, none, none)
 .contentPage__ContentSection
   position: relative
-  &__pattern
+  background: $white
+  &::after,
+  &::before
+    content: ""
+    display: block
     position: absolute
     width: 100%
     height: 100%
     +resetForAbsoluteCentering()
-    background-repeat: no-repeat
-    background-size: 100% auto
-    &--top
-      background-position: 0 0
-    &--bottom
-      background-position: 0 100%
+  &::before
+    background: url('/images-theme/content-top-pattern.png') no-repeat 50% 0%
+  &::after
+    background: url('/images-theme/content-bottom-pattern.png') no-repeat 50% 100%
+  &.yellow--true
+    background: $yellow
   &__content
     position: relative
     z-index: 2

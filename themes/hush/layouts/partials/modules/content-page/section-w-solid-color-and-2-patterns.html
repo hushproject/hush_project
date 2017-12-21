@@ -5,9 +5,16 @@
       <p>{{.title}}</p>
     </div>
     <div class="contentPage__ContentSection__description">
-      {{with .text}}
-        {{. | markdownify}}
-      {{end}}
+      <div class="contentPage__ContentSection__description__left">
+        {{with .leftcolumn}}
+          {{. | markdownify}}
+        {{end}}
+      </div>
+      <div class="contentPage__ContentSection__description__right">
+        {{with .rightcolumn}}
+          {{. | markdownify}}
+        {{end}}
+      </div>
     </div>
   </div>
 </div>
