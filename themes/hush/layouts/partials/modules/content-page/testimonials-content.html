@@ -1,22 +1,24 @@
+{{$siteTestimonials := .Site.Params.testimonials}}
 <div class="container--fluid testimonials testimonials--contentPage
   hideLogoOnThisSection darkMenu" id="testimonials--contentPage">
   <div class="container">
-    <div class="homePageContentSection__title">
+    <div class="homePageContentSection__title hidden--lg">
       <img src="/images-theme/sidebar-menu-logo.svg" alt="">
     </div>
-    <div class="testimonials__list">
-      <div class="testimonials__item">
-        <div class="testimonials__item__text">
-          <p>My fiance and I <strong>really love</strong> this app and we've been getting great
-            feedback from our close <strong>friends</strong> and family. This is exactly what I
-            wanted, I know anyone can easily just make an account on the Knot
-            but I'm going to have friends and <strong>family</strong> coming
-            in from all places and this helps so much.</p>
-        </div>
-        <div class="testimonials__item__author">
-          <p>Amanda Lucas</p>
-        </div>
-      </div>
+    <div class="testimonials__list" id="testimonialSlider"
+      data-speed="{{$siteTestimonials.settings.sliderspeed}}">
+      {{with $siteTestimonials.list}}
+        {{range .}}
+          <div class="testimonials__item">
+            <div class="testimonials__item__text">
+              {{.text | markdownify}}
+            </div>
+            <div class="testimonials__item__author">
+              <p>{{.title}}</p>
+            </div>
+          </div>
+        {{end}}
+      {{end}}
     </div>
   </div>
 </div>
