@@ -5,10 +5,10 @@ type: find-us
 settings:
   id: '145925'
   itemType: contact
-  updatedAt: '2017-12-20T15:07:51.177Z'
+  updatedAt: '2017-12-21T07:20:17.993Z'
   createdAt: '2017-12-18T12:26:33.654Z'
-  googledirectionstext: /
-  googledirectionslink: Click here for Google Directions
+  googledirectionstext: Click here for Google Directions
+  googledirectionslink: /
   description: We may be only a stones throw from Norwich but we're very well hidden in the gentle folds of the Yare Valley...
   pinterestlink: /
   instagramlink: /

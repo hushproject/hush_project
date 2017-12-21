@@ -1,29 +1,55 @@
+{{$findUs := .Params.settings}}
+{{$siteFooter := .Site.Params.footer}}
 <div class="findUsPage darkMenu" id="findUsPage">
   <div class="container findUsPage__title">
-    <h1>Find Us</h1>
+    <h1>{{$findUs.title}}</h1>
   </div>
   <div class="findUsPage__contactInformation">
     <div class="findUsPage__contactInformation__text">
-      <p>Colts Lodge Fair Lane, Postwick Norfolk, NR13 5FT</p>
+      {{with $siteFooter.adsress}}
+        <p>{{.}}</p>
+      {{end}}
     </div>
     <div class="findUsPage__contactInformation__links">
-      <a href="mailto:weddings@hushvenues.com">weddings@hushvenues.com</a>
-      <a href="tel:01603 340717">01603 340717</a>
+      {{with $siteFooter.mailto}}
+        <a href="mailto:{{.}}">{{.}}</a>
+      {{end}}
+      {{with $siteFooter.phonenumber}}
+        <a href="tel:{{.}}">{{.}}</a>
+      {{end}}
     </div>
   </div>
   <div class="findUsPage__socialNetworks">
     <ul>
-      <li><a href=""><img src="/images-theme/facebook.svg" alt=""></a></li>
-      <li><a href=""><img src="/images-theme/instagram.svg" alt=""></a></li>
-      <li><a href=""><img src="/images-theme/pinterest.svg" alt=""></a></li>
+      {{with $findUs.facebooklink}}
+      <li><a href="{{.}}"><img src="/images-theme/facebook.svg" alt=""></a></li>
+      {{end}}
+      {{with $findUs.instagramlink}}
+      <li><a href="{{.}}"><img src="/images-theme/instagram.svg" alt=""></a></li>
+      {{end}}
+      {{with $findUs.pinterestlink}}
+      <li><a href="{{.}}"><img src="/images-theme/pinterest.svg" alt=""></a></li>
+      {{end}}
     </ul>
   </div>
   <div class="findUsPage__additionalDescription">
-    <p>We may be only a stones throw from Norwich but we're very well hidden in
-      the gentle folds of the Yare Valley...</p>
+    {{with $findUs.description}}
+    <p>{{.}}</p>
+    {{end}}
   </div>
-  <a href="" class="findUsPage__googleDirection">Click here for Google Directions</a>
+  {{with $findUs.googledirectionslink}}
+    <a href="{{.}}" class="findUsPage__googleDirection">
+      {{$findUs.googledirectionstext}}
+    </a>
+  {{end}}
   <div class="findUsPage__map">
-    <img src="/images-theme/map-mobile.jpg" alt="">
+    {{with $findUs.mappicturedesktop}}
+      <div class="container">
+        <img src="{{.url}}?auto=compress" alt="" class="visible--lg">
+      </div>
+    {{end}}
+    {{with $findUs.mappicturemobile}}
+      <img src="{{.url}}?auto=compress" alt="" class="hidden--lg">
+    {{end}}
   </div>
 </div>
