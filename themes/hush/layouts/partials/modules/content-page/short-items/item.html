@@ -1,13 +1,18 @@
 <div class="container contentPage__item">
-  <div class="contentPage__item__title">
-    <p>Master Suite</p>
-  </div>
+  {{with .picture}}
+    <div class="contentPage__item__picture">
+      <img src="{{.url}}?auto=compress" alt="">
+    </div>
+  {{end}}
   <div class="contentPage__item__description">
-    <p>For centuries this has been the main bedroom in the house. Featuring wooden
-      panelled walls, lovely views and a huge bed the suite is made up of a lovely
-      bedroom, a beautifully designed bathroom.</p>
-  </div>
-  <div class="contentPage__item__picture">
-    <img src="/images-theme/master-suite.png" alt="">
+    <div class="contentPage__item__title">
+      <p>{{.title}}</p>
+    </div>
+    <div class="contentPage__item__tagline visible--lg">
+      <p>{{.tagline}}</p>
+    </div>
+    {{with .text}}
+      {{. | markdownify}}
+    {{end}}
   </div>
 </div>

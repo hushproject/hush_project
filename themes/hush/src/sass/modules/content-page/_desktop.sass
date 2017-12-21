@@ -28,3 +28,30 @@
       padding-right: 45px
     &__right
       padding-left: 45px
+  .contentPage__item__title:after
+    display: none
+  .contentPage__item__description
+    text-align: left
+    +clear-fix()
+  .contentPage__items:nth-child(odd)
+    .contentPage__item__picture
+      float: right
+      margin-left: 70px
+      margin-right: 50px
+    .contentPage__item__description
+      padding-left: 70px
+      p
+        margin-bottom: 19px
+  .contentPage__items:nth-child(even)
+    .contentPage__item__picture
+      float: left
+      margin-left: 50px
+      margin-right: 70px
+    .contentPage__item__description
+      padding-right: 70px
+  .contentPage__item__title
+    font-size: 32px
+    margin-bottom: 17px
+  .contentPage__item__tagline
+    +font($main_400_italic, 23px, 36px, $yellow, normal, none, none)
+    margin-bottom: 55px
