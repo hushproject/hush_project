@@ -27,7 +27,7 @@ homepageheadersection:
 homepagesections:
   - id: '144897'
     itemType: homepagesection
-    updatedAt: '2017-12-15T14:42:24.530Z'
+    updatedAt: '2017-12-22T07:22:32.463Z'
     createdAt: '2017-12-15T12:36:57.545Z'
     position: 1
     nextsectionid: '#exclusive-use'
@@ -35,6 +35,14 @@ homepagesections:
     colorbackgroundbottompattern: null
     colorbackgroundtoppattern: null
     backgroundcolor: null
+    backgroundimagedesktop:
+      format: jpg
+      size: 1203088
+      width: 1540
+      height: 930
+      title: null
+      alt: null
+      url: 'https://www.datocms-assets.com/4204/1513927345-untitled-2.jpg'
     backgroundimagemobile:
       format: jpg
       size: 353524
@@ -61,7 +69,7 @@ homepagesections:
         title: Use white text color
   - id: '144912'
     itemType: homepagesection
-    updatedAt: '2017-12-15T14:42:34.145Z'
+    updatedAt: '2017-12-22T07:22:56.394Z'
     createdAt: '2017-12-15T13:04:06.364Z'
     position: 2
     nextsectionid: '#your-ceremony'
@@ -69,6 +77,14 @@ homepagesections:
     colorbackgroundbottompattern: null
     colorbackgroundtoppattern: null
     backgroundcolor: null
+    backgroundimagedesktop:
+      format: jpg
+      size: 903150
+      width: 1540
+      height: 930
+      title: null
+      alt: null
+      url: 'https://www.datocms-assets.com/4204/1513927370-untitled-3.jpg'
     backgroundimagemobile:
       format: jpg
       size: 233998
@@ -103,6 +119,7 @@ homepagesections:
     colorbackgroundbottompattern: null
     colorbackgroundtoppattern: null
     backgroundcolor: null
+    backgroundimagedesktop: null
     backgroundimagemobile:
       format: jpg
       size: 248084
@@ -114,8 +131,9 @@ homepagesections:
     buttons:
       - id: '144956'
         itemType: link
-        updatedAt: '2017-12-15T14:29:33.341Z'
+        updatedAt: '2017-12-22T07:03:25.241Z'
         createdAt: '2017-12-15T13:34:56.963Z'
+        position: 18
         additionalclasse: null
         buttonstyle:
           - id: '145000'
@@ -130,7 +148,7 @@ homepagesections:
             createdAt: '2017-12-15T14:28:02.845Z'
             class: button--bordered
             title: Bordered button
-        url: '#link-from-3th-section'
+        url: /content-page-dato
         title: MORE
     description: '*The Olde Woodshood under a canopy of beech, the drawing room at Colt''s Lodge, All Saints Church. The ceremony of your choice, a moment that is all yours.*'
     title: Your Ceremony
@@ -170,12 +188,14 @@ homepagesections:
       blue: 36
       rgb: 'rgb(225, 178, 36)'
       hex: '#e1b224'
+    backgroundimagedesktop: null
     backgroundimagemobile: null
     buttons:
       - id: '145005'
         itemType: link
-        updatedAt: '2017-12-15T14:32:52.127Z'
+        updatedAt: '2017-12-22T07:03:06.802Z'
         createdAt: '2017-12-15T14:32:52.127Z'
+        position: 15
         additionalclasse: null
         buttonstyle:
           - id: '145001'
@@ -190,7 +210,7 @@ homepagesections:
             createdAt: '2017-12-15T14:28:02.845Z'
             class: button--bordered
             title: Bordered button
-        url: /more-the-vibe
+        url: /content-page-dato
         title: MORE
     description: |-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
@@ -232,12 +252,14 @@ homepagesections:
       blue: 47
       rgb: 'rgb(23, 23, 47)'
       hex: '#17172f'
+    backgroundimagedesktop: null
     backgroundimagemobile: null
     buttons:
       - id: '144997'
         itemType: link
-        updatedAt: '2017-12-15T14:29:47.687Z'
+        updatedAt: '2017-12-22T07:03:17.142Z'
         createdAt: '2017-12-15T14:16:21.630Z'
+        position: 17
         additionalclasse: null
         buttonstyle:
           - id: '145000'
@@ -258,12 +280,13 @@ homepagesections:
             createdAt: '2017-12-15T14:29:18.722Z'
             class: button--md
             title: Middle size
-        url: /ColtsLodge
+        url: /content-page-dato
         title: Colts Lodge
       - id: '145004'
         itemType: link
-        updatedAt: '2017-12-15T14:31:05.236Z'
+        updatedAt: '2017-12-22T07:03:11.767Z'
         createdAt: '2017-12-15T14:31:05.236Z'
+        position: 16
         additionalclasse: null
         buttonstyle:
           - id: '145002'
@@ -284,7 +307,7 @@ homepagesections:
             createdAt: '2017-12-15T14:28:02.845Z'
             class: button--bordered
             title: Bordered button
-        url: /Glamping
+        url: /content-page-dato
         title: Glamping
     description: |-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
