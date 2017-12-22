@@ -5,6 +5,15 @@
     }
   </style>
 {{end}}
+{{if .backgroundimagedesktop}}
+  <style>
+    @media screen and (min-width : 640px) {
+      #{{.sectionid}} {
+        background-image: url('{{.backgroundimagedesktop.url}}?auto=compress');
+      }
+    }
+  </style>
+{{end}}
 <div class="container--fluid homePageContentSection
   {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}"
   id="{{.sectionid}}">

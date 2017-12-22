@@ -111,7 +111,7 @@ homepagesections:
         title: Use white text color
   - id: '144957'
     itemType: homepagesection
-    updatedAt: '2017-12-15T14:42:42.720Z'
+    updatedAt: '2017-12-22T07:41:24.136Z'
     createdAt: '2017-12-15T13:35:38.040Z'
     position: 3
     nextsectionid: null
@@ -119,7 +119,14 @@ homepagesections:
     colorbackgroundbottompattern: null
     colorbackgroundtoppattern: null
     backgroundcolor: null
-    backgroundimagedesktop: null
+    backgroundimagedesktop:
+      format: jpg
+      size: 907849
+      width: 1540
+      height: 930
+      title: null
+      alt: null
+      url: 'https://www.datocms-assets.com/4204/1513927384-untitled-4.jpg'
     backgroundimagemobile:
       format: jpg
       size: 248084
