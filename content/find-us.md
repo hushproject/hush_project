@@ -5,14 +5,14 @@ type: find-us
 settings:
   id: '145925'
   itemType: contact
-  updatedAt: '2017-12-21T07:20:17.993Z'
+  updatedAt: '2017-12-24T20:57:55.735Z'
   createdAt: '2017-12-18T12:26:33.654Z'
-  googledirectionstext: Click here for Google Directions
-  googledirectionslink: /
-  description: We may be only a stones throw from Norwich but we're very well hidden in the gentle folds of the Yare Valley...
-  pinterestlink: /
-  instagramlink: /
-  facebooklink: /
+  googledirectionstext: Click Here For Google Directions
+  googledirectionslink: 'https://www.google.co.uk/maps/dir//Colts+Lodge+Bed+%26+Breakfast,+Oak''s+Ln,+Postwick,+Norwich+NR13+5HD/@52.6111019,1.3527108,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47d9fcabb0d65977:0x8c6db7a6ad5847fc!2m2!1d1.389797!2d52.612325?hl=en'
+  description: We may be only a stone's throw from Norwich but we're very well hidden in the gentle folds of the Yare Valley...
+  pinterestlink: 'https://www.pinterest.co.uk/hushvenues/'
+  instagramlink: 'https://www.instagram.com/hushvenues/'
+  facebooklink: 'https://www.facebook.com/HushVenues/'
   mappicturedesktop:
     format: png
     size: 360546

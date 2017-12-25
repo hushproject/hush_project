@@ -5,7 +5,7 @@ import ScrollMagic from "scrollmagic"; {
         triggerElement: ".homeHeader__description",
         offset: jQuery(window).height() / 2 - 200
       }),
-      trigeredClasses = ".homeHeader__description .siteLogo, .siteHeader__burgerMenu__button";
+      trigeredClasses = ".homeHeader__description .siteLogo, .siteHeader__burgerMenu__button, .siteHeader__logo";
     jQuery('.hideLogoOnThisSection').each(function() {
       let el = `#${jQuery(this).attr('id')}`;
       new ScrollMagic.Scene({

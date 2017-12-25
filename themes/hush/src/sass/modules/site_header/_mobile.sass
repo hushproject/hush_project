@@ -99,6 +99,20 @@
       margin-bottom: 40px
       &::after
         display: none
+.siteHeader__logo
+  width: 101px
+  position: absolute
+  margin: 0px auto
+  left: 0px
+  right: 0px
+  opacity: 0.5
+  transform: scale(0)
+  +transition(300ms, linear)
+  img
+    width: 100%
+  &.fixedTop
+    transform: scale(1)
+    opacity: 1
 @keyframes showMenu
   0%
     opacity: 0

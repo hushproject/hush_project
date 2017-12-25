@@ -24,7 +24,10 @@
 <script type="text/javascript" src="/js/vendors/scrolloverflow.min.js"></script>
 <script type="text/javascript" src="/js/jquery.fullpage.min.js"></script>
 <script type="text/javascript">
-  $('#fullPage').fullpage({
-    scrollOverflow:true
-  });
+  if(jQuery(window).width() > 1024) {
+    $('#fullPage').fullpage({
+      scrollOverflow:true,
+      lazyLoading: true
+    });
+  }
 </script>

@@ -2,7 +2,7 @@
 homepageheadersection:
   id: '144704'
   itemType: homepageheadersection
-  updatedAt: '2017-12-18T13:39:46.575Z'
+  updatedAt: '2017-12-23T23:05:30.302Z'
   createdAt: '2017-12-15T08:33:35.174Z'
   backgroundimagedesktop:
     format: jpg
@@ -27,11 +27,11 @@ homepageheadersection:
 homepagesections:
   - id: '144897'
     itemType: homepagesection
-    updatedAt: '2017-12-22T07:22:32.463Z'
+    updatedAt: '2017-12-24T12:35:03.426Z'
     createdAt: '2017-12-15T12:36:57.545Z'
     position: 1
-    nextsectionid: '#exclusive-use'
-    sectionid: valley
+    nextsectionid: '#three'
+    sectionid: two
     colorbackgroundbottompattern: null
     colorbackgroundtoppattern: null
     backgroundcolor: null
@@ -52,7 +52,7 @@ homepagesections:
       alt: null
       url: 'https://www.datocms-assets.com/4204/1513341719-yare-valley.jpg'
     buttons: []
-    description: '*An area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yours.*'
+    description: 'An area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yours An area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yours.'
     title: Breathtaking Views of the Yare Valley
     visualpreferences:
       - id: '145009'
@@ -69,11 +69,11 @@ homepagesections:
         title: Use white text color
   - id: '144912'
     itemType: homepagesection
-    updatedAt: '2017-12-22T07:22:56.394Z'
+    updatedAt: '2017-12-22T12:47:48.991Z'
     createdAt: '2017-12-15T13:04:06.364Z'
     position: 2
-    nextsectionid: '#your-ceremony'
-    sectionid: exclusive-use
+    nextsectionid: '#four'
+    sectionid: three
     colorbackgroundbottompattern: null
     colorbackgroundtoppattern: null
     backgroundcolor: null
@@ -111,11 +111,11 @@ homepagesections:
         title: Use white text color
   - id: '144957'
     itemType: homepagesection
-    updatedAt: '2017-12-22T07:41:24.136Z'
+    updatedAt: '2017-12-22T12:48:20.528Z'
     createdAt: '2017-12-15T13:35:38.040Z'
     position: 3
-    nextsectionid: null
-    sectionid: your-ceremony
+    nextsectionid: '#vibe'
+    sectionid: four
     colorbackgroundbottompattern: null
     colorbackgroundtoppattern: null
     backgroundcolor: null
@@ -168,11 +168,11 @@ homepagesections:
         title: Use white text color
   - id: '144975'
     itemType: homepagesection
-    updatedAt: '2017-12-15T14:33:13.133Z'
+    updatedAt: '2017-12-24T20:49:36.769Z'
     createdAt: '2017-12-15T13:51:18.672Z'
     position: 4
-    nextsectionid: null
-    sectionid: the-vibe
+    nextsectionid: '#accomodation'
+    sectionid: vibe
     colorbackgroundbottompattern:
       format: png
       size: 3935
@@ -223,14 +223,13 @@ homepagesections:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
 
       Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+
+      Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+
+      Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     title: The Vibe
     visualpreferences:
-      - id: '144992'
-        itemType: homepagesectionpreference
-        updatedAt: '2017-12-15T14:07:59.435Z'
-        createdAt: '2017-12-15T14:07:59.435Z'
-        class: hideLogoOnThisSection
-        title: Don`t show show logo on this section
       - id: '144993'
         itemType: homepagesectionpreference
         updatedAt: '2017-12-15T14:09:13.234Z'
@@ -239,11 +238,11 @@ homepagesections:
         title: Use brown text color
   - id: '144998'
     itemType: homepagesection
-    updatedAt: '2017-12-15T14:31:09.915Z'
+    updatedAt: '2017-12-22T12:46:34.439Z'
     createdAt: '2017-12-15T14:17:03.430Z'
     position: 5
     nextsectionid: null
-    sectionid: vibe2
+    sectionid: accomodation
     colorbackgroundbottompattern:
       format: png
       size: 22148
@@ -320,7 +319,7 @@ homepagesections:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
 
       Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    title: The Vibe
+    title: Accomodation
     visualpreferences:
       - id: '144992'
         itemType: homepagesectionpreference
