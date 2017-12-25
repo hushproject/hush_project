@@ -6,19 +6,21 @@ import ScrollMagic from "scrollmagic"; {
         offset: jQuery(window).height() / 2 - 200
       }),
       trigeredClasses = ".homeHeader__description .siteLogo, .siteHeader__burgerMenu__button, .siteHeader__logo";
-    jQuery('.hideLogoOnThisSection').each(function() {
-      let el = `#${jQuery(this).attr('id')}`;
+    jQuery('.darkMenu').each(function(item) {
+      jQuery(this).attr('id', `darkMenu-${item}`);
       new ScrollMagic.Scene({
-        triggerElement: el,
-        duration: jQuery(this).height()
-      }).setClassToggle(trigeredClasses, "noLogo").addTo(controller);
-    });
-    jQuery('.darkMenu').each(function() {
-      let el = `#${jQuery(this).attr('id')}`;
-      new ScrollMagic.Scene({
-        triggerElement: el,
-        duration: jQuery(this).height()
+        triggerElement: `#darkMenu-${item}`,
+        duration: jQuery(this).height(),
+        offset: jQuery(window).height() / 2
       }).setClassToggle(trigeredClasses, "darkThere").addTo(controller);
+    });
+    jQuery('.hideLogo').each(function(item) {
+      jQuery(this).attr('id', `hideLogo-${item}`);
+      new ScrollMagic.Scene({
+        triggerElement: `#hideLogo-${item}`,
+        duration: jQuery(this).height(),
+        offset: jQuery(window).height() / 2
+      }).setClassToggle(trigeredClasses, "hiddenLogo").addTo(controller);
     });
     scene.setClassToggle(trigeredClasses, "fixedTop");
     scene.addTo(controller);
