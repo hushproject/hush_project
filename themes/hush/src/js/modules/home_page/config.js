@@ -15,5 +15,7 @@
       });
     });
   }
-  scrollToAnchor();
+  if(jQuery(window).width() < 1024) {
+    scrollToAnchor();
+  } 
 }

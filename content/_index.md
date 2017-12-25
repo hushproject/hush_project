@@ -2,7 +2,7 @@
 homepageheadersection:
   id: '144704'
   itemType: homepageheadersection
-  updatedAt: '2017-12-23T23:05:30.302Z'
+  updatedAt: '2017-12-25T11:12:30.607Z'
   createdAt: '2017-12-15T08:33:35.174Z'
   backgroundimagedesktop:
     format: jpg
@@ -20,7 +20,7 @@ homepageheadersection:
     title: null
     alt: null
     url: 'https://www.datocms-assets.com/4204/1513326985-home-1st-section.jpg'
-  nextsectionid: '#valley'
+  nextsectionid: two
   explorebuttontext: null
   enquirebuttontext: Enquire
   tagline: Be Yourself  Together

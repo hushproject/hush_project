@@ -1,44 +1,49 @@
-{{if .backgroundimagemobile}}
-  <style>
-    #{{.sectionid}} {
-      background-image: url('{{.backgroundimagemobile.url}}?auto=compress');
-    }
-  </style>
-{{end}}
-{{if .backgroundimagedesktop}}
-  <style>
-    @media screen and (min-width : 640px) {
-      #{{.sectionid}} {
-        background-image: url('{{.backgroundimagedesktop.url}}?auto=compress');
-      }
-    }
-  </style>
-{{end}}
-<div class="container--fluid homePageContentSection
-  {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}"
-  id="{{.sectionid}}">
-  <div class="homePageContentSection__content">
-    {{with .title}}
-      <div class="homePageContentSection__title">
-        <p>{{.}}</p>
+{{range $key, $value := .Params.homepagesections}}
+  {{if .backgroundimagemobile}}
+    <div class="section" id="{{.sectionid}}">
+    {{if .backgroundimagemobile}}
+      <style>
+        #{{.sectionid}} {
+          background-image: url('{{.backgroundimagemobile.url}}?auto=compress');
+        }
+      </style>
+    {{end}}
+    {{if .backgroundimagedesktop}}
+      <style>
+        @media screen and (min-width : 640px) {
+          #{{.sectionid}} {
+            background-image: url('{{.backgroundimagedesktop.url}}?auto=compress');
+          }
+        }
+      </style>
+    {{end}}
+    <div class="container--fluid homePageContentSection
+      {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}">
+      <div class="homePageContentSection__content">
+        {{with .title}}
+          <div class="homePageContentSection__title">
+            <p>{{.}}</p>
+          </div>
+        {{end}}
+        {{with .description}}
+        <div class="homePageContentSection__description">
+          {{. | markdownify}}
+        </div>
+        {{end}}
+        {{if .buttons}}
+        <div class="homePageContentSection__cta">
+          {{range .buttons}}
+            <a href="{{.url}}" class="button button--white button--bordered">{{.title}}</a>
+          {{end}}
+        </div>
+        {{end}}
       </div>
-    {{end}}
-    {{with .description}}
-    <div class="homePageContentSection__description">
-      {{. | markdownify}}
-    </div>
-    {{end}}
-    {{if .buttons}}
-    <div class="homePageContentSection__cta">
-      {{range .buttons}}
-        <a href="{{.url}}" class="button button--white button--bordered">{{.title}}</a>
+      {{if .nextsectionid}}
+        <div class="scrollToNext buttonToAnchor" data-href="{{.nextsectionid}}" onclick="$.fn.fullpage.moveTo({{add $key 3}})">
+          <img src="/images-theme/scrollToNext.svg" alt="">
+        </div>
       {{end}}
     </div>
-    {{end}}
-  </div>
-  {{if .nextsectionid}}
-    <div class="scrollToNext buttonToAnchor" data-href="{{.nextsectionid}}">
-      <img src="/images-theme/scrollToNext.svg" alt="">
     </div>
   {{end}}
-</div>
+{{end}}

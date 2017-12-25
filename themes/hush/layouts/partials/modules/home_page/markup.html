@@ -1,15 +1,7 @@
 {{partial "modules/site_header/markup" .}}
 <div id="fullPage">
-<div class="section active">
   {{partial "modules/home_page/header_section/markup" .}}
-</div>
-  {{range .Params.homepagesections}}
-    {{if .backgroundimagemobile}}
-    <div class="section">
-      {{partial "modules/home_page/content-section/w-background-image" .}}
-    </div>
-    {{end}}
-  {{end}}
+  {{partial "modules/home_page/content-section/w-background-image" .}}
 <div class="section section__innerHalfs">
   {{range .Params.homepagesections}}
     {{if .backgroundimagemobile}}{{else}}
@@ -27,7 +19,9 @@
   if(jQuery(window).width() > 1024) {
     $('#fullPage').fullpage({
       scrollOverflow:true,
-      lazyLoading: true
+      lazyLoading: true,
+      scrollingSpeed: 400,
+      css3: true
     });
   }
 </script>

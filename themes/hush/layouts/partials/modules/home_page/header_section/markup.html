@@ -1,43 +1,42 @@
-<div class="container--fluid homeHeader active" id="home">
-  {{$headerSection := .Params.homepageheadersection}}
+<div class="section active" id="home">
+  <div class="container--fluid homeHeader active">
+    {{$headerSection := .Params.homepageheadersection}}
 
-  {{with $headerSection.backgroundimagemobile}}
-    <style>
-      .homeHeader {
-        background-image: url('{{.url}}?auto=compress');
-      }
-    </style>
-  {{end}}
-  {{with $headerSection.backgroundimagedesktop}}
-    <style>
-      @media screen and (min-width : 640px) {
+    {{with $headerSection.backgroundimagemobile}}
+      <style>
         .homeHeader {
           background-image: url('{{.url}}?auto=compress');
         }
-      }
-    </style>
-  {{end}}
-  <div class="homeHeader__description">
-    <a href="" class="siteLogo"><img src="/images-theme/logo.svg" alt=""></a>
-    <a href="" class="siteLogo--mask"><img src="/images-theme/logo.svg" alt=""></a>
-    {{with $headerSection.tagline}}
-      <p class="homeHeader__title">{{.}}</p>
+      </style>
     {{end}}
-  </div>
-  <div class="homeHeader__cta">
-    {{with $headerSection.enquirebuttontext}}
-      <div class="button button--white button--bordered">{{.}}</div>
+    {{with $headerSection.backgroundimagedesktop}}
+      <style>
+        @media screen and (min-width : 640px) {
+          .homeHeader {
+            background-image: url('{{.url}}?auto=compress');
+          }
+        }
+      </style>
     {{end}}
-    {{with $headerSection.nextSectionId}}
-      <div class="container--fluid">
-        <a href="{{.}}" class="button button--white scrollToAnchor">
-          {{if $headerSection.explorebuttontext}}
-              {{$headerSection.explorebuttontext}}
-            {{else}}
+    <div class="homeHeader__description">
+      <a href="" class="siteLogo"><img src="/images-theme/logo.svg" alt=""></a>
+      <a href="" class="siteLogo--mask"><img src="/images-theme/logo.svg" alt=""></a>
+      {{with $headerSection.tagline}}
+        <p class="homeHeader__title">{{.}}</p>
+      {{end}}
+    </div>
+    <div class="homeHeader__cta">
+      {{with $headerSection.enquirebuttontext}}
+        <div class="button button--white button--bordered">{{.}}</div>
+      {{end}}
+      {{with $headerSection.nextSectionId}}
+        <div class="container--fluid">
+          <div data-href="#{{.}}" class="button button--white scrollToAnchor"
+            onclick="$.fn.fullpage.moveTo(2)">
               <img src="/images-theme/scrollToNext.svg" alt="">
-          {{end}}
-        </a>
-      </div>
-    {{end}}
+          </div>
+        </div>
+      {{end}}
+    </div>
   </div>
 </div>
