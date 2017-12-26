@@ -1,0 +1,81 @@
+{{$formSettings := .Site.Params.formSetting}}
+<div class="sendRequest__wrapper">
+  {{with $formSettings.formtitle}}
+    <div class="sitePopup__content__title">
+      <p>{{.}}</p>
+    </div>
+  {{end}}
+  {{with $formSettings.formdescription}}
+  <div class="sitePopup__content__description">
+    <p>{{.}}</p>
+  </div>
+  {{end}}
+    <form class="sendRequest" action="https://hushvenues.createsend.com/t/t/s/fvkil/" method="post" id="subForm">
+    {{with $formSettings.yourname}}
+      <input type="text" name="cm-name" class="sendRequest__input" value="" placeholder="{{.}}">
+    {{end}}
+    {{with $formSettings.whenareyouthinkingstring}}
+      <select name="whenareyouthinkingstring" class="sendRequest__input" required>
+        <option value="" disabled selected hidden>{{.}}</option>
+        {{range $formSettings.optionswayth}}
+          <option value="{{.value}}">{{.text}}</option>
+        {{end}}
+      </select>
+    {{end}}
+    {{with $formSettings.howmanypeoplestring}}
+      <select name="howmanypeoplestring" class="sendRequest__input" required>
+        <option value="" disabled selected hidden>{{.}}</option>
+        {{range $formSettings.optionsforhowmanypeople}}
+          <option value="{{.value}}">{{.text}}</option>
+        {{end}}
+      </select>
+    {{end}}
+    {{with $formSettings.emailstring}}
+      <input type="text" name="email" class="sendRequest__input" value="" placeholder="{{.}}">
+    {{end}}
+    {{with $formSettings.pleasesendmeabrochurestring}}
+      <div class="sendRequest__radio">
+        <input type="checkbox" name="pleasesendmeabrochurestring">
+        <label><p>{{.}}</p>
+        <div></div></label>
+      </div>
+    {{end}}
+    {{with $formSettings.message}}
+      <textarea name="message" class="sendRequest__input" placeholder="{{.}}"></textarea>
+    {{end}}
+    {{with $formSettings.pleaseaddmetoyourmailingliststring}}
+      <div class="sendRequest__radio">
+        <input type="checkbox" name="pleaseaddmetoyourmailingliststring" checked="checked">
+        <label><p>{{.}}</p>
+        <div></div></label>
+      </div>
+    {{end}}
+    {{with $formSettings.okaystring}}
+      <button type="submit" name="button" class="sendRequest__submit">{{.}}</button>
+    {{end}}
+    {{with $formSettings.closestring}}
+      <div class="closePopup visible--lg">{{.}}</div>
+    {{end}}
+    {{with $formSettings.privacypolicystring}}
+      <p class="sendRequest__copyright">{{$formSettings.yourprivacyiskeystring}}
+        <a href="{{$formSettings.privacypolicylink}}" target="_blank">{{.}}</a></p>
+    {{end}}
+  </form>
+</div>
+
+<!-- <form action="https://hushvenues.createsend.com/t/t/s/fvkil/" method="post" id="subForm">
+  <input id="fieldName" name="cm-name" type="text" />
+  <input id="fieldEmail" name="cm-fvkil-fvkil" type="email" required />
+  <select id="fieldvjrdru" name="cm-fo-vjrdru">
+      <option value=""></option>
+      <option value="1898867">In 2018</option>
+      <option value="1898868">In 2019</option>
+  </select>
+  <select id="fieldvjrdyl" name="cm-fo-vjrdyl">
+      <option value=""></option>
+      <option value="1898872">From 10 to 20</option>
+      <option value="1898873">From 20 to 30</option>
+  </select>
+  <input id="fieldvjrdyr" name="cm-f-vjrdyr" type="text" />
+  <input id="listfvktd" name="cm-ol-fvktd" type="checkbox" />
+</form> -->
