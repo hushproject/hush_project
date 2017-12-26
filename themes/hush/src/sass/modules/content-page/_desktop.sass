@@ -33,22 +33,6 @@
   .contentPage__item__description
     text-align: left
     +clear-fix()
-  .contentPage__items:nth-child(odd)
-    .contentPage__item__picture
-      float: right
-      margin-left: 70px
-      margin-right: 50px
-    .contentPage__item__description
-      padding-left: 70px
-      p
-        margin-bottom: 19px
-  .contentPage__items:nth-child(even)
-    .contentPage__item__picture
-      float: left
-      margin-left: 50px
-      margin-right: 70px
-    .contentPage__item__description
-      padding-right: 70px
   .contentPage__item__title
     font-size: 32px
     margin-bottom: 17px
@@ -69,3 +53,54 @@
     font-size: 25px
   .testimonials
     min-height: inherit
+  .contentPage__item__picture
+    max-width: 25%
+    width: 100%
+    margin-bottom: 20px
+  .contentPage__item
+    display: block
+  .contentPage__items:nth-child(odd)
+    .contentPage__item__picture
+      float: right
+      margin-left: 0px
+      margin-right: 20px
+    .contentPage__item__description
+      padding-left: 20px
+  .contentPage__item__description
+    p
+      margin-bottom: 19px
+  .contentPage__items:nth-child(even)
+    .contentPage__item__picture
+      float: left
+      margin-left: 20px
+      margin-right: 20px
+    .contentPage__item__description
+      padding-right: 20px
+  .testimonials--contentPage
+    padding-top: 170px
+@media screen and (min-width : 960px)
+  .contentPage__item__picture
+    max-width: 35%
+    width: 100%
+    margin-bottom: 20px
+@media screen and (min-width : 1240px)
+  .contentPage__item__picture
+    max-width: 50%
+    width: 100%
+  .contentPage__items:nth-child(odd)
+    .contentPage__item__picture
+      float: right
+      margin-left: 70px
+      margin-right: 50px
+    .contentPage__item__description
+      padding-left: 70px
+  .contentPage__item__description
+    p
+      margin-bottom: 19px
+  .contentPage__items:nth-child(even)
+    .contentPage__item__picture
+      float: left
+      margin-left: 50px
+      margin-right: 70px
+    .contentPage__item__description
+      padding-right: 70px
