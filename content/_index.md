@@ -27,7 +27,7 @@ homepageheadersection:
 homepagesections:
   - id: '144897'
     itemType: homepagesection
-    updatedAt: '2017-12-24T12:35:03.426Z'
+    updatedAt: '2017-12-27T13:33:19.982Z'
     createdAt: '2017-12-15T12:36:57.545Z'
     position: 1
     nextsectionid: '#three'
@@ -55,12 +55,6 @@ homepagesections:
     description: 'An area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yours An area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yours.'
     title: Breathtaking Views of the Yare Valley
     visualpreferences:
-      - id: '145009'
-        itemType: homepagesectionpreference
-        updatedAt: '2017-12-15T14:42:07.418Z'
-        createdAt: '2017-12-15T14:42:07.418Z'
-        class: homePageContentSection--wDarkMask
-        title: Use gradient mask for section
       - id: '144991'
         itemType: homepagesectionpreference
         updatedAt: '2017-12-15T14:07:19.309Z'

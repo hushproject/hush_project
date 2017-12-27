@@ -5,7 +5,7 @@
       <ul>
         <span>{{.grouptitle}}</span>
         {{range .link}}
-          <li><a href="{{.url}}" class="">{{.title}}</a></li>
+          <li><a href="{{.url}}" class="{{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a></li>
         {{end}}
       </ul>
     {{end}}
