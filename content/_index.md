@@ -168,27 +168,27 @@ homepagesections:
         title: Use white text color
   - id: '144975'
     itemType: homepagesection
-    updatedAt: '2017-12-24T20:49:36.769Z'
+    updatedAt: '2017-12-27T12:11:50.873Z'
     createdAt: '2017-12-15T13:51:18.672Z'
     position: 4
     nextsectionid: '#accomodation'
     sectionid: vibe
     colorbackgroundbottompattern:
       format: png
-      size: 3935
-      width: 374
+      size: 10282
+      width: 415
       height: 822
       title: null
       alt: null
-      url: 'https://www.datocms-assets.com/4204/1513345799-content-bottom-pattern.png'
+      url: 'https://www.datocms-assets.com/4204/1514376707-patt-1.png'
     colorbackgroundtoppattern:
       format: png
-      size: 8813
-      width: 374
-      height: 822
+      size: 9104
+      width: 820
+      height: 374
       title: null
       alt: null
-      url: 'https://www.datocms-assets.com/4204/1513345774-section-4-top-pattern.png'
+      url: 'https://www.datocms-assets.com/4204/1514376701-patt-2.png'
     backgroundcolor:
       red: 225
       green: 178
@@ -238,20 +238,27 @@ homepagesections:
         title: Use brown text color
   - id: '144998'
     itemType: homepagesection
-    updatedAt: '2017-12-22T12:46:34.439Z'
+    updatedAt: '2017-12-27T12:13:37.046Z'
     createdAt: '2017-12-15T14:17:03.430Z'
     position: 5
     nextsectionid: null
     sectionid: accomodation
     colorbackgroundbottompattern:
       format: png
-      size: 22148
-      width: 374
-      height: 762
+      size: 31454
+      width: 1176
+      height: 457
       title: null
       alt: null
-      url: 'https://www.datocms-assets.com/4204/1513347419-section-5-bottom-pattern.png'
-    colorbackgroundtoppattern: null
+      url: 'https://www.datocms-assets.com/4204/1514376749-patt-4.png'
+    colorbackgroundtoppattern:
+      format: png
+      size: 14583
+      width: 1176
+      height: 374
+      title: null
+      alt: null
+      url: 'https://www.datocms-assets.com/4204/1514376809-patt-3.png'
     backgroundcolor:
       red: 23
       green: 23
