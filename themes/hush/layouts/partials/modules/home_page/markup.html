@@ -24,4 +24,9 @@
       css3: true
     });
   }
+  function scrollToNext(number) {
+    if(jQuery(window).width() > 1024) {
+      $.fn.fullpage.moveTo(number)
+    }
+  }
 </script>

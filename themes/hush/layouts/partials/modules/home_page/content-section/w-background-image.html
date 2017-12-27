@@ -39,7 +39,8 @@
         {{end}}
       </div>
       {{if .nextsectionid}}
-        <div class="scrollToNext buttonToAnchor" data-href="{{.nextsectionid}}" onclick="$.fn.fullpage.moveTo({{add $key 3}})">
+        <div class="scrollToNext buttonToAnchor" data-href="{{.nextsectionid}}"
+          onclick="scrollToNext({{add $key 3}})">
           <img src="/images-theme/scrollToNext.svg" alt="">
         </div>
       {{end}}

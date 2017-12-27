@@ -1,7 +1,6 @@
 <div class="section active" id="home">
   <div class="container--fluid homeHeader active">
     {{$headerSection := .Params.homepageheadersection}}
-
     {{with $headerSection.backgroundimagemobile}}
       <style>
         .homeHeader {
@@ -32,7 +31,7 @@
       {{with $headerSection.nextSectionId}}
         <div class="container--fluid">
           <div data-href="#{{.}}" class="button button--white scrollToAnchor buttonToAnchor"
-            onclick="$.fn.fullpage.moveTo(2)">
+            onclick="scrollToNext(2)">
               <img src="/images-theme/scrollToNext.svg" alt="">
           </div>
         </div>
