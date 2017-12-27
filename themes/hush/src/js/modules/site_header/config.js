@@ -1,10 +1,11 @@
 import ScrollMagic from "scrollmagic"; {
   function pinSiteLogo(logo) {
     let controller = new ScrollMagic.Controller(),
-      trigeredClasses = ".homeHeader__description .siteLogo, .siteHeader__burgerMenu__button, .siteHeader__logo";
-    if(jQuery('.homeHeader__description, .contentPage__header__text, .findUsPage').length) {
+      trigeredClasses = ".homeHeader__description .siteLogo, .siteHeader__burgerMenu__button, .siteHeader__logo",
+      hideMenuWord = ".homeHeader__description, .contentPage__header__text, .findUsPage, .testimonialsPage__title";
+    if(jQuery(hideMenuWord).length) {
       new ScrollMagic.Scene({
-        triggerElement: ".homeHeader__description, .contentPage__header__text, .findUsPage",
+        triggerElement: hideMenuWord,
         offset: jQuery(window).outerHeight() / 2
       }).setClassToggle(trigeredClasses, "fixedTop").addTo(controller);
     }
