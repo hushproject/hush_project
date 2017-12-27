@@ -35,13 +35,18 @@
       &.noLogo
         .siteHeader__burgerMenu__burger:after,
         .siteHeader__burgerMenu__burger:before,
-        .siteHeader__burgerMenu__burger span
+        .siteHeader__burgerMenu__burger .stick
           background: $white
-      &.darkThere
+      &.darkTheme
         .siteHeader__burgerMenu__burger:after,
         .siteHeader__burgerMenu__burger:before,
         .siteHeader__burgerMenu__burger .stick
           background: $brown-1
+      &.lightMenu
+        .siteHeader__burgerMenu__burger:after,
+        .siteHeader__burgerMenu__burger:before,
+        .siteHeader__burgerMenu__burger .stick
+          background: $white
     &__burger
       display: flex
       flex-direction: column

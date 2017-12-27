@@ -1,31 +1,38 @@
 import ScrollMagic from "scrollmagic"; {
   function pinSiteLogo(logo) {
     let controller = new ScrollMagic.Controller(),
-      scene = new ScrollMagic.Scene({
-        triggerElement: ".homeHeader__description",
-        offset: jQuery(window).height() / 2 - 200
-      }),
       trigeredClasses = ".homeHeader__description .siteLogo, .siteHeader__burgerMenu__button, .siteHeader__logo";
+    if(jQuery('.homeHeader__description, .contentPage__header__text, .findUsPage').length) {
+      new ScrollMagic.Scene({
+        triggerElement: ".homeHeader__description, .contentPage__header__text, .findUsPage",
+        offset: jQuery(window).outerHeight() / 2
+      }).setClassToggle(trigeredClasses, "fixedTop").addTo(controller);
+    }
     jQuery('.darkMenu').each(function(item) {
       jQuery(this).attr('id', `darkMenu-${item}`);
       new ScrollMagic.Scene({
         triggerElement: `#darkMenu-${item}`,
-        duration: jQuery(this).height(),
-        offset: jQuery(window).height() / 2
-      }).setClassToggle(trigeredClasses, "darkThere").addTo(controller);
+        duration: jQuery(this).outerHeight(),
+        offset: jQuery(window).outerHeight() / 2
+      }).setClassToggle(trigeredClasses, "darkTheme").addTo(controller);
+    });
+    jQuery('.lightMenu').each(function(item) {
+      jQuery(this).attr('id', `light-${item}`);
+      new ScrollMagic.Scene({
+        triggerElement: `#light-${item}`,
+        duration: jQuery(this).outerHeight(),
+        offset: 50
+      }).setClassToggle(trigeredClasses, "lightMenu").addTo(controller);
     });
     jQuery('.hideLogo').each(function(item) {
       jQuery(this).attr('id', `hideLogo-${item}`);
       new ScrollMagic.Scene({
         triggerElement: `#hideLogo-${item}`,
-        duration: jQuery(this).height(),
-        offset: jQuery(window).height() / 2
+        duration: jQuery(this).outerHeight(),
+        offset: jQuery(window).outerHeight() / 1.8
       }).setClassToggle(trigeredClasses, "hiddenLogo").addTo(controller);
     });
-    scene.setClassToggle(trigeredClasses, "fixedTop");
-    scene.addTo(controller);
   }
-
   function showHideSidebar(scrollPosition) {
     jQuery('.siteHeader__burgerMenu__button').click(function() {
       let elements = jQuery('.siteSidebarMenu, .siteHeader__burgerMenu__button');

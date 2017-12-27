@@ -1,33 +1,35 @@
-{{$currentSection := .}}
-{{with $currentSection.backgroundimagemobile}}
-  <style>
-    #ps__{{$currentSection.id}} {
-      background-image: url('{{.url}}?auto=compress');
-    }
-  </style>
-{{end}}
-{{with $currentSection.backgroundimagedesktop}}
-  <style>
-    @media screen and (min-width : 640px) {
+<div class="hideLogo lightMenu">
+  {{$currentSection := .}}
+  {{with $currentSection.backgroundimagemobile}}
+    <style>
       #ps__{{$currentSection.id}} {
         background-image: url('{{.url}}?auto=compress');
       }
-    }
-  </style>
-{{end}}
-<div class="container--fluid contentPage__presentation" id="ps__{{.id}}">
-  <div class="container">
-    <div class="contentPage__presentation__text">
-      {{with .title}}
-        <div class="contentPage__presentation__title">
+    </style>
+  {{end}}
+  {{with $currentSection.backgroundimagedesktop}}
+    <style>
+      @media screen and (min-width : 640px) {
+        #ps__{{$currentSection.id}} {
+          background-image: url('{{.url}}?auto=compress');
+        }
+      }
+    </style>
+  {{end}}
+  <div class="container--fluid contentPage__presentation" id="ps__{{.id}}">
+    <div class="container">
+      <div class="contentPage__presentation__text">
+        {{with .title}}
+          <div class="contentPage__presentation__title">
+            <p>{{.}}</p>
+          </div>
+        {{end}}
+        {{with .description}}
+        <div class="contentPage__presentation__description">
           <p>{{.}}</p>
         </div>
-      {{end}}
-      {{with .description}}
-      <div class="contentPage__presentation__description">
-        <p>{{.}}</p>
+        {{end}}
       </div>
-      {{end}}
     </div>
   </div>
 </div>
