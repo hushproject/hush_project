@@ -1,0 +1,151 @@
+<div id="preloader">
+  <img src="/images-theme/logo.svg" alt="" id="preloader__logo">
+</div>
+<style media="screen">
+  #loadingtime {
+    color: white;
+  }
+  #preloader {
+    position: fixed;
+    z-index: 9999;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    height: 100vh;
+    width: 100vw;
+    transition: .8s linear;
+  }
+  #preloader::after,
+  #preloader::before {
+    content: "";
+    top: 0;
+    display: block;
+    position: absolute;
+    background: black;
+    height: 100vh;
+    width: 50vw;
+    z-index: 1;
+  }
+  #preloader::before {
+    right: 0px;
+  }
+  #preloader::after {
+    left: 0px;
+  }
+  #preloader.loaded::before {
+    animation: .5s forwards closeRight;
+    animation-delay: 0.5s;
+  }
+  #preloader.loaded::after {
+    animation: .5s forwards closeLeft;
+    animation-delay: 0.5s;
+  }
+  #preloader.loaded {
+    animation: .1s forwards destroyPreloader;
+    animation-delay: 1.5s;
+  }
+  @keyframes destroyPreloader {
+    0%{
+      height: 100vh;
+    }
+    100%{
+      height: 0px;
+    }
+  }
+
+  @keyframes closeLeft {
+    0% {
+      left: 0;
+      opacity: 1;
+    }
+    30% {
+      opacity: .5;
+      left: 0;
+    }
+    100% {
+      opacity: 0;
+      left: -50vw;
+    }
+  }
+  @keyframes closeRight {
+    0% {
+      right: 0;
+      opacity: 1;
+    }
+    30% {
+      opacity: .5;
+      right: 0;
+    }
+    100% {
+      opacity: 0;
+      right: -50vw;
+    }
+  }
+  @keyframes hidePreloader {
+
+  }
+  #preloader__logo {
+    position: absolute;
+    width: 120px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    animation: .5s infinite beatLogo;
+    transition: .8s linear;
+    z-index: 2;
+  }
+  #preloader__logo.loaded {
+    animation-iteration-count: 3;
+    opacity: 0;
+  }
+
+  @keyframes beatLogo {
+  0% {
+    transform: scale(1);
+    opacity: .3
+  }
+  33% {
+    transform: scale(1.2);
+    opacity: 1
+  }
+  100% {
+    transform: scale(1);
+    opacity: .3
+  }
+}
+@keyframes hideLogo {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style>
+<script type="text/javascript">
+  function domReady() {
+    var preloader = document.getElementById('preloader'),
+      logo = document.getElementById('preloader__logo');
+    setTimeout(function() {
+      addClass(preloader, 'loaded');
+      addClass(logo, 'loaded');
+    }, 1000);
+  }
+  function addClass(element, classString) {
+    element.className = element
+        .className
+        .split(' ')
+        .filter(function (name) { return name !== classString; })
+        .concat(classString)
+        .join(' ');
+  }
+  window.onload = function() {
+  }, document.addEventListener ? document.addEventListener("DOMContentLoaded", function() {
+      document.removeEventListener("DOMContentLoaded", arguments.callee, !1), domReady()
+  }, !1) : document.attachEvent && document.attachEvent("onreadystatechange", function() {
+      "complete" === document.readyState && (document.detachEvent("onreadystatechange", arguments.callee), domReady())
+  });
+</script>
