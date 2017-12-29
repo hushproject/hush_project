@@ -9,7 +9,7 @@ settings:
   createdAt: '2017-12-18T10:02:15.879Z'
   seoMetaTags:
     - tagName: title
-      content: Content page
+      content: Content page | HUSH
     - tagName: meta
       attributes:
         property: 'og:title'
@@ -18,6 +18,18 @@ settings:
       attributes:
         name: 'twitter:title'
         content: Content page
+    - tagName: meta
+      attributes:
+        name: description
+        content: 'The Olde Woodshood under a canopy of beech, the drawing room at Colt’s Lodge, All Saints Church. The ceremony of your choice, a moment that is all yours.'
+    - tagName: meta
+      attributes:
+        property: 'og:description'
+        content: 'The Olde Woodshood under a canopy of beech, the drawing room at Colt’s Lodge, All Saints Church. The ceremony of your choice, a moment that is all yours.'
+    - tagName: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'The Olde Woodshood under a canopy of beech, the drawing room at Colt’s Lodge, All Saints Church. The ceremony of your choice, a moment that is all yours.'
     - tagName: meta
       attributes:
         name: 'twitter:card'
@@ -34,6 +46,10 @@ settings:
       attributes:
         property: 'og:type'
         content: article
+    - tagName: meta
+      attributes:
+        property: 'og:site_name'
+        content: Be Yourself Together
     - tagName: meta
       attributes:
         property: 'og:image'

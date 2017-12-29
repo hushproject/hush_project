@@ -19,7 +19,9 @@ module.exports = {
             list: dato.testimonials.map(t => t.toMap()),
             settings: dato.testimonialspreference.toMap(),
           },
-          formSetting: dato.formseting.toMap()
+          formSetting: dato.formseting.toMap(),
+          globalSeo: dato.site.globalSeo.toMap(),
+          favicon: `//${dato.site.imgixHost}${dato.site.favicon.path}`
         }
       });
     });
