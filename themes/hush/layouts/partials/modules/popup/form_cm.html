@@ -58,6 +58,12 @@
     {{with $formSettings.closestring}}
       <div class="closePopup visible--lg">{{.}}</div>
     {{end}}
+    {{with $formSettings.formversioninputname}}
+      <input type="text" name="{{.}}" value="{{$formSettings.formversionvalue}}" hidden="hidden">
+    {{end}}
+    {{with $formSettings.liststatusinputname}}
+      <input type="text" name="{{.}}" value="{{$formSettings.liststatusvalue}}" hidden="hidden">
+    {{end}}
     {{with $formSettings.privacypolicystring}}
       <p class="sendRequest__copyright">{{$formSettings.yourprivacyiskeystring}}
         <a href="{{$formSettings.privacypolicylink}}" target="_blank">{{.}}</a></p>
