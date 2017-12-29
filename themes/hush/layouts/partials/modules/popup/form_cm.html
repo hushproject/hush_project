@@ -10,7 +10,7 @@
     <p>{{.}}</p>
   </div>
   {{end}}
-    <form class="sendRequest" action="https://hushvenues.createsend.com/t/t/s/fvkil/" method="post" id="subForm">
+    <form class="sendRequest" action="{{$formSettings.actionurl}}" method="post" id="subForm">
     {{with $formSettings.yourname}}
       <input type="text" name="{{$formSettings.yournameinputname}}"
         class="sendRequest__input" value="" placeholder="{{.}}">
@@ -37,7 +37,7 @@
     {{end}}
     {{with $formSettings.pleasesendmeabrochurestring}}
       <div class="sendRequest__radio">
-        <input type="checkbox" name="{{$formSettings.pleasesendmeabrochureinputname}}">
+        <input type="checkbox" name="{{$formSettings.pleasesendmeabrochureinputname}}" value="YES">
         <label><p>{{.}}</p>
         <div></div></label>
       </div>
