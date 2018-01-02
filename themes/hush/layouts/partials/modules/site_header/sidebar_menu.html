@@ -4,8 +4,15 @@
     {{range $siteMenu.menugroup}}
       <ul>
         <span>{{.grouptitle}}</span>
-        {{range .link}}
-          <li><a href="{{.url}}" class="{{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a></li>
+        {{if .link}}
+          {{range .link}}
+            <li><a href="{{.url}}" class="{{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a></li>
+          {{end}}
+        {{end}}
+        {{if .selectfrompages}}
+          {{range .selectfrompages}}
+            <li><a href="{{.url}}" class="{{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a></li>
+          {{end}}
         {{end}}
       </ul>
     {{end}}

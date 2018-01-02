@@ -14,7 +14,20 @@ module.exports = {
         enableRobotsTXT: true,
         params: {
           footer: dato.sitefooter.toMap(),
-          siteMenu: dato.sitemenu.toMap(),
+          siteMenu: {
+            stringmenu: dato.sitemenu.stringmenu,
+            menugroup: dato.sitemenu.menugroup.map(t => {
+              return {
+                link: t.link.toMap(),
+                selectfrompages: t.selectfrompages.map(s => {
+                  return {
+                    url: `/${s.slug}`,
+                    title: s.title
+                  }
+                })
+              }
+            })
+          },
           testimonials: {
             list: dato.testimonials.map(t => t.toMap()),
             settings: dato.testimonialspreference.toMap(),
