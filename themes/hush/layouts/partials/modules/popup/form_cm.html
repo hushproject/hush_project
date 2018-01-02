@@ -10,7 +10,7 @@
     <p>{{.}}</p>
   </div>
   {{end}}
-    <form class="sendRequest" action="{{$formSettings.actionurl}}" method="post" id="subForm">
+    <form class="sendRequest getLocation" action="{{$formSettings.actionurl}}" method="post" id="subForm">
     {{with $formSettings.yourname}}
       <input type="text" name="{{$formSettings.yournameinputname}}"
         class="sendRequest__input" value="" placeholder="{{.}}">
@@ -52,9 +52,6 @@
         <div></div></label>
       </div>
     {{end}}
-    {{with $formSettings.okaystring}}
-      <button type="submit" name="button" class="sendRequest__submit">{{.}}</button>
-    {{end}}
     {{with $formSettings.closestring}}
       <div class="closePopup visible--lg">{{.}}</div>
     {{end}}
@@ -64,9 +61,15 @@
     {{with $formSettings.liststatusinputname}}
       <input type="text" name="{{.}}" value="{{$formSettings.liststatusvalue}}" hidden="hidden">
     {{end}}
+    {{with $formSettings.getuserlocation}}
+      <input type="text" name="{{.}}" id="getuserlocation" value="{{$formSettings.getuserlocationfieldname}}" hidden="hidden">
+    {{end}}
     {{with $formSettings.privacypolicystring}}
       <p class="sendRequest__copyright">{{$formSettings.yourprivacyiskeystring}}
         <a href="{{$formSettings.privacypolicylink}}" target="_blank">{{.}}</a></p>
+    {{end}}
+    {{with $formSettings.okaystring}}
+      <button type="submit" name="button" class="sendRequest__submit">{{.}}</button>
     {{end}}
   </form>
 </div>
