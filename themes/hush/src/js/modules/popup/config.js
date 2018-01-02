@@ -32,7 +32,7 @@
     jQuery('.formSending').fadeIn(300);
     if (jQuery('#getuserlocation').length) {
       getPosition().then((position) => {
-        jQuery('#getuserlocation').val(`latitude:${position.coords.latitude}|longitude:${position.coords.longitude}`);
+        jQuery('#getuserlocation').val(`${position.coords.latitude},${position.coords.longitude}`);
         console.log(jQuery('#getuserlocation').val());
         sendForm(_this);
       }).catch((err) => {
