@@ -62,7 +62,7 @@
       <input type="text" name="{{.}}" value="{{$formSettings.liststatusvalue}}" hidden="hidden">
     {{end}}
     {{with $formSettings.getuserlocation}}
-      <input type="text" name="{{.}}" id="getuserlocation" value="{{$formSettings.getuserlocationfieldname}}" hidden="hidden">
+      <input type="text" name="{{$formSettings.getuserlocationfieldname}}" id="getuserlocation" value="" hidden="hidden">
     {{end}}
     {{with $formSettings.privacypolicystring}}
       <p class="sendRequest__copyright">{{$formSettings.yourprivacyiskeystring}}
