@@ -1,4 +1,5 @@
 {{$siteMenu := .Site.Params.siteMenu}}
+{{$active := replace .Params.slug "/" ""}}
 <div class="siteSidebarMenu">
   <div class="siteSidebarMenu__inner">
     {{range $siteMenu.menugroup}}
@@ -6,12 +7,26 @@
         <span>{{.grouptitle}}</span>
         {{if .link}}
           {{range .link}}
-            <li><a href="{{.url}}" class="{{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a></li>
+            <li>
+            {{$url := replace .url "/" ""}}
+            {{if eq $active $url}}
+              <a href="{{.url}}" class="active {{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a>
+              {{else}}
+              <a href="{{.url}}" class="{{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a>
+            {{end}}
+            </li>
           {{end}}
         {{end}}
         {{if .selectfrompages}}
           {{range .selectfrompages}}
-            <li><a href="{{.url}}" class="{{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a></li>
+            <li>
+              {{$url := replace .url "/" ""}}
+              {{if eq $active $url}}
+                <a href="{{.url}}" class="active {{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a>
+                {{else}}
+                <a href="{{.url}}" class="{{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a>
+              {{end}}
+            </li>
           {{end}}
         {{end}}
       </ul>
