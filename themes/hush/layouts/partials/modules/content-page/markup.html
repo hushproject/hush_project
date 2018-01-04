@@ -1,5 +1,9 @@
+
 {{partial "modules/site_header/markup" .}}
-{{partial "modules/content-page/header" .}}
+{{if eq .Params.settings.hideheadersectionyn true}}
+  {{else}}
+  {{partial "modules/content-page/header" .}}
+{{end}}
 {{range .Params.settings.pagebloks}}
   {{if eq .itemType "patternedsection"}}
     {{partial "modules/content-page/section-w-solid-color-and-2-patterns" .}}
@@ -11,5 +15,8 @@
     {{partial "modules/content-page/short-items/markup" .}}
   {{end}}
 {{end}}
-{{partial "modules/content-page/testimonials-content" .}}
+{{if eq .Params.settings.hidetestimonialsyn true}}
+  {{else}}
+  {{partial "modules/content-page/testimonials-content" .}}
+{{end}}
 {{partial "modules/footer/markup" .}}

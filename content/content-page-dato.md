@@ -58,6 +58,8 @@ settings:
       attributes:
         name: 'twitter:image'
         content: 'https://www.datocms-assets.com/4204/1513845459-content-page-header.jpg'
+  hideheadersectionyn: null
+  hidetestimonialsyn: null
   seofields: null
   pagebloks:
     - id: '148512'
