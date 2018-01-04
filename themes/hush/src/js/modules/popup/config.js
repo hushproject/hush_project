@@ -33,11 +33,12 @@
     if (jQuery('#getuserlocation').length) {
       getPosition().then((position) => {
         jQuery('#getuserlocation').val(`${position.coords.latitude},${position.coords.longitude}`);
-        console.log(jQuery('#getuserlocation').val());
         sendForm(_this);
       }).catch((err) => {
         sendForm(_this);
       });
+    }else {
+      sendForm(_this);
     }
   });
 
