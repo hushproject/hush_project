@@ -72,4 +72,8 @@
       <button type="submit" name="button" class="sendRequest__submit">{{.}}</button>
     {{end}}
   </form>
+  {{with $formSettings.utmprefences}}
+    {{. | safeHTML}}
+    <script src="//d12ue6f2329cfl.cloudfront.net/resources/utm_form-1.0.2.min.js async"></script>
+  {{end}}
 </div>
