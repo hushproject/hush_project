@@ -34,7 +34,11 @@ module.exports = {
           },
           formSetting: dato.formseting.toMap(),
           globalSeo: dato.site.globalSeo.toMap(),
-          favicon: `//${dato.site.imgixHost}${dato.site.favicon.path}`
+          favicon: `//${dato.site.imgixHost}${dato.site.favicon.path}`,
+          gtm: {
+            head: dato.sitesetting.gtmcodehead,
+            body: dato.sitesetting.gtmsnippetbody
+          }
         }
       });
     });

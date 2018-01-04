@@ -1,2 +1,7 @@
 <link rel="icon" href="{{.Site.Params.favicon}}">
+{{with .Site.Params.gtm}}
+  {{with .head}}
+    {{. | safeHTML}}
+  {{end}}
+{{end}}
 {{partial "vendor/preloader"}}
