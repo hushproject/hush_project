@@ -37,7 +37,7 @@
     {{end}}
     {{with $formSettings.pleasesendmeabrochurestring}}
       <div class="sendRequest__radio">
-        <input type="checkbox" name="{{$formSettings.pleasesendmeabrochureinputname}}" value="YES">
+        <input type="checkbox" name="{{$formSettings.pleasesendmeabrochureinputname}}" value="YES" checked="checked">
         <label><p>{{.}}</p>
         <div></div></label>
       </div>
@@ -47,7 +47,7 @@
     {{end}}
     {{with $formSettings.pleaseaddmetoyourmailingliststring}}
       <div class="sendRequest__radio">
-        <input type="checkbox" name="{{$formSettings.pleaseaddmetoyourmailinglistinputname}}" checked="checked">
+        <input type="checkbox" name="{{$formSettings.pleaseaddmetoyourmailinglistinputname}}">
         <label><p>{{.}}</p>
         <div></div></label>
       </div>
