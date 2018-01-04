@@ -61,6 +61,17 @@
     {{with $formSettings.buttonidinputname}}
       <input type="text" name="{{.}}" value="" id="buttonidinputname" hidden="hidden">
     {{end}}
+    {{with $formSettings.hashtaginputname}}
+      <input type="text" name="{{.}}" value="" id="hashtaginputname" hidden="hidden">
+      <script type="text/javascript">
+        if(window.location.hash) {
+          var hash = window.location.hash.substring(1),
+            now = new Date();
+          now.setTime(now.getTime() + 20000);
+          document.cookie = "_hashtaginputname=" + hash + "; expires=" + now.toUTCString() + "; path=/";
+        }
+      </script>
+    {{end}}
     {{with $formSettings.liststatusinputname}}
       <input type="text" name="{{.}}" value="{{$formSettings.liststatusvalue}}" hidden="hidden">
     {{end}}
