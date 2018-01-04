@@ -3,11 +3,13 @@
     if (!scrollPosition) {
       scrollPosition = jQuery(window).scrollTop();
     }
-    jQuery('.enquireCallForm').click(() => {
+    jQuery('.enquireCallForm').click(function(e) {
       scrollPosition = jQuery(window).scrollTop();
       jQuery('.sitePopup').addClass('active');
       jQuery("body").addClass('noScroll');
       jQuery("body").css("top", scrollPosition * -1);
+      jQuery("#buttonidinputname").val(jQuery(this).attr('href'));
+      e.preventDefault();
     });
     jQuery('.closePopup').click(() => {
       jQuery("body").removeClass('noScroll');

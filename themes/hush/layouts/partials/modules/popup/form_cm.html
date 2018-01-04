@@ -58,6 +58,9 @@
     {{with $formSettings.formversioninputname}}
       <input type="text" name="{{.}}" value="{{$formSettings.formversionvalue}}" hidden="hidden">
     {{end}}
+    {{with $formSettings.buttonidinputname}}
+      <input type="text" name="{{.}}" value="" id="buttonidinputname" hidden="hidden">
+    {{end}}
     {{with $formSettings.liststatusinputname}}
       <input type="text" name="{{.}}" value="{{$formSettings.liststatusvalue}}" hidden="hidden">
     {{end}}
