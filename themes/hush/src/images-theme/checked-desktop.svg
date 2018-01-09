@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22"><defs><path id="81qha" d="M7868 1970.5a9.5 9.5 0 1 1-19 0 9.5 9.5 0 0 1 19 0zm-1.73 0a7.77 7.77 0 1 0-15.55 0 7.77 7.77 0 0 0 15.55 0zm-4.26-2.34c.34.34.34.88 0 1.22l-3.66 3.67a.86.86 0 0 1-1.22 0l-1.83-1.84a.87.87 0 0 1 1.22-1.22l1.22 1.22 3.05-3.05a.86.86 0 0 1 1.22 0z"/></defs><g><g transform="translate(-7847 -1959)"><use fill="#433407" xlink:href="#81qha"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 22 22" style="enable-background:new 0 0 22 22;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F08226;}
+</style>
+<g>
+	<g transform="translate(-7847 -1959)">
+		<g>
+			<path id="_x38_1qha" class="st0" d="M7868,1970.5c0,5.2-4.3,9.5-9.5,9.5s-9.5-4.3-9.5-9.5l0,0c0-5.2,4.3-9.5,9.5-9.5
+				S7868,1965.3,7868,1970.5z M7866.3,1970.5c0-4.3-3.5-7.8-7.8-7.8s-7.8,3.5-7.8,7.8s3.5,7.8,7.8,7.8S7866.3,1974.8,7866.3,1970.5z
+				 M7862,1968.2c0.3,0.3,0.3,0.9,0,1.2l-3.7,3.7c-0.3,0.3-0.9,0.3-1.2,0c0,0,0,0,0,0l-1.8-1.8c-0.3-0.4-0.2-0.9,0.2-1.2
+				c0.3-0.2,0.7-0.2,1.1,0l1.2,1.2l3-3.1C7861.1,1967.8,7861.7,1967.8,7862,1968.2C7862,1968.2,7862,1968.2,7862,1968.2z"/>
+		</g>
+	</g>
+</g>
+</svg>
