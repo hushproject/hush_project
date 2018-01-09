@@ -21,7 +21,7 @@
         {{with $siteFooter.buttons}}
           <div class="siteFooter__cta">
             {{range .}}
-              <a href="{{.url}}" class="button button--white button--bordered {{.additionalclasse}}">
+              <a href="{{.url}}" class="button {{range .setting}} {{.class}} {{end}}">
                 {{.title}}
               </a>
             {{end}}

@@ -33,7 +33,7 @@
         {{if .buttons}}
         <div class="homePageContentSection__cta">
           {{range .buttons}}
-            <a href="{{.url}}" class="button button--white button--bordered">{{.title}}</a>
+            <a href="{{.url}}" class="button {{range .setting}} {{.class}} {{end}}">{{.title}}</a>
           {{end}}
         </div>
         {{end}}

@@ -10,9 +10,9 @@
             <li>
             {{$url := replace .url "/" ""}}
             {{if eq $active $url}}
-              <a href="{{.url}}" class="active {{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a>
+              <a href="{{.url}}" class="active {{range .buttonstyle}} {{.class}} {{end}}">{{.title}}</a>
               {{else}}
-              <a href="{{.url}}" class="{{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a>
+              <a href="{{.url}}" class="{{range .buttonstyle}} {{.class}} {{end}}">{{.title}}</a>
             {{end}}
             </li>
           {{end}}
@@ -22,9 +22,9 @@
             <li>
               {{$url := replace .url "/" ""}}
               {{if eq $active $url}}
-                <a href="{{.url}}" class="active {{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a>
+                <a href="{{.url}}" class="active {{range .buttonstyle}} {{.class}} {{end}}">{{.title}}</a>
                 {{else}}
-                <a href="{{.url}}" class="{{with .additionalclasse}}{{.}}{{end}}">{{.title}}</a>
+                <a href="{{.url}}" class="{{range .buttonstyle}} {{.class}} {{end}}">{{.title}}</a>
               {{end}}
             </li>
           {{end}}

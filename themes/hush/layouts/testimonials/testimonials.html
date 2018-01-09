@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
   {{partial "vendor/head" .}}
-  <body class="testimonialsWrapper">
+  {{$pageSlug := .Page.Params.slug}}
+  <body class="testimonialsWrapper" data-page-id="{{$pageSlug}}">
   {{partial "modules/testimonials/markup" .}}
   {{partial "vendor/footer_includes" .}}
   </body>

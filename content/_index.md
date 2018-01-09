@@ -30,6 +30,7 @@ homepagesections:
     updatedAt: '2018-01-09T08:47:03.356Z'
     createdAt: '2017-12-15T12:36:57.545Z'
     position: 1
+    buttons: []
     nextsectionid: '#three'
     sectionid: two
     colorbackgroundbottompattern: null
@@ -51,7 +52,6 @@ homepagesections:
       title: null
       alt: null
       url: 'https://www.datocms-assets.com/4204/1513341719-yare-valley.jpg'
-    buttons: []
     description: 'An area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yours An area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yours.'
     title: Breathtaking Views of the Yare Valley
     visualpreferences:
@@ -66,6 +66,7 @@ homepagesections:
     updatedAt: '2018-01-09T08:48:26.104Z'
     createdAt: '2017-12-15T13:04:06.364Z'
     position: 2
+    buttons: []
     nextsectionid: '#four'
     sectionid: three
     colorbackgroundbottompattern: null
@@ -87,7 +88,6 @@ homepagesections:
       title: null
       alt: null
       url: 'https://www.datocms-assets.com/4204/1513343008-exclusive-use.jpg'
-    buttons: []
     description: '*An experience to savour. Yours and your guest''s own woodland world for three nights. No need to rush – it''s all yours.*'
     title: 3 Nights Exclusive Use
     visualpreferences:
@@ -105,9 +105,29 @@ homepagesections:
         title: Cream (text color)
   - id: '144957'
     itemType: homepagesection
-    updatedAt: '2018-01-09T08:46:20.371Z'
+    updatedAt: '2018-01-09T11:52:58.895Z'
     createdAt: '2017-12-15T13:35:38.040Z'
     position: 3
+    buttons:
+      - id: '153324'
+        itemType: button
+        updatedAt: '2018-01-09T11:52:58.250Z'
+        createdAt: '2018-01-09T11:52:58.250Z'
+        setting:
+          - id: '145000'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:50:57.318Z'
+            createdAt: '2017-12-15T14:28:18.987Z'
+            class: button--white
+            title: Cream (buttons color)
+          - id: '144999'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:51:19.824Z'
+            createdAt: '2017-12-15T14:28:02.845Z'
+            class: button--bordered
+            title: Bordered (buttons style)
+        url: /
+        title: More
     nextsectionid: '#vibe'
     sectionid: four
     colorbackgroundbottompattern: null
@@ -129,28 +149,6 @@ homepagesections:
       title: null
       alt: null
       url: 'https://www.datocms-assets.com/4204/1513344905-your-ceremony.jpg'
-    buttons:
-      - id: '144956'
-        itemType: link
-        updatedAt: '2017-12-22T07:03:25.241Z'
-        createdAt: '2017-12-15T13:34:56.963Z'
-        position: 18
-        additionalclasse: null
-        buttonstyle:
-          - id: '145000'
-            itemType: buttonsprefence
-            updatedAt: '2017-12-15T14:28:18.987Z'
-            createdAt: '2017-12-15T14:28:18.987Z'
-            class: button--white
-            title: White
-          - id: '144999'
-            itemType: buttonsprefence
-            updatedAt: '2017-12-15T14:28:02.845Z'
-            createdAt: '2017-12-15T14:28:02.845Z'
-            class: button--bordered
-            title: Bordered button
-        url: /content-page-dato
-        title: MORE
     description: '*The Olde Woodshood under a canopy of beech, the drawing room at Colt''s Lodge, All Saints Church. The ceremony of your choice, a moment that is all yours.*'
     title: Your Ceremony
     visualpreferences:
@@ -162,9 +160,29 @@ homepagesections:
         title: Cream (text color)
   - id: '144975'
     itemType: homepagesection
-    updatedAt: '2018-01-09T09:03:55.014Z'
+    updatedAt: '2018-01-09T12:53:51.007Z'
     createdAt: '2017-12-15T13:51:18.672Z'
     position: 4
+    buttons:
+      - id: '153258'
+        itemType: button
+        updatedAt: '2018-01-09T12:53:50.243Z'
+        createdAt: '2018-01-09T09:38:56.480Z'
+        setting:
+          - id: '144999'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:51:19.824Z'
+            createdAt: '2017-12-15T14:28:02.845Z'
+            class: button--bordered
+            title: Bordered (buttons style)
+          - id: '145001'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:50:38.686Z'
+            createdAt: '2017-12-15T14:28:56.718Z'
+            class: button--brown
+            title: Brown (buttons color)
+        url: /vibe
+        title: More
     nextsectionid: '#accomodation'
     sectionid: vibe
     colorbackgroundbottompattern:
@@ -191,28 +209,6 @@ homepagesections:
       hex: '#e1b224'
     backgroundimagedesktop: null
     backgroundimagemobile: null
-    buttons:
-      - id: '145005'
-        itemType: link
-        updatedAt: '2017-12-22T07:03:06.802Z'
-        createdAt: '2017-12-15T14:32:52.127Z'
-        position: 15
-        additionalclasse: null
-        buttonstyle:
-          - id: '145001'
-            itemType: buttonsprefence
-            updatedAt: '2017-12-15T14:28:56.718Z'
-            createdAt: '2017-12-15T14:28:56.718Z'
-            class: button--brown
-            title: Brown
-          - id: '144999'
-            itemType: buttonsprefence
-            updatedAt: '2017-12-15T14:28:02.845Z'
-            createdAt: '2017-12-15T14:28:02.845Z'
-            class: button--bordered
-            title: Bordered button
-        url: /content-page-dato
-        title: MORE
     description: |-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
 
@@ -232,9 +228,60 @@ homepagesections:
         title: Brown-dark (text color)
   - id: '144998'
     itemType: homepagesection
-    updatedAt: '2018-01-09T08:48:13.221Z'
+    updatedAt: '2018-01-09T12:54:08.691Z'
     createdAt: '2017-12-15T14:17:03.430Z'
     position: 5
+    buttons:
+      - id: '153259'
+        itemType: button
+        updatedAt: '2018-01-09T12:54:07.898Z'
+        createdAt: '2018-01-09T09:40:17.601Z'
+        setting:
+          - id: '145002'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:50:16.820Z'
+            createdAt: '2017-12-15T14:29:18.722Z'
+            class: button--md
+            title: Middle size (buttons size)
+          - id: '145000'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:50:57.318Z'
+            createdAt: '2017-12-15T14:28:18.987Z'
+            class: button--white
+            title: Cream (buttons color)
+          - id: '144999'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:51:19.824Z'
+            createdAt: '2017-12-15T14:28:02.845Z'
+            class: button--bordered
+            title: Bordered (buttons style)
+        url: /content-page-dato
+        title: Colts Lodge
+      - id: '153260'
+        itemType: button
+        updatedAt: '2018-01-09T12:54:08.029Z'
+        createdAt: '2018-01-09T09:40:17.734Z'
+        setting:
+          - id: '145002'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:50:16.820Z'
+            createdAt: '2017-12-15T14:29:18.722Z'
+            class: button--md
+            title: Middle size (buttons size)
+          - id: '144999'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:51:19.824Z'
+            createdAt: '2017-12-15T14:28:02.845Z'
+            class: button--bordered
+            title: Bordered (buttons style)
+          - id: '145000'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:50:57.318Z'
+            createdAt: '2017-12-15T14:28:18.987Z'
+            class: button--white
+            title: Cream (buttons color)
+        url: /content-page-dato
+        title: Glamping
     nextsectionid: null
     sectionid: accomodation
     colorbackgroundbottompattern:
@@ -261,61 +308,6 @@ homepagesections:
       hex: '#17172f'
     backgroundimagedesktop: null
     backgroundimagemobile: null
-    buttons:
-      - id: '144997'
-        itemType: link
-        updatedAt: '2017-12-22T07:03:17.142Z'
-        createdAt: '2017-12-15T14:16:21.630Z'
-        position: 17
-        additionalclasse: null
-        buttonstyle:
-          - id: '145000'
-            itemType: buttonsprefence
-            updatedAt: '2017-12-15T14:28:18.987Z'
-            createdAt: '2017-12-15T14:28:18.987Z'
-            class: button--white
-            title: White
-          - id: '144999'
-            itemType: buttonsprefence
-            updatedAt: '2017-12-15T14:28:02.845Z'
-            createdAt: '2017-12-15T14:28:02.845Z'
-            class: button--bordered
-            title: Bordered button
-          - id: '145002'
-            itemType: buttonsprefence
-            updatedAt: '2017-12-15T14:29:18.722Z'
-            createdAt: '2017-12-15T14:29:18.722Z'
-            class: button--md
-            title: Middle size
-        url: /content-page-dato
-        title: Colts Lodge
-      - id: '145004'
-        itemType: link
-        updatedAt: '2017-12-22T07:03:11.767Z'
-        createdAt: '2017-12-15T14:31:05.236Z'
-        position: 16
-        additionalclasse: null
-        buttonstyle:
-          - id: '145002'
-            itemType: buttonsprefence
-            updatedAt: '2017-12-15T14:29:18.722Z'
-            createdAt: '2017-12-15T14:29:18.722Z'
-            class: button--md
-            title: Middle size
-          - id: '145000'
-            itemType: buttonsprefence
-            updatedAt: '2017-12-15T14:28:18.987Z'
-            createdAt: '2017-12-15T14:28:18.987Z'
-            class: button--white
-            title: White
-          - id: '144999'
-            itemType: buttonsprefence
-            updatedAt: '2017-12-15T14:28:02.845Z'
-            createdAt: '2017-12-15T14:28:02.845Z'
-            class: button--bordered
-            title: Bordered button
-        url: /content-page-dato
-        title: Glamping
     description: |-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
 

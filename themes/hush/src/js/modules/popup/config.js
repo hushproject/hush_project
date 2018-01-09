@@ -8,10 +8,9 @@
       jQuery('.sitePopup').addClass('active');
       jQuery("body").addClass('noScroll');
       jQuery("body").css("top", scrollPosition * -1);
-      jQuery("#buttonidinputname").val(jQuery(this).attr('href'));
+      jQuery("#buttonidinputname").val(jQuery(this).attr('href') + '-' + jQuery('body').attr('data-page-id'));
       if (readCookie('_hashtaginputname') != null) {
         jQuery('#hashtaginputname').val(readCookie('_hashtaginputname'));
-        console.log(jQuery('#hashtaginputname').val());
       }
       e.preventDefault();
     });

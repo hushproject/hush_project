@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
   {{partial "vendor/head" .}}
-  <body>
+  {{$pageSlug := .Page.Params.slug}}
+  <body data-page-id="{{$pageSlug}}">
   {{partial "modules/home_page/markup" .}}
   {{partial "vendor/footer_includes" .}}
   </body>
