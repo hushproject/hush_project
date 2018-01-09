@@ -27,7 +27,7 @@ homepageheadersection:
 homepagesections:
   - id: '144897'
     itemType: homepagesection
-    updatedAt: '2017-12-27T13:33:19.982Z'
+    updatedAt: '2018-01-09T08:47:03.356Z'
     createdAt: '2017-12-15T12:36:57.545Z'
     position: 1
     nextsectionid: '#three'
@@ -55,15 +55,15 @@ homepagesections:
     description: 'An area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yours An area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yours.'
     title: Breathtaking Views of the Yare Valley
     visualpreferences:
-      - id: '144991'
-        itemType: homepagesectionpreference
-        updatedAt: '2017-12-15T14:07:19.309Z'
-        createdAt: '2017-12-15T14:07:19.309Z'
-        class: homePageContentSection--whiteFont
-        title: Use white text color
+      - id: '153221'
+        itemType: visualpreference
+        updatedAt: '2018-01-09T08:28:47.634Z'
+        createdAt: '2018-01-09T08:28:47.634Z'
+        class: textColor--cream
+        title: Cream (text color)
   - id: '144912'
     itemType: homepagesection
-    updatedAt: '2017-12-22T12:47:48.991Z'
+    updatedAt: '2018-01-09T08:48:26.104Z'
     createdAt: '2017-12-15T13:04:06.364Z'
     position: 2
     nextsectionid: '#four'
@@ -97,15 +97,15 @@ homepagesections:
         createdAt: '2017-12-15T14:42:07.418Z'
         class: homePageContentSection--wDarkMask
         title: Use gradient mask for section
-      - id: '144991'
-        itemType: homepagesectionpreference
-        updatedAt: '2017-12-15T14:07:19.309Z'
-        createdAt: '2017-12-15T14:07:19.309Z'
-        class: homePageContentSection--whiteFont
-        title: Use white text color
+      - id: '153221'
+        itemType: visualpreference
+        updatedAt: '2018-01-09T08:28:47.634Z'
+        createdAt: '2018-01-09T08:28:47.634Z'
+        class: textColor--cream
+        title: Cream (text color)
   - id: '144957'
     itemType: homepagesection
-    updatedAt: '2017-12-22T12:48:20.528Z'
+    updatedAt: '2018-01-09T08:46:20.371Z'
     createdAt: '2017-12-15T13:35:38.040Z'
     position: 3
     nextsectionid: '#vibe'
@@ -154,15 +154,15 @@ homepagesections:
     description: '*The Olde Woodshood under a canopy of beech, the drawing room at Colt''s Lodge, All Saints Church. The ceremony of your choice, a moment that is all yours.*'
     title: Your Ceremony
     visualpreferences:
-      - id: '144991'
-        itemType: homepagesectionpreference
-        updatedAt: '2017-12-15T14:07:19.309Z'
-        createdAt: '2017-12-15T14:07:19.309Z'
-        class: homePageContentSection--whiteFont
-        title: Use white text color
+      - id: '153221'
+        itemType: visualpreference
+        updatedAt: '2018-01-09T08:28:47.634Z'
+        createdAt: '2018-01-09T08:28:47.634Z'
+        class: textColor--cream
+        title: Cream (text color)
   - id: '144975'
     itemType: homepagesection
-    updatedAt: '2017-12-27T12:11:50.873Z'
+    updatedAt: '2018-01-09T09:03:55.014Z'
     createdAt: '2017-12-15T13:51:18.672Z'
     position: 4
     nextsectionid: '#accomodation'
@@ -224,15 +224,15 @@ homepagesections:
       Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     title: The Vibe
     visualpreferences:
-      - id: '144993'
-        itemType: homepagesectionpreference
-        updatedAt: '2017-12-15T14:09:13.234Z'
-        createdAt: '2017-12-15T14:08:41.158Z'
-        class: homePageContentSection--brownFont
-        title: Use brown text color
+      - id: '153224'
+        itemType: visualpreference
+        updatedAt: '2018-01-09T08:30:44.137Z'
+        createdAt: '2018-01-09T08:30:44.137Z'
+        class: textColor--brown--dark
+        title: Brown-dark (text color)
   - id: '144998'
     itemType: homepagesection
-    updatedAt: '2017-12-27T12:13:37.046Z'
+    updatedAt: '2018-01-09T08:48:13.221Z'
     createdAt: '2017-12-15T14:17:03.430Z'
     position: 5
     nextsectionid: null
@@ -322,17 +322,11 @@ homepagesections:
       Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     title: Accomodation
     visualpreferences:
-      - id: '144992'
-        itemType: homepagesectionpreference
-        updatedAt: '2017-12-15T14:07:59.435Z'
-        createdAt: '2017-12-15T14:07:59.435Z'
-        class: hideLogoOnThisSection
-        title: Don`t show show logo on this section
-      - id: '144991'
-        itemType: homepagesectionpreference
-        updatedAt: '2017-12-15T14:07:19.309Z'
-        createdAt: '2017-12-15T14:07:19.309Z'
-        class: homePageContentSection--whiteFont
-        title: Use white text color
+      - id: '153221'
+        itemType: visualpreference
+        updatedAt: '2018-01-09T08:28:47.634Z'
+        createdAt: '2018-01-09T08:28:47.634Z'
+        class: textColor--cream
+        title: Cream (text color)
 ---
 
