@@ -1,4 +1,4 @@
-<div class="hideLogo lightMenu">
+<div class="{{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}">
   {{$currentSection := .}}
   {{with $currentSection.backgroundimagemobile}}
     <style>

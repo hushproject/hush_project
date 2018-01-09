@@ -1,6 +1,6 @@
-<div class="container--fluid contentPage__ContentSection hideLogoOnThisSection hideLogo
-    {{if eq .isityellow true}}lightMenu{{else}}darkMenu{{end}}
-   contentPage__ContentSection--brownFont yellow--{{.isityellow}}" id="the-vibe-2">
+<div class="container--fluid contentPage__ContentSection hideLogoOnThisSection
+   contentPage__ContentSection--brownFont yellow--{{.isityellow}}
+   {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}" id="the-vibe-2">
   <div class="container contentPage__ContentSection__content">
     <div class="contentPage__ContentSection__title">
       <p>{{.title}}</p>

@@ -15,7 +15,8 @@
     }
   </style>
 {{end}}
-<div class="container--fluid contentPage__header">
+<div class="container--fluid contentPage__header
+  {{with $headerSection.visualpreferencesheader}}{{range .}}{{.class}} {{end}}{{end}}">
   <div class="container">
     <div class="contentPage__header__text">
       {{with $headerSection.headertitle}}
