@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   {{partial "vendor/head" .}}
-  {{$pageSlug := .Page.Params.slug}}
+  {{$pageSlug := .Params.slug}}
   <body class="findUsWrapper" data-page-id="{{$pageSlug}}">
   {{partial "modules/find-us/markup" .}}
   {{partial "vendor/footer_includes" .}}
