@@ -119,11 +119,18 @@
   +transition(300ms, linear)
   img
     width: 100%
+  .dark
+    display: none
   &.fixedTop
     transform: scale(1)
     opacity: 1
   &.hiddenLogo
     opacity: 0
+.darkTheme.siteHeader__logo
+  img
+    display: none
+  .dark
+    display: block
 @keyframes showMenu
   0%
     opacity: 0
