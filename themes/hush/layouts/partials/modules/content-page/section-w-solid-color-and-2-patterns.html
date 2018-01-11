@@ -1,6 +1,8 @@
-<div class="container--fluid contentPage__ContentSection hideLogoOnThisSection
+<div class="container--fluid contentPage__ContentSection
+   nopattern-{{.dontshowpattern}}
    contentPage__ContentSection--brownFont yellow--{{.isityellow}}
-   {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}" id="the-vibe-2">
+   {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}"
+   {{if .manualbackground}} style="background: {{.manualbackground.hex}}"{{end}}>
   <div class="container contentPage__ContentSection__content">
     <div class="contentPage__ContentSection__title">
       <p>{{.title}}</p>
@@ -14,6 +16,11 @@
       <div class="contentPage__ContentSection__description__right">
         {{with .rightcolumn}}
           {{. | markdownify}}
+        {{end}}
+      </div>
+      <div class="contentPage__ContentSection__description__full">
+        {{with .fullwidthtext}}
+          {{. | safeHTML}}
         {{end}}
       </div>
     </div>

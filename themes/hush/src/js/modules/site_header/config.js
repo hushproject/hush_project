@@ -2,7 +2,7 @@ import ScrollMagic from "scrollmagic"; {
   function pinSiteLogo(logo) {
     let controller = new ScrollMagic.Controller(),
       trigeredClasses = ".homeHeader__description .siteLogo, .siteHeader__burgerMenu__button, .siteHeader__logo",
-      hideMenuWord = ".homeHeader__description, .contentPage__header__text, .findUsPage, .testimonialsPage__title";
+      hideMenuWord = ".homeHeader__description, .contentPage__header__text, .findUsPage, .testimonialsPage__title, .contentPage__ContentSection";
     if(jQuery(hideMenuWord).length) {
       new ScrollMagic.Scene({
         triggerElement: hideMenuWord,
