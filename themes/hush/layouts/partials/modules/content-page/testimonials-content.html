@@ -1,7 +1,10 @@
 {{$siteTestimonials := .Site.Params.testimonials}}
 <div class="container--fluid testimonials  testimonials--contentPage
-  hideLogo darkMenu" id="testimonials--contentPage">
-  <div class="container">
+  {{if $siteTestimonials.settings.visualpreferences}}{{range $siteTestimonials.settings.visualpreferences}}{{.class}} {{end}}{{end}}"
+  id="testimonials--contentPage"
+  {{if $siteTestimonials.settings.backgroundcolor}}
+    style="background-color: {{$siteTestimonials.settings.backgroundcolor.hex}}"
+  {{end}}>
     <div class="homePageContentSection__title hidden--lg">
       <img src="/images-theme/sidebar-menu-logo.svg" alt="">
     </div>
@@ -19,6 +22,5 @@
           </div>
         {{end}}
       {{end}}
-    </div>
   </div>
 </div>

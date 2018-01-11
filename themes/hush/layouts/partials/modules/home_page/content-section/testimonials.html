@@ -1,5 +1,10 @@
 {{$siteTestimonials := .Site.Params.testimonials}}
-<div class="container--fluid testimonials hideLogo darkMenu" id="testimonialSection">
+<div class="container--fluid testimonials
+  {{if $siteTestimonials.settings.visualpreferences}}{{range $siteTestimonials.settings.visualpreferences}}{{.class}} {{end}}{{end}}"
+  id="testimonialSection"
+  {{if $siteTestimonials.settings.backgroundcolor}}
+    style="background-color: {{$siteTestimonials.settings.backgroundcolor.hex}}"
+  {{end}}>
   <div class="homePageContentSection__title">
     <p>{{$siteTestimonials.settings.sectiontitle}}</p>
   </div>

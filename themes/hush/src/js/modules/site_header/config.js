@@ -7,28 +7,28 @@
     if(jQuery(hideMenuWord).length) {
       new ScrollMagic.Scene({
         triggerElement: hideMenuWord,
-      }).setClassToggle(trigeredClasses, "fixedTop").addTo(controller).triggerHook(0);
+      }).setClassToggle(trigeredClasses, "fixedTop").addTo(controller).triggerHook(0.1);
     }
     jQuery('.darkMenu').each(function(item) {
       jQuery(this).attr('id', `darkMenu-${item}`);
       new ScrollMagic.Scene({
         triggerElement: `#darkMenu-${item}`,
         duration: jQuery(this).outerHeight()
-      }).setClassToggle(trigeredClasses, "darkTheme").addTo(controller).triggerHook(0);
+      }).setClassToggle(trigeredClasses, "darkTheme").addTo(controller).triggerHook(0.1);
     });
     jQuery('.lightMenu').each(function(item) {
       jQuery(this).attr('id', `light-${item}`);
       new ScrollMagic.Scene({
         triggerElement: `#light-${item}`,
         duration: jQuery(this).outerHeight(),
-      }).setClassToggle(trigeredClasses, "lightMenu").addTo(controller).triggerHook(0);
+      }).setClassToggle(trigeredClasses, "lightMenu").addTo(controller).triggerHook(0.1);
     });
     jQuery('.hideLogo').each(function(item) {
       jQuery(this).attr('id', `hideLogo-${item}`);
       new ScrollMagic.Scene({
         triggerElement: `#hideLogo-${item}`,
         duration: jQuery(this).outerHeight()
-      }).setClassToggle(trigeredClasses, "hiddenLogo").addTo(controller).triggerHook(0);
+      }).setClassToggle(trigeredClasses, "hiddenLogo").addTo(controller).triggerHook(0.1);
     });
     jQuery('.animate').each(function(item) {
       var id = `#animated-${item}`;
