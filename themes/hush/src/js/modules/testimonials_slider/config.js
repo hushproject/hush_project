@@ -5,7 +5,7 @@ import slick from "slick-carousel";
     if(speed.length > 0) {
       $('#testimonialSlider').slick({
         slidesToShow: 1,
-        arrows: false,
+        arrows: true,
         dots: false,
         speed: 300,
         autoplay: true,

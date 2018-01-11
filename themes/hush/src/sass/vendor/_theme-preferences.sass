@@ -50,6 +50,28 @@
 body.noScroll
   overflow: scroll
   position: fixed
+#testimonialSlider
+  position: relative
+  .slick-prev,
+  .slick-next
+    position: absolute
+    top: calc(50% - 40px)
+    display: block
+    font-size: 0px
+    width: 30px
+    height: 30px
+    border: 0px
+    border-left: 3px solid $brown-1
+    border-top: 3px solid $brown-1
+    background: transparent
+    z-index: 2
+    opacity: 0.3
+  .slick-prev
+    left: 20px
+    transform: rotate(-45deg)
+  .slick-next
+    right: 20px
+    transform: rotate(135deg)
 @media screen and (min-width : 640px)
   .container
     max-width: 1340px
@@ -78,3 +100,15 @@ body.noScroll
       min-width: 125px
     &--md
       min-width: 125px
+@media screen and (min-width : 1000px)
+  #testimonialSlider
+    .slick-prev,
+    .slick-next
+      width: 40px
+      height: 40px
+    .slick-prev
+      left: 50px
+      transform: rotate(-45deg)
+    .slick-next
+      right: 50px
+      transform: rotate(135deg)
