@@ -1,4 +1,4 @@
-import ScrollMagic from "scrollmagic";
+// import ScrollMagic from "scrollmagic";
 {
   function pinSiteLogo(logo) {
     let controller = new ScrollMagic.Controller(),
@@ -29,6 +29,20 @@ import ScrollMagic from "scrollmagic";
         triggerElement: `#hideLogo-${item}`,
         duration: jQuery(this).outerHeight()
       }).setClassToggle(trigeredClasses, "hiddenLogo").addTo(controller).triggerHook(0);
+    });
+    jQuery('.animate').each(function(item) {
+      var id = `#animated-${item}`;
+      if(jQuery(this).attr('id')) {
+        id = `${jQuery(this).attr('id')}`
+      }else {
+        id = `animated-${item}`
+      }
+      jQuery(this).attr('id', id);
+      new ScrollMagic.Scene({
+        triggerElement: `#${id}`
+      }).setClassToggle(`#${id}`, `${jQuery(this).attr('data-animation')}`)
+      .addTo(controller)
+      .triggerHook(1);
     });
   }
   function showHideSidebar(scrollPosition) {

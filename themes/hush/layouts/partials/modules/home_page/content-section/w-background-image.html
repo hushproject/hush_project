@@ -21,17 +21,17 @@
       {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}">
       <div class="homePageContentSection__content hideLogo">
         {{with .title}}
-          <div class="homePageContentSection__title flipInX" >
+          <div class="homePageContentSection__title animate" data-animation="fadeInDown">
             <p>{{.}}</p>
           </div>
         {{end}}
         {{with .description}}
-        <div class="homePageContentSection__description">
+        <div class="homePageContentSection__description animate" data-animation="fadeInUp">
           {{. | markdownify}}
         </div>
         {{end}}
         {{if .buttons}}
-        <div class="homePageContentSection__cta">
+        <div class="homePageContentSection__cta animate" data-animation="fadeIn">
           {{range .buttons}}
             <a href="{{.url}}" class="button {{range .setting}} {{.class}} {{end}}">{{.title}}</a>
           {{end}}
