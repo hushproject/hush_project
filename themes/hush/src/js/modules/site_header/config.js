@@ -1,37 +1,34 @@
-import ScrollMagic from "scrollmagic"; {
+import ScrollMagic from "scrollmagic";
+{
   function pinSiteLogo(logo) {
     let controller = new ScrollMagic.Controller(),
       trigeredClasses = ".homeHeader__description .siteLogo, .siteHeader__burgerMenu__button, .siteHeader__logo",
-      hideMenuWord = ".homeHeader__description, .contentPage__header__text, .findUsPage, .testimonialsPage__title, .contentPage__ContentSection";
+      hideMenuWord = ".pinHeader";
     if(jQuery(hideMenuWord).length) {
       new ScrollMagic.Scene({
         triggerElement: hideMenuWord,
-        offset: jQuery(window).outerHeight() / 2
-      }).setClassToggle(trigeredClasses, "fixedTop").addTo(controller);
+      }).setClassToggle(trigeredClasses, "fixedTop").addTo(controller).triggerHook(0);
     }
     jQuery('.darkMenu').each(function(item) {
       jQuery(this).attr('id', `darkMenu-${item}`);
       new ScrollMagic.Scene({
         triggerElement: `#darkMenu-${item}`,
-        duration: jQuery(this).outerHeight(),
-        offset: jQuery(window).outerHeight() / 2
-      }).setClassToggle(trigeredClasses, "darkTheme").addTo(controller);
+        duration: jQuery(this).outerHeight()
+      }).setClassToggle(trigeredClasses, "darkTheme").addTo(controller).triggerHook(0);
     });
     jQuery('.lightMenu').each(function(item) {
       jQuery(this).attr('id', `light-${item}`);
       new ScrollMagic.Scene({
         triggerElement: `#light-${item}`,
         duration: jQuery(this).outerHeight(),
-        offset: 50
-      }).setClassToggle(trigeredClasses, "lightMenu").addTo(controller);
+      }).setClassToggle(trigeredClasses, "lightMenu").addTo(controller).triggerHook(0);
     });
     jQuery('.hideLogo').each(function(item) {
       jQuery(this).attr('id', `hideLogo-${item}`);
       new ScrollMagic.Scene({
         triggerElement: `#hideLogo-${item}`,
-        duration: jQuery(this).outerHeight(),
-        offset: jQuery(window).outerHeight() / 1.8
-      }).setClassToggle(trigeredClasses, "hiddenLogo").addTo(controller);
+        duration: jQuery(this).outerHeight()
+      }).setClassToggle(trigeredClasses, "hiddenLogo").addTo(controller).triggerHook(0);
     });
   }
   function showHideSidebar(scrollPosition) {
