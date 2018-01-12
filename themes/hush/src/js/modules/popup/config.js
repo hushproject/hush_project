@@ -57,6 +57,8 @@
       $(_this).serialize(),
       function(data) {
         if (data.Status === 400) {
+          jQuery('.formSending').hide(300);
+          jQuery('.sendRequest__wrapper').fadeIn(300);
           alert("Error: " + data.Message);
         } else {
           jQuery('.formSending').hide();
