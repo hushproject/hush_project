@@ -1,17 +1,17 @@
 .sitePopup
   position: fixed
-  z-index: 200
+  z-index: 500
   height: 100vh
   width: 100vw
   overflow-x: auto
   background: $white
-  top: 0px
-  left: -9999px
   opacity: 0
-  overflow-y: scroll
+  overflow: hidden
+  animation: hideMenu .4s ease-out forwards
   &.active
-    left: 0px
-    animation: showPopup .6s ease-out forwards
+    overflow-y: scroll
+    top: 0px
+    animation: showMenu .3s ease-out forwards
 .sitePopup
   &__header
     width: 100%
@@ -146,6 +146,7 @@
 .sendRequest__copyright
   text-align: center
   +font($main_300, 15px, 16px, $brown-4, normal, none, none)
+  margin-bottom: 20px
   a
     +font($main_300, 15px, 16px, $brown-4, normal, underline, none)
 .sitePopup__content__thankU

@@ -15,13 +15,17 @@
       e.preventDefault();
     });
     jQuery('.closePopup').click(() => {
-      jQuery("body").removeClass('noScroll');
-      $("html, body").animate({
-        scrollTop: scrollPosition
-      }, 0, function functionName() {
+      if(jQuery('.siteSidebarMenu').hasClass('active')) {
         jQuery('.sitePopup').removeClass('active');
-        scrollPosition = 0;
-      });
+      }else {
+        jQuery("body").removeClass('noScroll');
+        $("html, body").animate({
+          scrollTop: scrollPosition
+        }, 0, function () {
+          jQuery('.sitePopup').removeClass('active');
+            scrollPosition = 0;
+        });
+      }
     });
   };
   showHideForm();

@@ -74,16 +74,16 @@
 .siteSidebarMenu
   position: fixed
   height: 100vh
-  overflow-y: scroll
+  overflow: hidden
   width: 100%
-  top: -100%
   background: $white url('/images-theme/burger-menu-background-pattern.png') no-repeat 63% 0%
   z-index: 80
   opacity: 0
-  animation: hideMenu .5s ease-out forwards
+  animation: hideMenu .4s ease-out forwards
   &.active
-    top: 0px
-    animation: showMenu .5s ease-out forwards
+    top: 0
+    animation: showMenu .3s ease-out forwards
+    overflow-y: scroll
   &__innerLogo
     display: block
     width: 67px
@@ -146,10 +146,15 @@
 @keyframes hideMenu
   0%
     opacity: 1
-  80%
+    top: 0
+  70%
     opacity: .95
-  100%
+    top: 0
+  80%
+    top: 0
     opacity: 0
+  100%
+    top: -10000vh
 .stick
   width: 80px
   height: 8px
