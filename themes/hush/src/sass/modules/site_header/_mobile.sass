@@ -37,17 +37,20 @@
         .siteHeader__burgerMenu__burger:before,
         .siteHeader__burgerMenu__burger .stick
           background: $white
+          +transition(300ms, linear)
       &.darkTheme
         color: $brown-1
         .siteHeader__burgerMenu__burger:after,
         .siteHeader__burgerMenu__burger:before,
         .siteHeader__burgerMenu__burger .stick
           background: $brown-1
+          +transition(300ms, linear)
       &.lightMenu
         .siteHeader__burgerMenu__burger:after,
         .siteHeader__burgerMenu__burger:before,
         .siteHeader__burgerMenu__burger .stick
           background: $white
+          +transition(300ms, linear)
     &__burger
       display: flex
       flex-direction: column

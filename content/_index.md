@@ -21,7 +21,6 @@ homepageheadersection:
     alt: null
     url: 'https://www.datocms-assets.com/4204/1513326985-home-1st-section.jpg'
   nextsectionid: two
-  explorebuttontext: null
   enquirebuttontext: Enquire
   tagline: Be Yourself  Together
 homepagesections:
@@ -105,7 +104,7 @@ homepagesections:
         title: Cream (text color)
   - id: '144957'
     itemType: homepagesection
-    updatedAt: '2018-01-09T11:52:58.895Z'
+    updatedAt: '2018-01-12T13:45:54.654Z'
     createdAt: '2017-12-15T13:35:38.040Z'
     position: 3
     buttons:
@@ -158,9 +157,15 @@ homepagesections:
         createdAt: '2018-01-09T08:28:47.634Z'
         class: textColor--cream
         title: Cream (text color)
+      - id: '153399'
+        itemType: visualpreference
+        updatedAt: '2018-01-09T13:54:10.147Z'
+        createdAt: '2018-01-09T13:54:10.147Z'
+        class: lightMenu
+        title: Light burger menu color
   - id: '144975'
     itemType: homepagesection
-    updatedAt: '2018-01-09T12:53:51.007Z'
+    updatedAt: '2018-01-12T13:44:04.636Z'
     createdAt: '2017-12-15T13:51:18.672Z'
     position: 4
     buttons:
@@ -226,9 +231,21 @@ homepagesections:
         createdAt: '2018-01-09T08:30:44.137Z'
         class: textColor--brown--dark
         title: Brown-dark (text color)
+      - id: '153397'
+        itemType: visualpreference
+        updatedAt: '2018-01-09T13:53:39.222Z'
+        createdAt: '2018-01-09T13:53:39.222Z'
+        class: hideLogo
+        title: Hide logo
+      - id: '153400'
+        itemType: visualpreference
+        updatedAt: '2018-01-09T13:55:19.206Z'
+        createdAt: '2018-01-09T13:55:19.206Z'
+        class: darkMenu
+        title: Dark burger menu color
   - id: '144998'
     itemType: homepagesection
-    updatedAt: '2018-01-09T12:54:08.691Z'
+    updatedAt: '2018-01-12T13:45:16.888Z'
     createdAt: '2017-12-15T14:17:03.430Z'
     position: 5
     buttons:
@@ -320,5 +337,17 @@ homepagesections:
         createdAt: '2018-01-09T08:28:47.634Z'
         class: textColor--cream
         title: Cream (text color)
+      - id: '153399'
+        itemType: visualpreference
+        updatedAt: '2018-01-09T13:54:10.147Z'
+        createdAt: '2018-01-09T13:54:10.147Z'
+        class: lightMenu
+        title: Light burger menu color
+      - id: '153397'
+        itemType: visualpreference
+        updatedAt: '2018-01-09T13:53:39.222Z'
+        createdAt: '2018-01-09T13:53:39.222Z'
+        class: hideLogo
+        title: Hide logo
 ---
 

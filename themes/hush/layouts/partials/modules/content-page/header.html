@@ -15,12 +15,12 @@
     }
   </style>
 {{end}}
-<div class="container--fluid contentPage__header
+<div class="container--fluid contentPage__header pinHeader
   {{with $headerSection.visualpreferencesheader}}{{range .}}{{.class}} {{end}}{{end}}">
   <div class="container">
-    <div class="contentPage__header__text">
+    <div class="contentPage__header__text hideLogo">
       {{with $headerSection.headertitle}}
-      <div class="contentPage__header__title pinHeader">
+      <div class="contentPage__header__title">
         <h1>{{.}}</h1>
       </div>
       {{end}}
