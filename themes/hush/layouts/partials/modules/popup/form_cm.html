@@ -37,7 +37,11 @@
     {{end}}
     {{with $formSettings.pleasesendmeabrochurestring}}
       <div class="sendRequest__radio">
-        <input type="checkbox" name="{{$formSettings.pleasesendmeabrochureinputname}}" value="YES" checked="checked">
+        <input type="checkbox" name="{{$formSettings.pleasesendmeabrochureinputname}}"
+          value="{{$formSettings.pleasesendmeabrochureyesvalue}}" checked="checked"
+          data-yes="{{$formSettings.pleasesendmeabrochureyesvalue}}"
+          data-no="{{$formSettings.pleasesendmeabrochurenovalue}}"
+          id="brochureInput">
         <label><p>{{.}}</p>
         <div></div></label>
       </div>

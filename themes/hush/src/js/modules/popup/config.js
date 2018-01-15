@@ -81,4 +81,15 @@
     }
     return null;
   }
+  jQuery('#brochureInput').click(function() {
+    let valueYes = jQuery(this).attr('data-yes'),
+      valueNo = jQuery(this).attr('data-no'),
+      valueCurrent = jQuery(this).val();
+      if(valueCurrent == valueYes) {
+        jQuery(this).val(valueNo);
+      }else {
+        jQuery(this).val(valueYes);
+      }
+      console.log(jQuery(this).val());
+  });
 }
