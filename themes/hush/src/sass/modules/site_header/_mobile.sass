@@ -64,7 +64,19 @@
       transform: scale(0.3)
       right: -30px
       top: -33px
-.siteHeader__burgerMenu__button.active
+.siteHeader__burgerMenu__button.lightMenu.active .siteHeader__burgerMenu__burger .stick,
+.siteHeader__burgerMenu__button.lightMenu.active .siteHeader__burgerMenu__burger:after,
+.siteHeader__burgerMenu__button.lightMenu.active .siteHeader__burgerMenu__burger:before
+  background: $brown-1 !important
+.siteHeader__burgerMenu__button.active,
+.siteHeader__burgerMenu__button.lightMenu.active
+  .siteHeader__burgerMenu__burger
+    color: $brown-1 !important
+    .siteHeader__burgerMenu__burger:after,
+    .siteHeader__burgerMenu__burger:before,
+    .siteHeader__burgerMenu__burger .stick
+      background: $brown-1 !important
+      +transition(300ms, linear)
   justify-content: space-between
   i
     display: none
