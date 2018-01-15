@@ -1,5 +1,5 @@
 <div id="preloader">
-  <img src="/images-theme/logo.svg" alt="" id="preloader__logo">
+  <img src="/images-theme/sidebar-menu-logo.svg?auto=compress" alt="" id="preloader__logo">
 </div>
 <style media="screen">
   #loadingtime {
@@ -15,35 +15,10 @@
     height: 100vh;
     width: 100vw;
     transition: .8s linear;
-  }
-  #preloader::after,
-  #preloader::before {
-    content: "";
-    top: 0;
-    display: block;
-    position: absolute;
     background: black;
-    height: 100vh;
-    width: 50vw;
-    z-index: 1;
-  }
-  #preloader::before {
-    right: 0px;
-  }
-  #preloader::after {
-    left: 0px;
-  }
-  #preloader.loaded::before {
-    animation: .5s forwards closeRight;
-    animation-delay: 0.5s;
-  }
-  #preloader.loaded::after {
-    animation: .5s forwards closeLeft;
-    animation-delay: 0.5s;
   }
   #preloader.loaded {
-    animation: .1s forwards destroyPreloader;
-    animation-delay: 1.5s;
+    animation: destroyPreloader .5s forwards linear;
   }
   @keyframes destroyPreloader {
     0%{
@@ -53,38 +28,6 @@
       height: 0px;
     }
   }
-
-  @keyframes closeLeft {
-    0% {
-      left: 0;
-      opacity: 1;
-    }
-    30% {
-      opacity: .5;
-      left: 0;
-    }
-    100% {
-      opacity: 0;
-      left: -50vw;
-    }
-  }
-  @keyframes closeRight {
-    0% {
-      right: 0;
-      opacity: 1;
-    }
-    30% {
-      opacity: .5;
-      right: 0;
-    }
-    100% {
-      opacity: 0;
-      right: -50vw;
-    }
-  }
-  @keyframes hidePreloader {
-
-  }
   #preloader__logo {
     position: absolute;
     width: 120px;
@@ -93,7 +36,7 @@
     top: 0px;
     bottom: 0px;
     margin: auto;
-    animation: .5s infinite beatLogo;
+    animation: spinLogo 3s infinite linear;
     transition: .8s linear;
     z-index: 2;
   }
@@ -102,19 +45,22 @@
     opacity: 0;
   }
 
-  @keyframes beatLogo {
-  0% {
-    transform: scale(1);
-    opacity: .3
-  }
-  33% {
-    transform: scale(1.2);
-    opacity: 1
-  }
-  100% {
-    transform: scale(1);
-    opacity: .3
-  }
+  @keyframes spinLogo {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(360deg);
+    }
+    30% {
+      transform: rotate(720deg);
+    }
+    90% {
+      transform: rotate(1080deg);
+    }
+    100% {
+      transform: rotate(1440deg);
+    }
 }
 @keyframes hideLogo {
   0% {
@@ -122,6 +68,33 @@
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes destroyPreloader {
+  0% {
+    opacity: 1;
+    left: 0;
+    top: 0;
+  }
+  80% {
+    opacity: .8;
+    left: 0;
+    top: 0;
+  }
+  90% {
+    opacity: .5;
+    left: 0;
+    top: 0;
+  }
+  99% {
+    opacity: 0;
+    left: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    left: -99999999px;
+    top: -99999999px;
   }
 }
 </style>
