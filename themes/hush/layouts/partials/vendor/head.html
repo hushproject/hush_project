@@ -1,6 +1,5 @@
 <head>
-  <title>{{if .Params.title}}{{.Params.title}}{{else}}{{.Site.Params.globalSeo.siteName}}{{end}}{{.Site.Params.globalSeo.titleSuffix}}</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{if .Params.settings.title}}{{.Params.settings.title}}{{else}}{{.Site.Params.globalSeo.siteName}}{{end}}{{.Site.Params.globalSeo.titleSuffix}}</title>
+  {{partial "vendor/meta-og-tags" .}}
   {{partial "vendor/head_includes" .}}
 </head>
