@@ -10,3 +10,4 @@ package-lock.json
 .env
 config.yaml
 content
+static/_redirects

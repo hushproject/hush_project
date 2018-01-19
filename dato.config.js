@@ -3,7 +3,8 @@ var homePage = require("./dato-config/home-page.js"),
   testimonials = require("./dato-config/testimonials.js"),
   notFound = require("./dato-config/not-found.js"),
   findUs = require("./dato-config/find-us.js"),
-  contentPage = require("./dato-config/content-config.js");
+  contentPage = require("./dato-config/content-config.js"),
+  redirects = require("./dato-config/redirects.js");
 
 module.exports = (dato, root, i18n) => {
   i18n.availableLocales.forEach((locale) => {
@@ -14,6 +15,7 @@ module.exports = (dato, root, i18n) => {
       notFound.create(dato, root, i18n, locale);
       findUs.create(dato, root, i18n, locale);
       contentPage.create(dato, root, i18n, locale);
+      redirects.create(dato, root, i18n, locale);
     });
   });
 }
