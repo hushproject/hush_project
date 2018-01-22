@@ -1,12 +1,21 @@
+.pageIndex
+  z-index: 5
+  position: relative
 .contentPage__header
   min-height: 100vh
   position: relative
   display: flex
   align-items: flex-end
   justify-content: center
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: 50% 50%
+  &__pattern
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 50%
+    position: fixed
+    width: 100vw
+    top: 0
+    left: 0
+    z-index: 1
   &::after
     content: ""
     position: absolute

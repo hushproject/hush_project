@@ -4,6 +4,7 @@
   {{else}}
   {{partial "modules/content-page/header" .}}
 {{end}}
+<div class="pageIndex">
 {{range .Params.settings.pagebloks}}
   {{if eq .itemType "patternedsection"}}
     {{partial "modules/content-page/section-w-solid-color-and-2-patterns" .}}
@@ -20,3 +21,4 @@
   {{partial "modules/content-page/testimonials-content" .}}
 {{end}}
 {{partial "modules/footer/markup" .}}
+</div>

@@ -1,7 +1,7 @@
 {{$headerSection := .Params.settings}}
 {{with $headerSection.headerbackgroundimagemobile}}
   <style>
-    .contentPage__header {
+    .contentPage__header__pattern {
       background-image: url('{{.url}}?auto=compress');
     }
   </style>
@@ -9,7 +9,7 @@
 {{with $headerSection.headerbackgroundimagedesktop}}
   <style>
     @media screen and (min-width : 640px) {
-      .contentPage__header {
+      .contentPage__header__pattern {
         background-image: url('{{.url}}?auto=compress');
       }
     }
@@ -17,6 +17,7 @@
 {{end}}
 <div class="container--fluid contentPage__header pinHeader
   {{with $headerSection.visualpreferencesheader}}{{range .}}{{.class}} {{end}}{{end}}">
+  <div class="contentPage__header__pattern"></div>
   <div class="container">
     <div class="contentPage__header__text hideLogo">
       {{with $headerSection.headertitle}}
