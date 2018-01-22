@@ -9,6 +9,15 @@
         triggerElement: hideMenuWord,
       }).setClassToggle(trigeredClasses, "fixedTop").addTo(controller).triggerHook(0.1);
     }
+    if(jQuery('#contentPageHeader').length) {
+      new ScrollMagic.Scene({
+        triggerElement: jQuery('#contentPageHeader'),
+        duration: jQuery('#contentPageHeader').outerHeight(),
+      }).addTo(controller).triggerHook(0).on("progress", function(e) {
+        console.log(1 - (e.progress.toFixed(2)));
+        jQuery('#contentPageHeader').css("opacity", 1 - (e.progress.toFixed(3) / 2))
+      });
+    }
     jQuery('.darkMenu').each(function(item) {
       jQuery(this).attr('id', `darkMenu-${item}`);
       new ScrollMagic.Scene({
