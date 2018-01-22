@@ -11,3 +11,4 @@ package-lock.json
 config.yaml
 content
 static/_redirects
+themes/hush/layouts/robots.txt

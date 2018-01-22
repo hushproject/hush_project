@@ -26,7 +26,7 @@ homepageheadersection:
 homepagesections:
   - id: '144897'
     itemType: homepagesection
-    updatedAt: '2018-01-09T08:47:03.356Z'
+    updatedAt: '2018-01-21T17:59:54.006Z'
     createdAt: '2017-12-15T12:36:57.545Z'
     position: 1
     buttons: []
@@ -60,6 +60,12 @@ homepagesections:
         createdAt: '2018-01-09T08:28:47.634Z'
         class: textColor--cream
         title: Cream (text color)
+      - id: '145009'
+        itemType: homepagesectionpreference
+        updatedAt: '2017-12-15T14:42:07.418Z'
+        createdAt: '2017-12-15T14:42:07.418Z'
+        class: homePageContentSection--wDarkMask
+        title: Use gradient mask for section
   - id: '144912'
     itemType: homepagesection
     updatedAt: '2018-01-09T08:48:26.104Z'
@@ -104,21 +110,21 @@ homepagesections:
         title: Cream (text color)
   - id: '144957'
     itemType: homepagesection
-    updatedAt: '2018-01-12T13:45:54.654Z'
+    updatedAt: '2018-01-21T21:08:49.391Z'
     createdAt: '2017-12-15T13:35:38.040Z'
     position: 3
     buttons:
       - id: '153324'
         itemType: button
-        updatedAt: '2018-01-09T11:52:58.250Z'
+        updatedAt: '2018-01-21T21:08:45.705Z'
         createdAt: '2018-01-09T11:52:58.250Z'
         setting:
-          - id: '145000'
+          - id: '145001'
             itemType: buttonsprefence
-            updatedAt: '2018-01-09T11:50:57.318Z'
-            createdAt: '2017-12-15T14:28:18.987Z'
-            class: button--white
-            title: Cream (buttons color)
+            updatedAt: '2018-01-09T11:50:38.686Z'
+            createdAt: '2017-12-15T14:28:56.718Z'
+            class: button--brown
+            title: Brown (buttons color)
           - id: '144999'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:51:19.824Z'
@@ -163,23 +169,23 @@ homepagesections:
         createdAt: '2018-01-09T13:54:10.147Z'
         class: lightMenu
         title: Light burger menu color
+      - id: '145009'
+        itemType: homepagesectionpreference
+        updatedAt: '2017-12-15T14:42:07.418Z'
+        createdAt: '2017-12-15T14:42:07.418Z'
+        class: homePageContentSection--wDarkMask
+        title: Use gradient mask for section
   - id: '144975'
     itemType: homepagesection
-    updatedAt: '2018-01-12T13:44:04.636Z'
+    updatedAt: '2018-01-21T21:00:58.357Z'
     createdAt: '2017-12-15T13:51:18.672Z'
     position: 4
     buttons:
       - id: '153258'
         itemType: button
-        updatedAt: '2018-01-09T12:53:50.243Z'
+        updatedAt: '2018-01-21T21:00:57.650Z'
         createdAt: '2018-01-09T09:38:56.480Z'
         setting:
-          - id: '144999'
-            itemType: buttonsprefence
-            updatedAt: '2018-01-09T11:51:19.824Z'
-            createdAt: '2017-12-15T14:28:02.845Z'
-            class: button--bordered
-            title: Bordered (buttons style)
           - id: '145001'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:50:38.686Z'
@@ -231,12 +237,6 @@ homepagesections:
         createdAt: '2018-01-09T08:30:44.137Z'
         class: textColor--brown--dark
         title: Brown-dark (text color)
-      - id: '153397'
-        itemType: visualpreference
-        updatedAt: '2018-01-09T13:53:39.222Z'
-        createdAt: '2018-01-09T13:53:39.222Z'
-        class: hideLogo
-        title: Hide logo
       - id: '153400'
         itemType: visualpreference
         updatedAt: '2018-01-09T13:55:19.206Z'
@@ -245,7 +245,7 @@ homepagesections:
         title: Dark burger menu color
   - id: '144998'
     itemType: homepagesection
-    updatedAt: '2018-01-12T13:45:16.888Z'
+    updatedAt: '2018-01-21T14:58:15.947Z'
     createdAt: '2017-12-15T14:17:03.430Z'
     position: 5
     buttons:
@@ -343,11 +343,5 @@ homepagesections:
         createdAt: '2018-01-09T13:54:10.147Z'
         class: lightMenu
         title: Light burger menu color
-      - id: '153397'
-        itemType: visualpreference
-        updatedAt: '2018-01-09T13:53:39.222Z'
-        createdAt: '2018-01-09T13:53:39.222Z'
-        class: hideLogo
-        title: Hide logo
 ---
 
