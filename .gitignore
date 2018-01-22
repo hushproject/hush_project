@@ -12,3 +12,4 @@ config.yaml
 content
 static/_redirects
 themes/hush/layouts/robots.txt
+themes/hush/layouts/sitemap.xml
