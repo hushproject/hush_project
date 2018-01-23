@@ -13,7 +13,7 @@
     <form class="sendRequest getLocation" action="{{$formSettings.actionurl}}" method="post" id="subForm">
     {{with $formSettings.yourname}}
       <input type="text" name="{{$formSettings.yournameinputname}}"
-        class="sendRequest__input" value="" placeholder="{{.}}">
+        class="sendRequest__input" value="" placeholder="{{.}}" required>
     {{end}}
     {{with $formSettings.whenareyouthinkingstring}}
       <select name="{{$formSettings.whenareyouthinkinginputname}}" class="sendRequest__input" required>
@@ -33,7 +33,7 @@
     {{end}}
     {{with $formSettings.emailstring}}
       <input type="text" name="{{$formSettings.emailinputname}}"
-        class="sendRequest__input" value="" placeholder="{{.}}">
+        class="sendRequest__input" value="" placeholder="{{.}}" required>
     {{end}}
     {{with $formSettings.pleasesendmeabrochurestring}}
       <div class="sendRequest__radio">
@@ -82,12 +82,12 @@
     {{with $formSettings.getuserlocation}}
       <input type="text" name="{{$formSettings.getuserlocationfieldname}}" id="getuserlocation" value="" hidden="hidden">
     {{end}}
+    {{with $formSettings.okaystring}}
+      <button type="submit" name="button" class="sendRequest__submit">{{.}}</button>
+    {{end}}
     {{with $formSettings.privacypolicystring}}
       <p class="sendRequest__copyright">{{$formSettings.yourprivacyiskeystring}}
         <a href="{{$formSettings.privacypolicylink}}" target="_blank">{{.}}</a></p>
-    {{end}}
-    {{with $formSettings.okaystring}}
-      <button type="submit" name="button" class="sendRequest__submit">{{.}}</button>
     {{end}}
   </form>
   {{with $formSettings.utmprefences}}

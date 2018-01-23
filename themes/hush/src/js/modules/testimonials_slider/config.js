@@ -10,7 +10,17 @@ import slick from "slick-carousel";
         speed: 300,
         autoplay: true,
         autoplaySpeed: speed,
-        fade: true
+        fade: true,
+        responsive: [
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                slidesToScroll: 1
+              }
+            }
+          ]
       });
     }
   }

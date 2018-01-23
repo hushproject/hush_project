@@ -12,12 +12,12 @@
       data-speed="{{$siteTestimonials.settings.sliderspeed}}">
       {{with $siteTestimonials.list}}
         {{range .}}
-          <div class="testimonials__item">
-            <div class="testimonials__item__text">
+          <div class="testimonials__item hreview">
+            <div class="testimonials__item__text e-content description">
               {{.text | markdownify}}
             </div>
             <div class="testimonials__item__author">
-              <p>{{.title}}</p>
+              <p class="reviewer vcard">{{.title}}</p>
             </div>
           </div>
         {{end}}

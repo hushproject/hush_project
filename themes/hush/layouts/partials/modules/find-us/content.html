@@ -4,18 +4,18 @@
   <div class="container findUsPage__title pinHeader">
     <h1>{{$findUs.title}}</h1>
   </div>
-  <div class="findUsPage__contactInformation">
+  <div class="findUsPage__contactInformation vcard">
     <div class="findUsPage__contactInformation__text">
       {{with $siteFooter.adsress}}
-        <p>{{.}}</p>
+        <p class="org adr">{{.}}</p>
       {{end}}
     </div>
     <div class="findUsPage__contactInformation__links">
       {{with $siteFooter.mailto}}
-        <a href="mailto:{{.}}">{{.}}</a>
+        <a class="email" href="mailto:{{.}}">{{.}}</a>
       {{end}}
       {{with $siteFooter.phonenumber}}
-        <a href="tel:{{.}}">{{.}}</a>
+        <a class="tel" href="tel:{{.}}">{{.}}</a>
       {{end}}
     </div>
   </div>

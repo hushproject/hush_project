@@ -5,16 +5,16 @@
       <img src="/images-theme/logo.svg" alt=""></a>
     <div class="siteFooter__container">
       <div class="siteFooter__contactInformation">
-        <div class="siteFooter__contactInformation__text">
+        <div class="siteFooter__contactInformation__text vcard">
           {{with $siteFooter.adsress}}
-            <p>{{.}}</p>
+            <p  class="org adr">{{.}}</p>
           {{end}}
           <div class="siteFooter__contactInformation__links">
             {{with $siteFooter.mailto}}
-              <a href="mailto:{{.}}">{{.}}</a>
+              <a class="email" href="mailto:{{.}}">{{.}}</a>
             {{end}}
             {{with $siteFooter.phonenumber}}
-              <a href="tel:{{.}}">{{.}}</a>
+              <a class="tel" href="tel:{{.}}">{{.}}</a>
             {{end}}
           </div>
         </div>
