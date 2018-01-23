@@ -1,4 +1,6 @@
 <link rel="icon" href="{{.Site.Params.favicon}}">
+<meta name="robots" content="noindex" />
+<meta name="robots" content="noindex,nofollow">
 {{with .Site.Params.gtm}}
   {{with .head}}
     {{. | safeHTML}}
