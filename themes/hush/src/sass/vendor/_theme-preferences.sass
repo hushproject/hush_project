@@ -20,9 +20,11 @@
   letter-spacing: 2.08px
   text-align: center
   cursor: pointer
+  background: transparent
   +transition(.25s, linear)
   &:hover
-    color: $orange !important
+    color: $gl-dark-gray !important
+    background: $white
   &.closeAfterSending:hover
     color: $orange !important
   &--brown
@@ -33,14 +35,14 @@
         border-color: $white
       &.closeAfterSending:hover
         border-color: $orange
+        background: $orange
+        color: $white !important
     &:hover
       color: $white !important
   &--bordered
     border-color: $white
     border-radius: 24px
     min-width: 220px
-    &:hover
-      border-color: $orange
   &--md
     font-size: 14px
     line-height: 14px
