@@ -106,6 +106,7 @@ settings:
       itemType: itemsection
       updatedAt: '2017-12-21T11:55:59.264Z'
       createdAt: '2017-12-21T09:00:04.195Z'
+      manualbackground: null
       picture:
         format: png
         size: 517575
@@ -125,6 +126,7 @@ settings:
       itemType: itemsection
       updatedAt: '2017-12-21T11:55:59.341Z'
       createdAt: '2017-12-21T09:00:04.178Z'
+      manualbackground: null
       picture:
         format: png
         size: 576343
@@ -144,6 +146,7 @@ settings:
       itemType: itemsection
       updatedAt: '2017-12-21T12:00:26.864Z'
       createdAt: '2017-12-21T12:00:26.813Z'
+      manualbackground: null
       picture:
         format: png
         size: 524051
@@ -163,6 +166,7 @@ settings:
       itemType: itemsection
       updatedAt: '2017-12-21T12:28:24.967Z'
       createdAt: '2017-12-21T12:28:24.918Z'
+      manualbackground: null
       picture:
         format: png
         size: 451343
@@ -182,6 +186,7 @@ settings:
       itemType: itemsection
       updatedAt: '2017-12-21T12:28:25.084Z'
       createdAt: '2017-12-21T12:28:25.052Z'
+      manualbackground: null
       picture:
         format: png
         size: 413125
@@ -201,6 +206,7 @@ settings:
       itemType: itemsection
       updatedAt: '2017-12-21T12:28:25.104Z'
       createdAt: '2017-12-21T12:28:25.071Z'
+      manualbackground: null
       picture:
         format: png
         size: 466461

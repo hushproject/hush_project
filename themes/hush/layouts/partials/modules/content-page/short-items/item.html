@@ -1,4 +1,5 @@
-<div class="container contentPage__item {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}">
+<div class="container contentPage__item {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}"
+  {{if .manualbackground}} style="background: {{.manualbackground.hex}}"{{end}}>
   {{with .picture}}
     <div class="contentPage__item__picture">
       <img src="{{.url}}?auto=compress" alt="">
