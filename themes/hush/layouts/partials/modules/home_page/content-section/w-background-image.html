@@ -31,7 +31,7 @@
         </div>
         {{end}}
         {{if .buttons}}
-        <div class="homePageContentSection__cta animate" data-animation="fadeIn">
+        <div class="homePageContentSection__cta animate" data-animation="fadeInDown">
           {{range .buttons}}
             <a href="{{.url}}" class="button {{range .setting}} {{.class}} {{end}}">{{.title}}</a>
           {{end}}
@@ -39,7 +39,7 @@
         {{end}}
       </div>
       {{if .nextsectionid}}
-        <div class="scrollToNext buttonToAnchor" data-href="{{.nextsectionid}}"
+        <div class="scrollToNext buttonToAnchor animate" data-animation="fadeInDown" data-href="{{.nextsectionid}}"
           onclick="scrollToNext({{add $key 3}})">
           <img src="/images-theme/scrollToNext.svg" alt="">
         </div>

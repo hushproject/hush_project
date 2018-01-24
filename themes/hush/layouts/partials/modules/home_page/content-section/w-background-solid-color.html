@@ -11,17 +11,17 @@
   {{end}}
     <div class="homePageContentSection__content hideLogo">
       {{with .title}}
-        <div class="homePageContentSection__title animate" data-animation="fadeIn">
+        <div class="homePageContentSection__title animate" data-animation="fadeInUp">
           <h2>{{.}}</h2>
         </div>
       {{end}}
       {{with .description}}
-      <div class="homePageContentSection__description animate" data-animation="fadeIn">
+      <div class="homePageContentSection__description animate" data-animation="fadeInDown">
         {{. | markdownify}}
       </div>
       {{end}}
       {{if .buttons}}
-      <div class="homePageContentSection__cta animate" data-animation="fadeIn">
+      <div class="homePageContentSection__cta animate" data-animation="fadeInDown">
         {{range .buttons}}
           <a href="{{.url}}" class="button {{range .setting}} {{.class}} {{end}}">{{.title}}</a>
         {{end}}
