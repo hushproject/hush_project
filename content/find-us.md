@@ -80,7 +80,8 @@ settings:
     title: null
     alt: null
     url: 'https://www.datocms-assets.com/4204/1513782410-map-mobile.jpg'
-  noindexnofollow: false
+  nofollow: null
+  noindex: false
   seofields:
     title: Find US
     description: Find US

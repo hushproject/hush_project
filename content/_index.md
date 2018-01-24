@@ -399,7 +399,8 @@ settings:
       attributes:
         name: 'twitter:image'
         content: 'https://www.datocms-assets.com/4204/1514390706-hush-venues-outdoor-summer-norfolk-wedding-112-848x566-1.jpg'
-  noindexnofollow: true
+  nofollow: null
+  noindex: true
   seofields:
     title: HOME
     description: HOME HUSH
