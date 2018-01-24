@@ -344,72 +344,72 @@ homepagesections:
         class: lightMenu
         title: Light burger menu color
 settings:
+  id: '164152'
+  itemType: homepageseo
+  updatedAt: '2018-01-24T11:26:37.830Z'
+  createdAt: '2018-01-24T11:26:37.792Z'
+  seoMetaTags:
+    - tagName: title
+      content: HOME | HUSH
+    - tagName: meta
+      attributes:
+        property: 'og:title'
+        content: HOME
+    - tagName: meta
+      attributes:
+        name: 'twitter:title'
+        content: HOME
+    - tagName: meta
+      attributes:
+        name: description
+        content: HOME HUSH
+    - tagName: meta
+      attributes:
+        property: 'og:description'
+        content: HOME HUSH
+    - tagName: meta
+      attributes:
+        name: 'twitter:description'
+        content: HOME HUSH
+    - tagName: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    - tagName: meta
+      attributes:
+        property: 'article:modified_time'
+        content: '2018-01-24T11:26:37Z'
+    - tagName: meta
+      attributes:
+        property: 'og:locale'
+        content: en_EN
+    - tagName: meta
+      attributes:
+        property: 'og:type'
+        content: article
+    - tagName: meta
+      attributes:
+        property: 'og:site_name'
+        content: Be Yourself Together
+    - tagName: meta
+      attributes:
+        property: 'og:image'
+        content: 'https://www.datocms-assets.com/4204/1514390706-hush-venues-outdoor-summer-norfolk-wedding-112-848x566-1.jpg'
+    - tagName: meta
+      attributes:
+        name: 'twitter:image'
+        content: 'https://www.datocms-assets.com/4204/1514390706-hush-venues-outdoor-summer-norfolk-wedding-112-848x566-1.jpg'
+  noindexnofollow: true
   seofields:
-    id: '164152'
-    itemType: homepageseo
-    updatedAt: '2018-01-24T11:26:37.830Z'
-    createdAt: '2018-01-24T11:26:37.792Z'
-    seoMetaTags:
-      - tagName: title
-        content: HOME | HUSH
-      - tagName: meta
-        attributes:
-          property: 'og:title'
-          content: HOME
-      - tagName: meta
-        attributes:
-          name: 'twitter:title'
-          content: HOME
-      - tagName: meta
-        attributes:
-          name: description
-          content: HOME HUSH
-      - tagName: meta
-        attributes:
-          property: 'og:description'
-          content: HOME HUSH
-      - tagName: meta
-        attributes:
-          name: 'twitter:description'
-          content: HOME HUSH
-      - tagName: meta
-        attributes:
-          name: 'twitter:card'
-          content: summary
-      - tagName: meta
-        attributes:
-          property: 'article:modified_time'
-          content: '2018-01-24T11:26:37Z'
-      - tagName: meta
-        attributes:
-          property: 'og:locale'
-          content: en_EN
-      - tagName: meta
-        attributes:
-          property: 'og:type'
-          content: article
-      - tagName: meta
-        attributes:
-          property: 'og:site_name'
-          content: Be Yourself Together
-      - tagName: meta
-        attributes:
-          property: 'og:image'
-          content: 'https://www.datocms-assets.com/4204/1514390706-hush-venues-outdoor-summer-norfolk-wedding-112-848x566-1.jpg'
-      - tagName: meta
-        attributes:
-          name: 'twitter:image'
-          content: 'https://www.datocms-assets.com/4204/1514390706-hush-venues-outdoor-summer-norfolk-wedding-112-848x566-1.jpg'
-    noindexnofollow: true
-    seofields:
-      title: HOME
-      description: HOME HUSH
-      image:
-        format: jpg
-        size: 221505
-        width: 848
-        height: 566
-        title: null
-        alt: null
-        url: 'https://www.datocms-assets.com/4204/1514390706-hush-venues-outdoor-summer-norfolk-wedding-112-848x566-1.jpg'
+    title: HOME
+    description: HOME HUSH
+    image:
+      format: jpg
+      size: 221505
+      width: 848
+      height: 566
+      title: null
+      alt: null
+      url: 'https://www.datocms-assets.com/4204/1514390706-hush-venues-outdoor-summer-norfolk-wedding-112-848x566-1.jpg'
 ---
+

@@ -4,9 +4,7 @@ module.exports = {
       frontmatter: {
         homepageheadersection: dato.homepageheadersection.toMap(),
         homepagesections: dato.homepagesections.map(section => section.toMap()),
-        settings: {
-          seofields: dato.homepageseo.toMap()
-        }
+        settings: dato.homepageseo.toMap()
       }
     });
   }
