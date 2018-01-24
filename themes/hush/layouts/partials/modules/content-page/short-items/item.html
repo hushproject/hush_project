@@ -1,19 +1,20 @@
-<div class="container contentPage__item {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}"
-  {{if .manualbackground}} style="background: {{.manualbackground.hex}}"{{end}}>
-  {{with .picture}}
-    <div class="contentPage__item__picture">
-      <img src="{{.url}}?auto=compress" alt="">
-    </div>
-  {{end}}
-  <div class="contentPage__item__description">
-    <div class="contentPage__item__title">
-      <h3>{{.title}}</h3>
-    </div>
-    <div class="contentPage__item__tagline visible--lg">
-      <p>{{.tagline}}</p>
-    </div>
-    {{with .text}}
-      {{. | markdownify}}
+<div class="container--fluid" {{if .manualbackground}} style="background: {{.manualbackground.hex}}"{{end}}>
+  <div class="container contentPage__item {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}">
+    {{with .picture}}
+      <div class="contentPage__item__picture">
+        <img src="{{.url}}?auto=compress" alt="">
+      </div>
     {{end}}
+    <div class="contentPage__item__description">
+      <div class="contentPage__item__title">
+        <h3>{{.title}}</h3>
+      </div>
+      <div class="contentPage__item__tagline visible--lg">
+        <p>{{.tagline}}</p>
+      </div>
+      {{with .text}}
+        {{. | markdownify}}
+      {{end}}
+    </div>
   </div>
 </div>
