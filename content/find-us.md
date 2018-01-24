@@ -29,6 +29,7 @@ settings:
     title: null
     alt: null
     url: 'https://www.datocms-assets.com/4204/1513782410-map-mobile.jpg'
+  noindexnofollow: null
   slug: find-us
   title: Find us
 ---

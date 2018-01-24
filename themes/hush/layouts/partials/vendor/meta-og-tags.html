@@ -23,3 +23,9 @@
   {{end}}
   {{end}}
   {{end}}
+  {{with .Params.settings.noindexnofollow}}
+    {{if eq . true}}
+  <meta name="robots" content="noindex" />
+  <meta name="robots" content="noindex, nofollow">
+    {{end}}
+  {{end}}

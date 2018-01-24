@@ -7,6 +7,7 @@ settings:
   itemType: notfoundpage
   updatedAt: '2017-12-24T20:59:18.297Z'
   createdAt: '2017-12-20T14:05:26.052Z'
+  noindexnofollow: null
   buttonhref: /
   buttontext: TAKE ME HOME
   after404text: Page cannot be found
