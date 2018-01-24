@@ -3,7 +3,10 @@ module.exports = {
     root.createPost(`content/_index.md`, 'yaml', {
       frontmatter: {
         homepageheadersection: dato.homepageheadersection.toMap(),
-        homepagesections: dato.homepagesections.map(section => section.toMap())
+        homepagesections: dato.homepagesections.map(section => section.toMap()),
+        settings: {
+          seofields: dato.homepageseo.toMap()
+        }
       }
     });
   }
