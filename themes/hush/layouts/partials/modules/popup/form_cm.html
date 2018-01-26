@@ -13,10 +13,10 @@
     <form class="sendRequest getLocation" action="{{$formSettings.actionurl}}" method="post" id="subForm">
     {{with $formSettings.yourname}}
       <input type="text" name="{{$formSettings.yournameinputname}}"
-        class="sendRequest__input" value="" placeholder="{{.}}" required>
+        class="sendRequest__input yourname" value="" placeholder="{{.}}">
     {{end}}
     {{with $formSettings.whenareyouthinkingstring}}
-      <select name="{{$formSettings.whenareyouthinkinginputname}}" class="sendRequest__input" required>
+      <select name="{{$formSettings.whenareyouthinkinginputname}}" class="sendRequest__input">
         <option value="" disabled selected hidden>{{.}}</option>
         {{with $formSettings.whenareyouthinkingoptions}}
           {{. | safeHTML}}
@@ -24,7 +24,7 @@
       </select>
     {{end}}
     {{with $formSettings.howmanypeoplestring}}
-      <select name="{{$formSettings.howmanypeopleinputname}}" class="sendRequest__input" required>
+      <select name="{{$formSettings.howmanypeopleinputname}}" class="sendRequest__input">
         <option value="" disabled selected hidden>{{.}}</option>
         {{with $formSettings.howmanypeopleoptions}}
           {{. | safeHTML}}
@@ -33,7 +33,7 @@
     {{end}}
     {{with $formSettings.emailstring}}
       <input type="text" name="{{$formSettings.emailinputname}}"
-        class="sendRequest__input" value="" placeholder="{{.}}" required>
+        class="sendRequest__input" value="" placeholder="{{.}}">
     {{end}}
     {{with $formSettings.pleasesendmeabrochurestring}}
       <div class="sendRequest__radio">

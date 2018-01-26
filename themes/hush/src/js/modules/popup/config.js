@@ -1,3 +1,4 @@
+import validate from "jquery-validation";
 {
   function showHideForm(scrollPosition) {
     if (!scrollPosition) {
@@ -29,28 +30,41 @@
     });
   };
   showHideForm();
-  jQuery('#subForm').submit(function(e) {
-    var getPosition = function() {
-      return new Promise(function(resolve, reject) {
-        return navigator.geolocation.getCurrentPosition(resolve, reject);
+  $('#subForm').validate({
+    rules: {
+      "cm-name": {
+        required: true,
+        minlength: 2
+      },
+      "cm-fvktd-fvktd": {
+        required: true,
+        email: true
+      }
+    },
+    success: function() {
+      jQuery('#subForm').submit(function(e) {
+        var getPosition = function() {
+          return new Promise(function(resolve, reject) {
+            return navigator.geolocation.getCurrentPosition(resolve, reject);
+          });
+        };
+        let _this = this;
+        e.preventDefault();
+        jQuery('.sendRequest__wrapper').fadeOut(300);
+        jQuery('.formSending').fadeIn(300);
+        if (jQuery('#getuserlocation').length) {
+          getPosition().then((position) => {
+            jQuery('#getuserlocation').val(`${position.coords.latitude},${position.coords.longitude}`);
+            sendForm(_this)
+          }).catch((err) => {
+            sendForm(_this)
+          });
+        } else {
+          sendForm(_this)
+        }
       });
-    };
-    let _this = this;
-    e.preventDefault();
-    jQuery('.sendRequest__wrapper').fadeOut(300);
-    jQuery('.formSending').fadeIn(300);
-    if (jQuery('#getuserlocation').length) {
-      getPosition().then((position) => {
-        jQuery('#getuserlocation').val(`${position.coords.latitude},${position.coords.longitude}`);
-        sendForm(_this);
-      }).catch((err) => {
-        sendForm(_this);
-      });
-    } else {
-      sendForm(_this);
     }
   });
-
   function sendForm(_this) {
     $.getJSON(
       _this.action + "?callback=?",
@@ -90,6 +104,5 @@
       }else {
         jQuery(this).val(valueYes);
       }
-      console.log(jQuery(this).val());
   });
 }

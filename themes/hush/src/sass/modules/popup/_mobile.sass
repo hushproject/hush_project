@@ -74,6 +74,17 @@
     border-radius: 4px
     padding: 10px 18px 9px
     margin-bottom: 10px
+    &.error
+      border-color: red
+  label.error
+    display: none !important
+    position: absolute
+    +font($main_400, 14px, 12px, red, normal, none, none)
+    background: $white
+    border-radius: 5px
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5)
+    padding: 2px 5px
+    z-index: 10
   input::-webkit-input-placeholder
     +font($main_400, 18px, 18px, $brown-4, normal, none, none)
     opacity: 0.5
