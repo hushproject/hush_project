@@ -10,12 +10,12 @@
       }).setClassToggle(trigeredClasses, "fixedTop").addTo(controller).triggerHook(0.1);
     }
     if(jQuery('#contentPageHeader').length) {
+      var el = jQuery('#contentPageHeader');
       new ScrollMagic.Scene({
-        triggerElement: jQuery('#contentPageHeader'),
-        duration: jQuery('#contentPageHeader').outerHeight(),
+        triggerElement: el,
+        duration: el.outerHeight(),
       }).addTo(controller).triggerHook(0).on("progress", function(e) {
-        console.log(1 - (e.progress.toFixed(2)));
-        jQuery('#contentPageHeader').css("opacity", 1 - (e.progress.toFixed(3) / 2))
+        el.css("opacity", 1 - e.progress.toFixed(2))
       });
     }
     jQuery('.darkMenu').each(function(item) {

@@ -1,7 +1,7 @@
 <div class="container--fluid contentPage__ContentSection
    nopattern-{{.dontshowpattern}}
    contentPage__ContentSection--brownFont yellow--{{.isityellow}}
-   {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}"
+   {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}  animate" data-animation="fadeInUp"
    {{if .manualbackground}} style="background: {{.manualbackground.hex}}"{{end}}>
   <div class="container contentPage__ContentSection__content">
     <div class="contentPage__ContentSection__title">
