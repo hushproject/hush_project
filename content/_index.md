@@ -110,27 +110,27 @@ homepagesections:
         title: Cream (text color)
   - id: '144957'
     itemType: homepagesection
-    updatedAt: '2018-01-21T21:08:49.391Z'
+    updatedAt: '2018-01-26T11:55:28.377Z'
     createdAt: '2017-12-15T13:35:38.040Z'
     position: 3
     buttons:
       - id: '153324'
         itemType: button
-        updatedAt: '2018-01-21T21:08:45.705Z'
+        updatedAt: '2018-01-26T11:55:27.902Z'
         createdAt: '2018-01-09T11:52:58.250Z'
         setting:
-          - id: '145001'
-            itemType: buttonsprefence
-            updatedAt: '2018-01-09T11:50:38.686Z'
-            createdAt: '2017-12-15T14:28:56.718Z'
-            class: button--brown
-            title: Brown (buttons color)
           - id: '144999'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:51:19.824Z'
             createdAt: '2017-12-15T14:28:02.845Z'
             class: button--bordered
             title: Bordered (buttons style)
+          - id: '145000'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:50:57.318Z'
+            createdAt: '2017-12-15T14:28:18.987Z'
+            class: button--white
+            title: Cream (buttons color)
         url: /
         title: More
     nextsectionid: '#vibe'
@@ -177,13 +177,13 @@ homepagesections:
         title: Use gradient mask for section
   - id: '144975'
     itemType: homepagesection
-    updatedAt: '2018-01-21T21:00:58.357Z'
+    updatedAt: '2018-01-26T11:58:23.668Z'
     createdAt: '2017-12-15T13:51:18.672Z'
     position: 4
     buttons:
       - id: '153258'
         itemType: button
-        updatedAt: '2018-01-21T21:00:57.650Z'
+        updatedAt: '2018-01-26T11:58:23.194Z'
         createdAt: '2018-01-09T09:38:56.480Z'
         setting:
           - id: '145001'
@@ -192,6 +192,12 @@ homepagesections:
             createdAt: '2017-12-15T14:28:56.718Z'
             class: button--brown
             title: Brown (buttons color)
+          - id: '144999'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:51:19.824Z'
+            createdAt: '2017-12-15T14:28:02.845Z'
+            class: button--bordered
+            title: Bordered (buttons style)
         url: /vibe
         title: More
     nextsectionid: '#accomodation'
