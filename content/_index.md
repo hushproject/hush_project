@@ -2,7 +2,7 @@
 homepageheadersection:
   id: '144704'
   itemType: homepageheadersection
-  updatedAt: '2018-01-29T10:49:00.338Z'
+  updatedAt: '2018-01-29T11:34:20.239Z'
   createdAt: '2017-12-15T08:33:35.174Z'
   visualpreferences:
     - id: '153222'
@@ -11,6 +11,18 @@ homepageheadersection:
       createdAt: '2018-01-09T08:29:15.369Z'
       class: textColor--yellow
       title: Yellow (text color)
+    - id: '144999'
+      itemType: buttonsprefence
+      updatedAt: '2018-01-09T11:51:19.824Z'
+      createdAt: '2017-12-15T14:28:02.845Z'
+      class: button--bordered
+      title: Bordered (buttons style)
+    - id: '145000'
+      itemType: buttonsprefence
+      updatedAt: '2018-01-09T11:50:57.318Z'
+      createdAt: '2017-12-15T14:28:18.987Z'
+      class: button--white
+      title: Cream (buttons color)
   backgroundimagedesktop:
     format: jpg
     size: 1611485

@@ -1,5 +1,5 @@
 {{$headerSection := .Params.homepageheadersection}}
-<div class="section active" id="home">
+<div class="section active {{with $headerSection.visualpreferences}}{{range .}}{{.class}} {{end}}{{end}}" id="home">
   <div class="container--fluid homeHeader active">
     {{with $headerSection.backgroundimagemobile}}
       <style>
@@ -17,7 +17,7 @@
         }
       </style>
     {{end}}
-    <div class="homeHeader__description {{with $headerSection.visualpreferences}}{{range .}}{{.class}} {{end}}{{end}}">
+    <div class="homeHeader__description">
       <a href="/" class="siteLogo">
         {{partial "modules/home_page/header_section/logo"}}
       </a>
@@ -28,7 +28,7 @@
     </div>
     <div class="homeHeader__cta">
       {{with $headerSection.enquirebuttontext}}
-        <a href="#homePageHeader" class="button button--white button--bordered enquireCallForm">{{.}}</a>
+        <a href="#homePageHeader" class="button {{with $headerSection.visualpreferences}}{{range .}}{{.class}} {{end}}{{end}}">{{.}}</a>
       {{end}}
       {{with $headerSection.nextSectionId}}
         <div class="container--fluid">
