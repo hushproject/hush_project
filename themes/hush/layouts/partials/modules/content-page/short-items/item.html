@@ -9,7 +9,7 @@
       <div class="contentPage__item__title">
         <h3>{{.title}}</h3>
       </div>
-      <div class="contentPage__item__tagline visible--lg">
+      <div class="contentPage__item__tagline {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}">
         <p>{{.tagline}}</p>
       </div>
       {{with .text}}

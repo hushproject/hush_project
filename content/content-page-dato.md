@@ -70,7 +70,6 @@ settings:
       createdAt: '2017-12-21T08:54:35.760Z'
       dontshowpattern: null
       manualbackground: null
-      isityellow: false
       fullwidthtext: null
       rightcolumn: |
         With plenty of fresh air and open space, your party can experience something unique, with no interruptions.
@@ -253,7 +252,6 @@ settings:
       createdAt: '2017-12-21T10:24:13.999Z'
       dontshowpattern: null
       manualbackground: null
-      isityellow: true
       fullwidthtext: null
       rightcolumn: |
         With plenty of fresh air and open space, your party can experience something unique, with no interruptions.
