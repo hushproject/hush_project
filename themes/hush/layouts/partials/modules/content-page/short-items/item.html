@@ -2,7 +2,7 @@
   <div class="container contentPage__item {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}">
     {{with .picture}}
       <div class="contentPage__item__picture">
-        <img src="{{.url}}?auto=compress" alt="">
+        <img src="{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}" alt="">
       </div>
     {{end}}
     <div class="contentPage__item__description">
