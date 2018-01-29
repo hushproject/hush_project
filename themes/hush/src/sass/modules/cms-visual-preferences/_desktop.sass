@@ -4,7 +4,7 @@
     color: $gl-cream !important
   &--yellow *
     color: $gl-yellow !important
-    fill: $gl-yellow !important 
+    fill: $gl-yellow !important
   &--brown *
     color: $gl-brown !important
   &--brown--dark *
@@ -15,3 +15,28 @@
     color: $gl-blue !important
   &--darkGray *
     color: $gl-dark-gray !important
+.button
+  &--brown
+    color: $brown-4 !important
+    &:hover
+      color: $white !important
+      background: $brown-4
+    &.button--bordered
+      border-color: $brown-4
+  &--white
+    color: $white !important
+    &:hover
+      color: $brown-4 !important
+    &.button--bordered
+      border-color: $white
+      &:hover
+        border-color: $white
+.sendRequest__submit
+  +transition(.3s, linear)
+  border: 2px solid $orange
+  &:hover
+    background: $white
+    border-color: $brown-4
+    color: $brown-4
+.closeAfterSending:hover
+  color: $white !important
