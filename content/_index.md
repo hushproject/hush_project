@@ -2,8 +2,15 @@
 homepageheadersection:
   id: '144704'
   itemType: homepageheadersection
-  updatedAt: '2017-12-25T11:12:30.607Z'
+  updatedAt: '2018-01-29T10:49:00.338Z'
   createdAt: '2017-12-15T08:33:35.174Z'
+  visualpreferences:
+    - id: '153222'
+      itemType: visualpreference
+      updatedAt: '2018-01-09T08:29:15.369Z'
+      createdAt: '2018-01-09T08:29:15.369Z'
+      class: textColor--yellow
+      title: Yellow (text color)
   backgroundimagedesktop:
     format: jpg
     size: 1611485

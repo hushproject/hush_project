@@ -1,6 +1,6 @@
+{{$headerSection := .Params.homepageheadersection}}
 <div class="section active" id="home">
   <div class="container--fluid homeHeader active">
-    {{$headerSection := .Params.homepageheadersection}}
     {{with $headerSection.backgroundimagemobile}}
       <style>
         .homeHeader {
@@ -17,9 +17,11 @@
         }
       </style>
     {{end}}
-    <div class="homeHeader__description">
-      <a href="" class="siteLogo"><img src="/images-theme/logo.svg" alt=""></a>
-      <a href="" class="siteLogo--mask pinHeader"><img src="/images-theme/logo.svg" alt=""></a>
+    <div class="homeHeader__description {{with $headerSection.visualpreferences}}{{range .}}{{.class}} {{end}}{{end}}">
+      <a href="/" class="siteLogo">
+        {{partial "modules/home_page/header_section/logo"}}
+      </a>
+      <a href="/" class="siteLogo--mask pinHeader"><img src="/images-theme/logo.svg" alt=""></a>
       {{with $headerSection.tagline}}
         <h1 class="homeHeader__title">{{.}}</h1>
       {{end}}
