@@ -193,7 +193,7 @@ settings:
         width: 629
         height: 459
         title: null
-        alt: null
+        alt: '?exp=20?auto=compress'
         url: 'https://www.datocms-assets.com/4204/1513859210-katherine-ashdown-boho-shoot-207.png'
       text: |-
         Nestled under a canopy of beech and chestnut trees is this former woodshed, and now Norfolk’s most unique fully licensed outdoor venue for civil ceremonies and informal hand fastenings.

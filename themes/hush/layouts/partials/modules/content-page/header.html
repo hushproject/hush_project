@@ -1,8 +1,10 @@
 {{$headerSection := .Params.settings}}
+
 {{with $headerSection.headerbackgroundimagemobile}}
   <style>
     .contentPage__header__pattern {
       background-image: url('{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}');
+      height: 100vh;
     }
   </style>
 {{end}}
