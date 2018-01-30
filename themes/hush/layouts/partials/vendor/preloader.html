@@ -105,7 +105,20 @@
     setTimeout(function() {
       addClass(preloader, 'loaded');
       // addClass(logo, 'loaded');
+      setTimeout(function() {
+        addClassToList('homePage__siteLogo', 'fadeInUp');
+        addClassToList('contentPage__header__title', 'fadeInUp');
+        addClassToList('contentPage__header__tagline', 'fadeInDown');
+        addClassToList('homeHeader__cta', 'fadeInDown');
+        addClassToList('homeHeader__title', 'fadeInDown');
+
+      },500);
     }, 1000);
+  }
+  function addClassToList(element, className) {
+    if(document.getElementsByClassName(element).length) {
+      document.getElementsByClassName(element)[0].classList.add(className);
+    }
   }
   function addClass(element, classString) {
     element.className = element

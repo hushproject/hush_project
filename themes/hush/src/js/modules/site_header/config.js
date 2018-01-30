@@ -41,17 +41,19 @@
     });
     jQuery('.animate').each(function(item) {
       var id = `#animated-${item}`;
-      if(jQuery(this).attr('id')) {
-        id = `${jQuery(this).attr('id')}`
-      }else {
-        id = `animated-${item}`
+      if(jQuery(this).attr('data-animation')) {
+        if(jQuery(this).attr('id')) {
+          id = `${jQuery(this).attr('id')}`
+        }else {
+          id = `animated-${item}`
+        }
+        jQuery(this).attr('id', id);
+        new ScrollMagic.Scene({
+          triggerElement: `#${id}`
+        }).setClassToggle(`#${id}`, `${jQuery(this).attr('data-animation')}`)
+        .addTo(controller)
+        .triggerHook(1);
       }
-      jQuery(this).attr('id', id);
-      new ScrollMagic.Scene({
-        triggerElement: `#${id}`
-      }).setClassToggle(`#${id}`, `${jQuery(this).attr('data-animation')}`)
-      .addTo(controller)
-      .triggerHook(1);
     });
   }
   function showHideSidebar(scrollPosition) {

@@ -82,7 +82,6 @@ settings:
       itemType: presentationsection
       updatedAt: '2017-12-21T10:01:21.032Z'
       createdAt: '2017-12-21T08:56:35.077Z'
-      fitsectiontopicture: false
       backgroundimagedesktop:
         format: jpg
         size: 995089
@@ -226,7 +225,6 @@ settings:
       itemType: presentationsection
       updatedAt: '2017-12-21T12:28:25.276Z'
       createdAt: '2017-12-21T12:28:25.201Z'
-      fitsectiontopicture: false
       backgroundimagedesktop:
         format: jpg
         size: 995089

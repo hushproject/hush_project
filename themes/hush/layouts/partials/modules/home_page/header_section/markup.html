@@ -18,15 +18,15 @@
       </style>
     {{end}}
     <div class="homeHeader__description">
-      <a href="/" class="siteLogo">
+      <a href="/" class="siteLogo homePage__siteLogo animate">
         {{partial "modules/home_page/header_section/logo"}}
       </a>
       <a href="/" class="siteLogo--mask pinHeader"><img src="/images-theme/logo.svg" alt=""></a>
       {{with $headerSection.tagline}}
-        <h1 class="homeHeader__title">{{.}}</h1>
+        <h1 class="homeHeader__title animate">{{.}}</h1>
       {{end}}
     </div>
-    <div class="homeHeader__cta">
+    <div class="homeHeader__cta animate">
       {{with $headerSection.enquirebuttontext}}
         <a href="#homePageHeader" class="button {{with $headerSection.visualpreferences}}{{range .}}{{.class}} {{end}}{{end}}">{{.}}</a>
       {{end}}
