@@ -60,6 +60,7 @@ settings:
         content: 'https://www.datocms-assets.com/4204/1513845459-content-page-header.jpg'
   nofollow: null
   noindex: null
+  hidelogoyn: null
   hideheadersectionyn: null
   hidetestimonialsyn: null
   seofields: null
@@ -68,6 +69,7 @@ settings:
       itemType: patternedsection
       updatedAt: '2017-12-21T11:26:34.672Z'
       createdAt: '2017-12-21T08:54:35.760Z'
+      maxtitlewidth: null
       dontshowpattern: null
       manualbackground: null
       fullwidthtext: null
@@ -82,6 +84,7 @@ settings:
       itemType: presentationsection
       updatedAt: '2017-12-21T10:01:21.032Z'
       createdAt: '2017-12-21T08:56:35.077Z'
+      maxtitlewidth: null
       backgroundimagedesktop:
         format: jpg
         size: 995089
@@ -225,6 +228,7 @@ settings:
       itemType: presentationsection
       updatedAt: '2017-12-21T12:28:25.276Z'
       createdAt: '2017-12-21T12:28:25.201Z'
+      maxtitlewidth: null
       backgroundimagedesktop:
         format: jpg
         size: 995089
@@ -248,6 +252,7 @@ settings:
       itemType: patternedsection
       updatedAt: '2017-12-21T11:26:34.694Z'
       createdAt: '2017-12-21T10:24:13.999Z'
+      maxtitlewidth: null
       dontshowpattern: null
       manualbackground: null
       fullwidthtext: null

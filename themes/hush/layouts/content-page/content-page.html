@@ -2,7 +2,7 @@
 <html lang="en">
   {{partial "vendor/head" .}}
   {{$pageSlug := .Params.slug}}
-  <body data-page-id="{{$pageSlug}}">
+  <body data-page-id="{{$pageSlug}}" class="{{if eq .Params.settings.hidelogoyn true}}noNavigationLogo{{end}}">
   {{partial "modules/content-page/markup" .}}
   {{partial "vendor/footer_includes" .}}
   </body>

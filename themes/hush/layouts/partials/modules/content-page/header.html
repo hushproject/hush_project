@@ -17,11 +17,11 @@
     }
   </style>
 {{end}}
-<div class="container--fluid contentPage__header pinHeader
+<div class="container--fluid contentPage__header
   {{with $headerSection.visualpreferencesheader}}{{range .}}{{.class}} {{end}}{{end}}" id="contentPageHeader">
   <div class="contentPage__header__pattern"></div>
   <div class="container">
-    <div class="contentPage__header__text hideLogo">
+    <div class="contentPage__header__text pinHeader">
       {{with $headerSection.headertitle}}
       <div class="contentPage__header__title animate">
         <h1>{{.}}</h1>
