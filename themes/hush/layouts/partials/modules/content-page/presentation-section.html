@@ -20,7 +20,8 @@
     <div class="container">
       <div class="contentPage__presentation__text">
         {{with .title}}
-          <div class="contentPage__presentation__title">
+          <div class="contentPage__presentation__title"
+           {{with $currentSection.maxtitlewidth}}style="max-width: {{.}}px;"{{end}}>
             <h2>{{.}}</h2>
           </div>
         {{end}}

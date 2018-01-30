@@ -1,10 +1,11 @@
 <div class="container--fluid contentPage__ContentSection
    nopattern-{{.dontshowpattern}}
-   contentPage__ContentSection--brownFont yellow--{{.isityellow}}
+   contentPage__ContentSection--brownFont
    {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}  animate" data-animation="fadeInUp"
    {{if .manualbackground}} style="background: {{.manualbackground.hex}}"{{end}}>
   <div class="container contentPage__ContentSection__content">
-    <div class="contentPage__ContentSection__title">
+    <div class="contentPage__ContentSection__title"
+      {{with .maxtitlewidth}}style="max-width: {{.}}px;"{{end}}>
       <h3>{{.title}}</h3>
     </div>
     <div class="contentPage__ContentSection__description">
