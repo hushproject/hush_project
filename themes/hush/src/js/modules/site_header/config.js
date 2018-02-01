@@ -1,4 +1,3 @@
-// import ScrollMagic from "scrollmagic";
 {
   function pinSiteLogo(logo) {
     let controller = new ScrollMagic.Controller(),
@@ -7,7 +6,8 @@
     if(jQuery(hideMenuWord).length) {
       new ScrollMagic.Scene({
         triggerElement: hideMenuWord,
-      }).setClassToggle(trigeredClasses, "fixedTop").addTo(controller).triggerHook(0.1);
+      }).setClassToggle(trigeredClasses, "fixedTop")
+        .addTo(controller).triggerHook(0.1);
     }
     if(jQuery('#contentPageHeader').length) {
       var el = jQuery('#contentPageHeader');
@@ -23,21 +23,28 @@
       new ScrollMagic.Scene({
         triggerElement: `#darkMenu-${item}`,
         duration: jQuery(this).outerHeight()
-      }).setClassToggle(trigeredClasses, "darkTheme").addTo(controller).triggerHook(0.1);
+      }).on("enter", function(e) {
+        jQuery(trigeredClasses).removeClass('lightMenu');
+        jQuery(trigeredClasses).addClass('darkTheme');
+      }).addTo(controller).triggerHook(0);
     });
     jQuery('.lightMenu').each(function(item) {
       jQuery(this).attr('id', `light-${item}`);
       new ScrollMagic.Scene({
         triggerElement: `#light-${item}`,
         duration: jQuery(this).outerHeight(),
-      }).setClassToggle(trigeredClasses, "lightMenu").addTo(controller).triggerHook(0.1);
+      }).on("enter", function(e) {
+        jQuery(trigeredClasses).removeClass('darkTheme');
+        jQuery(trigeredClasses).addClass('lightMenu');
+      }).addTo(controller).triggerHook(0);
     });
     jQuery('.hideLogo').each(function(item) {
       jQuery(this).attr('id', `hideLogo-${item}`);
       new ScrollMagic.Scene({
         triggerElement: `#hideLogo-${item}`,
         duration: jQuery(this).outerHeight()
-      }).setClassToggle(trigeredClasses, "hiddenLogo").addTo(controller).triggerHook(0.1);
+      }).setClassToggle(trigeredClasses, "hiddenLogo")
+        .addTo(controller).triggerHook(0.1);
     });
     jQuery('.animate').each(function(item) {
       var id = `#animated-${item}`;

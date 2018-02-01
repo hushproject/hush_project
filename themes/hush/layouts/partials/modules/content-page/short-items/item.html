@@ -1,5 +1,5 @@
 <div class="container--fluid animate" data-animation="fadeInUp" {{if .manualbackground}} style="background: {{.manualbackground.hex}}"{{end}}>
-  <div class="container contentPage__item {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}">
+  <div class="container contentPage__item">
     {{with .picture}}
       <div class="contentPage__item__picture">
         <img src="{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}" alt="">
