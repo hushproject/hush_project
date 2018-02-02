@@ -1,3 +1,3 @@
-<div class="contentPage__items hideLogo darkMenu">
+<div class="contentPage__items {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}">
   {{partial "modules/content-page/short-items/item" .}}
 </div>

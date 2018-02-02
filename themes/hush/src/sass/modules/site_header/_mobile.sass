@@ -1,6 +1,6 @@
 .siteHeader
   position: fixed
-  top: 35px
+  top: 20px
   right: 0px
   left: 0px
   width: 100%
@@ -130,7 +130,7 @@
   margin: 0px auto
   left: 0px
   right: 0px
-  opacity: 0
+  opacity: 1
   z-index: 10
   +transition(300ms, linear)
   img
@@ -251,3 +251,11 @@
   100%
     width: 80px
     transform: translate(0, 0px)
+body.noNavigationLogo .siteHeader__logo
+  display: none !important
+.siteHeader__logo.fixedTop
+  opacity: 0
+body.homePage .siteHeader__logo
+  opacity: 0
+body.homePage .siteHeader__logo.fixedTop
+  opacity: 1

@@ -1,10 +1,10 @@
-<div class="section active" id="home">
+{{$headerSection := .Params.homepageheadersection}}
+<div class="section active {{with $headerSection.visualpreferences}}{{range .}}{{.class}} {{end}}{{end}}" id="home">
   <div class="container--fluid homeHeader active">
-    {{$headerSection := .Params.homepageheadersection}}
     {{with $headerSection.backgroundimagemobile}}
       <style>
         .homeHeader {
-          background-image: url('{{.url}}?auto=compress');
+          background-image: url('{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}');
         }
       </style>
     {{end}}
@@ -12,25 +12,27 @@
       <style>
         @media screen and (min-width : 640px) {
           .homeHeader {
-            background-image: url('{{.url}}?auto=compress');
+            background-image: url('{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}');
           }
         }
       </style>
     {{end}}
     <div class="homeHeader__description">
-      <a href="" class="siteLogo"><img src="/images-theme/logo.svg" alt=""></a>
-      <a href="" class="siteLogo--mask pinHeader"><img src="/images-theme/logo.svg" alt=""></a>
+      <a href="/" class="siteLogo homePage__siteLogo animate">
+        {{partial "modules/home_page/header_section/logo"}}
+      </a>
+      <a href="/" class="siteLogo--mask pinHeader"><img src="/images-theme/logo.svg" alt=""></a>
       {{with $headerSection.tagline}}
-        <h1 class="homeHeader__title">{{.}}</h1>
+        <h1 class="homeHeader__title animate">{{.}}</h1>
       {{end}}
     </div>
-    <div class="homeHeader__cta">
+    <div class="homeHeader__cta animate">
       {{with $headerSection.enquirebuttontext}}
-        <a href="#homePageHeader" class="button button--white button--bordered enquireCallForm">{{.}}</a>
+        <a href="#homePageHeader" class="button {{with $headerSection.visualpreferences}}{{range .}}{{.class}} {{end}}{{end}}">{{.}}</a>
       {{end}}
       {{with $headerSection.nextSectionId}}
         <div class="container--fluid">
-          <div data-href="#{{.}}" class="button button--white scrollToAnchor buttonToAnchor"
+          <div data-href="#{{.}}" class="button scrollToAnchor buttonToAnchor"
             onclick="scrollToNext(2)">
               <img src="/images-theme/scrollToNext.svg" alt="">
           </div>

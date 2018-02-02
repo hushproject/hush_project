@@ -4,7 +4,7 @@
     {{if .backgroundimagemobile}}
       <style>
         #{{.sectionid}} {
-          background-image: url('{{.backgroundimagemobile.url}}?auto=compress');
+          background-image: url('{{.backgroundimagemobile.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}');
         }
       </style>
     {{end}}
@@ -12,7 +12,7 @@
       <style>
         @media screen and (min-width : 640px) {
           #{{.sectionid}} {
-            background-image: url('{{.backgroundimagedesktop.url}}?auto=compress');
+            background-image: url('{{.backgroundimagedesktop.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}');
           }
         }
       </style>

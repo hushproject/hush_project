@@ -1,15 +1,15 @@
 <div class="container--fluid animate" data-animation="fadeInUp" {{if .manualbackground}} style="background: {{.manualbackground.hex}}"{{end}}>
-  <div class="container contentPage__item {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}">
+  <div class="container contentPage__item">
     {{with .picture}}
       <div class="contentPage__item__picture">
-        <img src="{{.url}}?auto=compress" alt="">
+        <img src="{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}" alt="">
       </div>
     {{end}}
     <div class="contentPage__item__description">
       <div class="contentPage__item__title">
         <h3>{{.title}}</h3>
       </div>
-      <div class="contentPage__item__tagline visible--lg">
+      <div class="contentPage__item__tagline {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}">
         <p>{{.tagline}}</p>
       </div>
       {{with .text}}

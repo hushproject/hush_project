@@ -37,7 +37,7 @@
     margin: 0px auto
   &__title
     max-width: 295px
-    margin-bottom: 35px
+    margin: 0px auto 35px
     +font($main_400, 46px, 48px, $white, normal, none, none)
   &__tagline
     max-width: 275px
@@ -95,7 +95,7 @@
   padding-bottom: 50px
   &__title
     +font($main_400, 31px, 36px, $white, normal, none, none)
-    margin-bottom: 40px
+    margin: 0px auto 40px 
   &__description
     +font($main_400, 23px, 31px, $white, normal, none, none)
 .contentPage
@@ -105,7 +105,8 @@
     padding-top: 70px
     padding-bottom: 1px
   &__item
-    margin-bottom: 50px
+    padding-top: 30px
+    padding-bottom: 30px
     display: flex
     flex-direction: column-reverse
     &__title
@@ -154,3 +155,7 @@
   img
     max-width: 100%
     width: auto
+.contentPage__item__tagline
+  padding-top: 10px
+  padding-bottom: 10px
+  font-family: $main_400_italic

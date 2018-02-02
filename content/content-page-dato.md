@@ -60,6 +60,7 @@ settings:
         content: 'https://www.datocms-assets.com/4204/1513845459-content-page-header.jpg'
   nofollow: null
   noindex: null
+  hidelogoyn: null
   hideheadersectionyn: null
   hidetestimonialsyn: null
   seofields: null
@@ -68,9 +69,9 @@ settings:
       itemType: patternedsection
       updatedAt: '2017-12-21T11:26:34.672Z'
       createdAt: '2017-12-21T08:54:35.760Z'
+      maxtitlewidth: null
       dontshowpattern: null
       manualbackground: null
-      isityellow: false
       fullwidthtext: null
       rightcolumn: |
         With plenty of fresh air and open space, your party can experience something unique, with no interruptions.
@@ -83,7 +84,7 @@ settings:
       itemType: presentationsection
       updatedAt: '2017-12-21T10:01:21.032Z'
       createdAt: '2017-12-21T08:56:35.077Z'
-      fitsectiontopicture: false
+      maxtitlewidth: null
       backgroundimagedesktop:
         format: jpg
         size: 995089
@@ -194,7 +195,7 @@ settings:
         width: 629
         height: 459
         title: null
-        alt: null
+        alt: '?exp=20?auto=compress'
         url: 'https://www.datocms-assets.com/4204/1513859210-katherine-ashdown-boho-shoot-207.png'
       text: |-
         Nestled under a canopy of beech and chestnut trees is this former woodshed, and now Norfolk’s most unique fully licensed outdoor venue for civil ceremonies and informal hand fastenings.
@@ -227,7 +228,7 @@ settings:
       itemType: presentationsection
       updatedAt: '2017-12-21T12:28:25.276Z'
       createdAt: '2017-12-21T12:28:25.201Z'
-      fitsectiontopicture: false
+      maxtitlewidth: null
       backgroundimagedesktop:
         format: jpg
         size: 995089
@@ -251,9 +252,9 @@ settings:
       itemType: patternedsection
       updatedAt: '2017-12-21T11:26:34.694Z'
       createdAt: '2017-12-21T10:24:13.999Z'
+      maxtitlewidth: null
       dontshowpattern: null
       manualbackground: null
-      isityellow: true
       fullwidthtext: null
       rightcolumn: |
         With plenty of fresh air and open space, your party can experience something unique, with no interruptions.

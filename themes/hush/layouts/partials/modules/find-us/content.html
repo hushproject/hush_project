@@ -45,11 +45,11 @@
   <div class="findUsPage__map">
     {{with $findUs.mappicturedesktop}}
       <div class="container">
-        <img src="{{.url}}?auto=compress" alt="" class="visible--lg">
+        <img src="{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}" alt="" class="visible--lg">
       </div>
     {{end}}
     {{with $findUs.mappicturemobile}}
-      <img src="{{.url}}?auto=compress" alt="" class="hidden--lg">
+      <img src="{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}" alt="" class="hidden--lg">
     {{end}}
   </div>
 </div>
