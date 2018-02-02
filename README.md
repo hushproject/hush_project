@@ -35,6 +35,6 @@ if necessary.
 4. export DATO_API_TOKEN=abc123
 5. echo 'DATO_API_TOKEN=abc123' >> .env
 
-*DATO_API_TOKEN: http://prntscr.com/i90tju*
+*DATO_API_TOKEN: ![](docs/api-token.png)*
 
 ### Deployment
