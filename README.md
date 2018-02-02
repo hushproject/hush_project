@@ -23,7 +23,7 @@ if necessary.
 ## Continius Deployment
 1. Version control system "Git/GitHub"
 2. Deployment system "Netlify"
-> Current site have two envoirements, PRODUCTION & STAGE http://prntscr.com/i90non.
+> Current site have two envoirements, PRODUCTION & STAGE [](docs/deploy-environments.png).
 > - Porduction: hush.com Pass: dev
 > - Stage: hush-stage.netlify.com Pass: stage
 
