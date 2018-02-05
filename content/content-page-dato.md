@@ -114,7 +114,7 @@ settings:
         size: 517575
         width: 609
         height: 497
-        title: null
+        title: Trigger keypress event with keycode
         alt: null
         url: 'https://www.datocms-assets.com/4204/1513857351-20150905-rsp-0060.png'
       text: |-

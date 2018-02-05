@@ -10,7 +10,7 @@ seo:
       format: png
       size: 517575
       alt: null
-      title: null
+      title: Trigger keypress event with keycode
       width: 609
       height: 497
     title: Kind Words

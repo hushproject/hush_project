@@ -22,13 +22,13 @@
   <div class="findUsPage__socialNetworks">
     <ul>
       {{with $findUs.facebooklink}}
-      <li><a href="{{.}}" target="_blank"><img src="/images-theme/facebook.svg" alt=""></a></li>
+      <li><a href="{{.}}" target="_blank"><img src="/images-theme/facebook.svg" alt="facebook"></a></li>
       {{end}}
       {{with $findUs.instagramlink}}
-      <li><a href="{{.}}" target="_blank"><img src="/images-theme/instagram.svg" alt=""></a></li>
+      <li><a href="{{.}}" target="_blank"><img src="/images-theme/instagram.svg" alt="instagram"></a></li>
       {{end}}
       {{with $findUs.pinterestlink}}
-      <li><a href="{{.}}" target="_blank"><img src="/images-theme/pinterest.svg" alt=""></a></li>
+      <li><a href="{{.}}" target="_blank"><img src="/images-theme/pinterest.svg" alt="pinterest"></a></li>
       {{end}}
     </ul>
   </div>
@@ -45,11 +45,11 @@
   <div class="findUsPage__map">
     {{with $findUs.mappicturedesktop}}
       <div class="container">
-        <img src="{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}" alt="" class="visible--lg">
+        <img src="{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}" {{if .title}}alt="{{.title}}"{{end}} class="visible--lg">
       </div>
     {{end}}
     {{with $findUs.mappicturemobile}}
-      <img src="{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}" alt="" class="hidden--lg">
+      <img src="{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}" {{if .title}}alt="{{.title}}"{{end}} class="hidden--lg">
     {{end}}
   </div>
 </div>
