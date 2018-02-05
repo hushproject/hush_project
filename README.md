@@ -40,6 +40,6 @@ if necessary.
 ### Deployment
 1. Deploymennt system: https://www.netlify.com/
 2. Netlify configuration:
-![](deploy-settings.png)
+![](/docs/deploy-settings.png)
 3. DATO API tocken same w/ Development, more details about DATO CMS deployment setup: https://docs.datocms.com/deployment/netlify.html
 
