@@ -53,3 +53,10 @@ if necessary.
 ### Admin tricks:
 > 1. Image prefences
 > ![](/docs/images-setup.png)
+> 2. Always follow behind tips which placed under input field (Sure if they are present)
+> ![](/docs/tips.png)
+
+## WARNING!!!
+### Please never do changes byself in these models:
+![](/docs/danger.png)
+### You can lose your data and our garanties.
