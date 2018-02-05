@@ -43,3 +43,13 @@ if necessary.
 ![](/docs/deploy-settings.png)
 3. DATO API tocken same w/ Development, more details about DATO CMS deployment setup: https://docs.datocms.com/deployment/netlify.html
 
+## Tips:
+### If deploy unsuccess:
+> Site deployment can be unsuccess by couple reasons:
+> 1. DATO API key expired and should be upgraded in Netlify 
+> 2. Invalid data entered
+> 3. One of the service is temporary downd
+> * In the all of these cases you will never brake your site or loose data.
+### Admin tricks:
+> 1. Image prefences
+> ![](/docs/images-setup.png)
