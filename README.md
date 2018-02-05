@@ -23,7 +23,7 @@ if necessary.
 ## Continius Deployment
 1. Version control system "Git/GitHub"
 2. Deployment system "Netlify"
-> Current site have two envoirements, PRODUCTION & STAGE ![](docs/deploy-environments.png).
+> Current site have two envoirements, PRODUCTION & STAGE ![](./docs/deploy-environments.png).
 > - Porduction: hush.com Pass: dev
 > - Stage: hush-stage.netlify.com Pass: stage
 
@@ -35,12 +35,12 @@ if necessary.
 4. export DATO_API_TOKEN=abc123
 5. echo 'DATO_API_TOKEN=abc123' >> .env
 
-*DATO_API_TOKEN: ![](docs/api-token.png)*
+*DATO_API_TOKEN: ![](./docs/api-token.png)*
 
 ### Deployment
 1. Deploymennt system: https://www.netlify.com/
 2. Netlify configuration:
-![](/docs/deploy-settings.png)
+![](./docs/deploy-settings.png)
 3. DATO API tocken same w/ Development, more details about DATO CMS deployment setup: https://docs.datocms.com/deployment/netlify.html
 
 ## Tips:
@@ -52,11 +52,11 @@ if necessary.
 > * In the all of these cases you will never brake your site or loose data.
 ### Admin tricks:
 > 1. Image prefences
-> ![](/docs/images-setup.png)
+> ![](./docs/images-setup.png)
 > 2. Always follow behind tips which placed under input field (Sure if they are present)
-> ![](/docs/tips.png)
+> ![](./docs/tips.png)
 
 ## WARNING!!!
 ### Please never do changes byself in these models:
-![](/docs/danger.png)
+![](./docs/danger.png)
 ### You can lose your data and our garanties.
