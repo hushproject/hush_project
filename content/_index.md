@@ -2,15 +2,9 @@
 homepageheadersection:
   id: '144704'
   itemType: homepageheadersection
-  updatedAt: '2018-01-29T11:34:20.239Z'
+  updatedAt: '2018-02-12T04:00:22.265Z'
   createdAt: '2017-12-15T08:33:35.174Z'
   visualpreferences:
-    - id: '153222'
-      itemType: visualpreference
-      updatedAt: '2018-01-09T08:29:15.369Z'
-      createdAt: '2018-01-09T08:29:15.369Z'
-      class: textColor--yellow
-      title: Yellow (text color)
     - id: '144999'
       itemType: buttonsprefence
       updatedAt: '2018-01-09T11:51:19.824Z'
@@ -28,7 +22,7 @@ homepageheadersection:
     size: 1611485
     width: 1540
     height: 930
-    title: null
+    title: '?flip=v'
     alt: null
     url: 'https://www.datocms-assets.com/4204/1513604379-desktophomepage.jpg'
   backgroundimagemobile:
@@ -36,8 +30,8 @@ homepageheadersection:
     size: 135809
     width: 379
     height: 826
-    title: null
-    alt: null
+    title: '?flip=v'
+    alt: ew
     url: 'https://www.datocms-assets.com/4204/1513326985-home-1st-section.jpg'
   nextsectionid: two
   enquirebuttontext: Enquire
@@ -129,13 +123,13 @@ homepagesections:
         title: Cream (text color)
   - id: '144957'
     itemType: homepagesection
-    updatedAt: '2018-01-26T11:55:28.377Z'
+    updatedAt: '2018-02-11T08:08:56.445Z'
     createdAt: '2017-12-15T13:35:38.040Z'
     position: 3
     buttons:
       - id: '153324'
         itemType: button
-        updatedAt: '2018-01-26T11:55:27.902Z'
+        updatedAt: '2018-02-11T08:08:55.287Z'
         createdAt: '2018-01-09T11:52:58.250Z'
         setting:
           - id: '144999'
@@ -150,6 +144,12 @@ homepagesections:
             createdAt: '2017-12-15T14:28:18.987Z'
             class: button--white
             title: Cream (buttons color)
+          - id: '145002'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:50:16.820Z'
+            createdAt: '2017-12-15T14:29:18.722Z'
+            class: button--md
+            title: Middle size (buttons size)
         url: /
         title: More
     nextsectionid: '#vibe'
@@ -196,27 +196,27 @@ homepagesections:
         title: Use gradient mask for section
   - id: '144975'
     itemType: homepagesection
-    updatedAt: '2018-01-26T11:58:23.668Z'
+    updatedAt: '2018-02-11T08:00:03.590Z'
     createdAt: '2017-12-15T13:51:18.672Z'
     position: 4
     buttons:
       - id: '153258'
         itemType: button
-        updatedAt: '2018-01-26T11:58:23.194Z'
+        updatedAt: '2018-02-11T08:00:01.596Z'
         createdAt: '2018-01-09T09:38:56.480Z'
         setting:
-          - id: '145001'
-            itemType: buttonsprefence
-            updatedAt: '2018-01-09T11:50:38.686Z'
-            createdAt: '2017-12-15T14:28:56.718Z'
-            class: button--brown
-            title: Brown (buttons color)
           - id: '144999'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:51:19.824Z'
             createdAt: '2017-12-15T14:28:02.845Z'
             class: button--bordered
             title: Bordered (buttons style)
+          - id: '145000'
+            itemType: buttonsprefence
+            updatedAt: '2018-01-09T11:50:57.318Z'
+            createdAt: '2017-12-15T14:28:18.987Z'
+            class: button--white
+            title: Cream (buttons color)
         url: /vibe
         title: More
     nextsectionid: '#accomodation'
