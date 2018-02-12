@@ -28,13 +28,6 @@
   flex-flow: row wrap
   position: relative
   align-content: flex-end
-  &::after
-    content: ""
-    position: absolute
-    display: block
-    z-index: 1
-    background: $blackBottom2TopGradient
-    +resetForAbsoluteCentering()
   &__title
     +font($main_300, 40px, 54px, $white, normal, none, none)
     display: block
