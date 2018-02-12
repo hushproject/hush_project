@@ -2,7 +2,7 @@
 homepageheadersection:
   id: '144704'
   itemType: homepageheadersection
-  updatedAt: '2018-02-12T04:00:22.265Z'
+  updatedAt: '2018-02-12T09:27:53.025Z'
   createdAt: '2017-12-15T08:33:35.174Z'
   visualpreferences:
     - id: '144999'
@@ -30,12 +30,12 @@ homepageheadersection:
     size: 135809
     width: 379
     height: 826
-    title: '?flip=v'
-    alt: ew
+    title: null
+    alt: null
     url: 'https://www.datocms-assets.com/4204/1513326985-home-1st-section.jpg'
   nextsectionid: two
   enquirebuttontext: Enquire
-  tagline: Be Yourself  Together
+  tagline: Be Yourself Together
 homepagesections:
   - id: '144897'
     itemType: homepagesection
@@ -103,7 +103,7 @@ homepagesections:
       size: 233998
       width: 378
       height: 812
-      title: null
+      title: title
       alt: null
       url: 'https://www.datocms-assets.com/4204/1513343008-exclusive-use.jpg'
     description: '*An experience to savour. Yours and your guest''s own woodland world for three nights. No need to rush – it''s all yours.*'
