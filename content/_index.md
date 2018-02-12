@@ -69,10 +69,10 @@ homepagesections:
     visualpreferences:
       - id: '153221'
         itemType: visualpreference
-        updatedAt: '2018-01-09T08:28:47.634Z'
+        updatedAt: '2018-02-12T05:29:12.764Z'
         createdAt: '2018-01-09T08:28:47.634Z'
         class: textColor--cream
-        title: Cream (text color)
+        title: 'Cream (text color) (#F8F1DE)'
       - id: '145009'
         itemType: homepagesectionpreference
         updatedAt: '2017-12-15T14:42:07.418Z'
@@ -117,10 +117,10 @@ homepagesections:
         title: Use gradient mask for section
       - id: '153221'
         itemType: visualpreference
-        updatedAt: '2018-01-09T08:28:47.634Z'
+        updatedAt: '2018-02-12T05:29:12.764Z'
         createdAt: '2018-01-09T08:28:47.634Z'
         class: textColor--cream
-        title: Cream (text color)
+        title: 'Cream (text color) (#F8F1DE)'
   - id: '144957'
     itemType: homepagesection
     updatedAt: '2018-02-11T08:08:56.445Z'
@@ -178,10 +178,10 @@ homepagesections:
     visualpreferences:
       - id: '153221'
         itemType: visualpreference
-        updatedAt: '2018-01-09T08:28:47.634Z'
+        updatedAt: '2018-02-12T05:29:12.764Z'
         createdAt: '2018-01-09T08:28:47.634Z'
         class: textColor--cream
-        title: Cream (text color)
+        title: 'Cream (text color) (#F8F1DE)'
       - id: '153399'
         itemType: visualpreference
         updatedAt: '2018-01-09T13:54:10.147Z'
@@ -258,10 +258,10 @@ homepagesections:
     visualpreferences:
       - id: '153224'
         itemType: visualpreference
-        updatedAt: '2018-01-09T08:30:44.137Z'
+        updatedAt: '2018-02-12T05:29:49.251Z'
         createdAt: '2018-01-09T08:30:44.137Z'
         class: textColor--brown--dark
-        title: Brown-dark (text color)
+        title: 'Brown-dark (text color) (#5D5139)'
       - id: '153400'
         itemType: visualpreference
         updatedAt: '2018-01-09T13:55:19.206Z'
@@ -358,10 +358,10 @@ homepagesections:
     visualpreferences:
       - id: '153221'
         itemType: visualpreference
-        updatedAt: '2018-01-09T08:28:47.634Z'
+        updatedAt: '2018-02-12T05:29:12.764Z'
         createdAt: '2018-01-09T08:28:47.634Z'
         class: textColor--cream
-        title: Cream (text color)
+        title: 'Cream (text color) (#F8F1DE)'
       - id: '153399'
         itemType: visualpreference
         updatedAt: '2018-01-09T13:54:10.147Z'
