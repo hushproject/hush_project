@@ -129,7 +129,7 @@ homepagesections:
     buttons:
       - id: '153324'
         itemType: button
-        updatedAt: '2018-02-11T08:08:55.287Z'
+        updatedAt: '2018-02-12T06:15:51.850Z'
         createdAt: '2018-01-09T11:52:58.250Z'
         setting:
           - id: '144999'
@@ -144,12 +144,6 @@ homepagesections:
             createdAt: '2017-12-15T14:28:18.987Z'
             class: button--white
             title: Cream (buttons color)
-          - id: '145002'
-            itemType: buttonsprefence
-            updatedAt: '2018-01-09T11:50:16.820Z'
-            createdAt: '2017-12-15T14:29:18.722Z'
-            class: button--md
-            title: Middle size (buttons size)
         url: /
         title: More
     nextsectionid: '#vibe'
@@ -270,21 +264,15 @@ homepagesections:
         title: Dark burger menu color
   - id: '144998'
     itemType: homepagesection
-    updatedAt: '2018-01-21T14:58:15.947Z'
+    updatedAt: '2018-02-12T08:10:16.750Z'
     createdAt: '2017-12-15T14:17:03.430Z'
     position: 5
     buttons:
       - id: '153259'
         itemType: button
-        updatedAt: '2018-01-09T12:54:07.898Z'
+        updatedAt: '2018-02-12T06:15:51.906Z'
         createdAt: '2018-01-09T09:40:17.601Z'
         setting:
-          - id: '145002'
-            itemType: buttonsprefence
-            updatedAt: '2018-01-09T11:50:16.820Z'
-            createdAt: '2017-12-15T14:29:18.722Z'
-            class: button--md
-            title: Middle size (buttons size)
           - id: '145000'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:50:57.318Z'
@@ -301,15 +289,9 @@ homepagesections:
         title: Colts Lodge
       - id: '153260'
         itemType: button
-        updatedAt: '2018-01-09T12:54:08.029Z'
+        updatedAt: '2018-02-12T08:10:15.639Z'
         createdAt: '2018-01-09T09:40:17.734Z'
         setting:
-          - id: '145002'
-            itemType: buttonsprefence
-            updatedAt: '2018-01-09T11:50:16.820Z'
-            createdAt: '2017-12-15T14:29:18.722Z'
-            class: button--md
-            title: Middle size (buttons size)
           - id: '144999'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:51:19.824Z'
@@ -323,7 +305,7 @@ homepagesections:
             class: button--white
             title: Cream (buttons color)
         url: /content-page-dato
-        title: Glamping
+        title: ' Glamping '
     nextsectionid: null
     sectionid: accomodation
     colorbackgroundbottompattern:

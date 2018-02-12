@@ -4,7 +4,7 @@
     {{with $headerSection.backgroundimagemobile}}
       <style>
         .homeHeader {
-          background-image: url('{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}');
+          background-image: url('{{.url}}{{if .title}}{{.title}}{{else}}?auto=compress{{end}}');
         }
       </style>
     {{end}}
@@ -12,7 +12,7 @@
       <style>
         @media screen and (min-width : 640px) {
           .homeHeader {
-            background-image: url('{{.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}');
+            background-image: url('{{.url}}{{if .title}}{{.title}}{{else}}?auto=compress{{end}}');
           }
         }
       </style>
