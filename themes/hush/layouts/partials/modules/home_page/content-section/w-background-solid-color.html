@@ -3,11 +3,11 @@
   id="the-vibe" style="background-color: {{.backgroundcolor.hex}}">
   {{if .colorbackgroundtoppattern}}
   <div class="homePageContentSection__pattern homePageContentSection__pattern--top"
-    style="background-image: url('{{.colorbackgroundtoppattern.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}')"></div>
+    style="background-image: url('{{.colorbackgroundtoppattern.url}}{{if .title}}{{.title}}{{else}}?auto=compress{{end}}')"></div>
   {{end}}
   {{if .colorbackgroundbottompattern}}
   <div class="homePageContentSection__pattern homePageContentSection__pattern--bottom"
-    style="background-image: url('{{.colorbackgroundbottompattern.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}')"></div>
+    style="background-image: url('{{.colorbackgroundbottompattern.url}}{{if .title}}{{.title}}{{else}}?auto=compress{{end}}')"></div>
   {{end}}
     <div class="homePageContentSection__content hideLogo">
       {{with .title}}

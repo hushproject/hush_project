@@ -4,7 +4,7 @@
     {{if .backgroundimagemobile}}
       <style>
         #{{.sectionid}} {
-          background-image: url('{{.backgroundimagemobile.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}');
+          background-image: url('{{.backgroundimagemobile.url}}{{if .backgroundimagemobile.title}}{{.backgroundimagemobile.title}}{{else}}?auto=compress{{end}}');
         }
       </style>
     {{end}}
@@ -12,7 +12,7 @@
       <style>
         @media screen and (min-width : 640px) {
           #{{.sectionid}} {
-            background-image: url('{{.backgroundimagedesktop.url}}{{if .alt}}{{.alt}}{{else}}?auto=compress{{end}}');
+            background-image: url('{{.backgroundimagedesktop.url}}{{if .backgroundimagedesktop.title}}{{.backgroundimagedesktop.title}}{{else}}?auto=compress{{end}}');
           }
         }
       </style>
@@ -20,11 +20,7 @@
     <div class="container--fluid homePageContentSection
       {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}">
       <div class="homePageContentSection__content hideLogo">
-        {{with .title}}
-          <div class="homePageContentSection__title animate" data-animation="fadeInUp">
-            <h2>{{.}}</h2>
-          </div>
-        {{end}}
+
         {{with .description}}
         <div class="homePageContentSection__description animate" data-animation="fadeInDown">
           {{. | markdownify}}
