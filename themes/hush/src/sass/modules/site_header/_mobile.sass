@@ -9,7 +9,7 @@
   display: flex
   justify-content: flex-end
   &__burgerMenu
-    +font($main_400, 16px, 16px, $white, normal, none, uppercase)
+    +font($main_400, 14px, 14px, $white, normal, none, uppercase)
     display: block
     width: 100%
     &__button
@@ -18,7 +18,7 @@
       justify-content: flex-end
       align-items: center
       position: relative
-      padding-right: 34px
+      padding-right: 28px
       cursor: pointer
       .stick
         background: $white
@@ -45,6 +45,13 @@
         .siteHeader__burgerMenu__burger .stick
           background: $brown-1
           +transition(300ms, linear)
+      &.whiteMenu
+        color: $white-1
+        .siteHeader__burgerMenu__burger:after,
+        .siteHeader__burgerMenu__burger:before,
+        .siteHeader__burgerMenu__burger .stick
+          background: $white-1
+          +transition(300ms, linear)
       &.lightMenu
         .siteHeader__burgerMenu__burger:after,
         .siteHeader__burgerMenu__burger:before,
@@ -66,10 +73,14 @@
       top: -33px
 .siteHeader__burgerMenu__button.lightMenu.active .siteHeader__burgerMenu__burger .stick,
 .siteHeader__burgerMenu__button.lightMenu.active .siteHeader__burgerMenu__burger:after,
-.siteHeader__burgerMenu__button.lightMenu.active .siteHeader__burgerMenu__burger:before
+.siteHeader__burgerMenu__button.lightMenu.active .siteHeader__burgerMenu__burger:before,
+.siteHeader__burgerMenu__button.whiteMenu.active .siteHeader__burgerMenu__burger .stick,
+.siteHeader__burgerMenu__button.whiteMenu.active .siteHeader__burgerMenu__burger:after,
+.siteHeader__burgerMenu__button.whiteMenu.active .siteHeader__burgerMenu__burger:before
   background: $brown-1 !important
 .siteHeader__burgerMenu__button.active,
-.siteHeader__burgerMenu__button.lightMenu.active
+.siteHeader__burgerMenu__button.lightMenu.active,
+.siteHeader__burgerMenu__button.whiteMenu.active
   .siteHeader__burgerMenu__burger
     color: $brown-1 !important
     .siteHeader__burgerMenu__burger:after,
@@ -124,6 +135,14 @@
       margin-bottom: 40px
       &::after
         display: none
+.noScroll
+  .siteHeader__logo
+    img
+      display: none !important
+    .dark
+      display: block !important
+    .white
+      display: none !important
 .siteHeader__logo
   width: 101px
   position: absolute
@@ -132,10 +151,13 @@
   right: 0px
   opacity: 1
   z-index: 10
+  top: -3px
   +transition(300ms, linear)
   img
     width: 100%
   .dark
+    display: none
+  .white
     display: none
   &.fixedTop
     opacity: 1
@@ -145,6 +167,13 @@
   img
     display: none
   .dark
+    display: block
+.whiteMenu.siteHeader__logo
+  img
+    display: none
+  .dark
+    display: none
+  .white
     display: block
 @keyframes showMenu
   0%

@@ -25,6 +25,7 @@
         duration: jQuery(this).outerHeight()
       }).on("enter", function(e) {
         jQuery(trigeredClasses).removeClass('lightMenu');
+        jQuery(trigeredClasses).removeClass('whiteMenu');
         jQuery(trigeredClasses).addClass('darkTheme');
       }).addTo(controller).triggerHook(0);
     });
@@ -35,7 +36,19 @@
         duration: jQuery(this).outerHeight(),
       }).on("enter", function(e) {
         jQuery(trigeredClasses).removeClass('darkTheme');
+        jQuery(trigeredClasses).removeClass('whiteMenu');
         jQuery(trigeredClasses).addClass('lightMenu');
+      }).addTo(controller).triggerHook(0);
+    });
+    jQuery('.whiteMenu').each(function(item) {
+      jQuery(this).attr('id', `light-${item}`);
+      new ScrollMagic.Scene({
+        triggerElement: `#light-${item}`,
+        duration: jQuery(this).outerHeight(),
+      }).on("enter", function(e) {
+        jQuery(trigeredClasses).removeClass('darkTheme');
+        jQuery(trigeredClasses).removeClass('lightMenu');
+        jQuery(trigeredClasses).addClass('whiteMenu');
       }).addTo(controller).triggerHook(0);
     });
     jQuery('.hideLogo').each(function(item) {
