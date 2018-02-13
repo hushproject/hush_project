@@ -39,30 +39,38 @@ import validate from "jquery-validation";
       "cm-fvktd-fvktd": {
         required: true,
         email: true
+      },
+      "cm-fo-vjldkt": {
+        required: true
       }
     },
     success: function() {
-      jQuery('#subForm').submit(function(e) {
-        var getPosition = function() {
-          return new Promise(function(resolve, reject) {
-            return navigator.geolocation.getCurrentPosition(resolve, reject);
-          });
-        };
-        let _this = this;
-        e.preventDefault();
-        jQuery('.sendRequest__wrapper').fadeOut(300);
-        jQuery('.formSending').fadeIn(300);
-        if (jQuery('#getuserlocation').length) {
-          getPosition().then((position) => {
-            jQuery('#getuserlocation').val(`${position.coords.latitude},${position.coords.longitude}`);
+      let val1 = jQuery('input[name=cm-name]').val(),
+        val2 = jQuery('input[name=cm-fvktd-fvktd]').val(),
+        val3 = jQuery('select[name=cm-fo-vjldkt]').val();
+      if(val1.length > 2 && val2.length > 2 && val3 !== null) {
+        jQuery('#subForm').submit(function(e) {
+          var getPosition = function() {
+            return new Promise(function(resolve, reject) {
+              return navigator.geolocation.getCurrentPosition(resolve, reject);
+            });
+          };
+          let _this = this;
+          e.preventDefault();
+          jQuery('.sendRequest__wrapper').fadeOut(300);
+          jQuery('.formSending').fadeIn(300);
+          if (jQuery('#getuserlocation').length) {
+            getPosition().then((position) => {
+              jQuery('#getuserlocation').val(`${position.coords.latitude},${position.coords.longitude}`);
+              sendForm(_this)
+            }).catch((err) => {
+              sendForm(_this)
+            });
+          } else {
             sendForm(_this)
-          }).catch((err) => {
-            sendForm(_this)
-          });
-        } else {
-          sendForm(_this)
-        }
-      });
+          }
+        });
+      }
     }
   });
   function sendForm(_this) {
