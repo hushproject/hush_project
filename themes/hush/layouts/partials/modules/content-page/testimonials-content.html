@@ -1,6 +1,6 @@
 {{$siteTestimonials := .Site.Params.testimonials}}
 <div class="container--fluid testimonials  testimonials--contentPage
-  {{if $siteTestimonials.settings.visualpreferences}}{{range $siteTestimonials.settings.visualpreferences}}{{.class}} {{end}}{{end}}  animate" data-animation="fadeInUp"
+  {{if $siteTestimonials.settings.visualpreferences}}{{range $siteTestimonials.settings.visualpreferences}}{{.class}} {{end}}{{end}}  animate" data-animation="fadeIn"
   id="testimonials--contentPage"
   {{if $siteTestimonials.settings.backgroundcolor}}
     style="background-color: {{$siteTestimonials.settings.backgroundcolor.hex}}"
