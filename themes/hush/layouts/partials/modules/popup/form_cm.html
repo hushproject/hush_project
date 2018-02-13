@@ -56,9 +56,6 @@
         <div></div></label>
       </div>
     {{end}}
-    {{with $formSettings.closestring}}
-      <div class="closePopup visible--lg">{{.}}</div>
-    {{end}}
     {{with $formSettings.formversioninputname}}
       <input type="text" name="{{.}}" value="{{$formSettings.formversionvalue}}" hidden="hidden">
     {{end}}
