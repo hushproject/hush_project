@@ -39,7 +39,7 @@ homepageheadersection:
 homepagesections:
   - id: '144897'
     itemType: homepagesection
-    updatedAt: '2018-01-21T17:59:54.006Z'
+    updatedAt: '2018-02-13T15:48:49.984Z'
     createdAt: '2017-12-15T12:36:57.545Z'
     position: 1
     buttons: []
@@ -73,15 +73,9 @@ homepagesections:
         createdAt: '2018-01-09T08:28:47.634Z'
         class: textColor--cream
         title: 'Cream (text color) (#F8F1DE)'
-      - id: '145009'
-        itemType: homepagesectionpreference
-        updatedAt: '2017-12-15T14:42:07.418Z'
-        createdAt: '2017-12-15T14:42:07.418Z'
-        class: homePageContentSection--wDarkMask
-        title: Use gradient mask for section
   - id: '144912'
     itemType: homepagesection
-    updatedAt: '2018-01-09T08:48:26.104Z'
+    updatedAt: '2018-02-13T15:48:50.150Z'
     createdAt: '2017-12-15T13:04:06.364Z'
     position: 2
     buttons: []
@@ -109,12 +103,6 @@ homepagesections:
     description: '*An experience to savour. Yours and your guest''s own woodland world for three nights. No need to rush – it''s all yours.*'
     title: 3 Nights Exclusive Use
     visualpreferences:
-      - id: '145009'
-        itemType: homepagesectionpreference
-        updatedAt: '2017-12-15T14:42:07.418Z'
-        createdAt: '2017-12-15T14:42:07.418Z'
-        class: homePageContentSection--wDarkMask
-        title: Use gradient mask for section
       - id: '153221'
         itemType: visualpreference
         updatedAt: '2018-02-12T05:29:12.764Z'
@@ -123,7 +111,7 @@ homepagesections:
         title: 'Cream (text color) (#F8F1DE)'
   - id: '144957'
     itemType: homepagesection
-    updatedAt: '2018-02-11T08:08:56.445Z'
+    updatedAt: '2018-02-13T15:48:50.073Z'
     createdAt: '2017-12-15T13:35:38.040Z'
     position: 3
     buttons:
@@ -182,12 +170,6 @@ homepagesections:
         createdAt: '2018-01-09T13:54:10.147Z'
         class: lightMenu
         title: Light burger menu color
-      - id: '145009'
-        itemType: homepagesectionpreference
-        updatedAt: '2017-12-15T14:42:07.418Z'
-        createdAt: '2017-12-15T14:42:07.418Z'
-        class: homePageContentSection--wDarkMask
-        title: Use gradient mask for section
   - id: '144975'
     itemType: homepagesection
     updatedAt: '2018-02-11T08:00:03.590Z'

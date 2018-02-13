@@ -108,7 +108,7 @@
     animation: showMenu .3s ease-out forwards
     overflow-y: scroll
   &__innerLogo
-    display: block
+    display: none
     width: 67px
     margin: 0px auto
     img
@@ -136,7 +136,11 @@
       &::after
         display: none
 .noScroll
+  .siteSidebarMenu__innerLogo
+    position: absolute
+    display: none
   .siteHeader__logo
+    display: none !important
     img
       display: none !important
     .dark
