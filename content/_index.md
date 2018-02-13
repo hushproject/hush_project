@@ -53,7 +53,7 @@ homepagesections:
       size: 1203088
       width: 1540
       height: 930
-      title: '?mark64=aHR0cHM6Ly9zYW5kYm94LXVwbG9hZHMuaW1naXgubmV0L3UvMTUxODUxNDAxNy05MTEwNmEyOTNlZjE2YTU4YmNjZmFlMmI1MzVmOGI1Mj93PTEzMA&markx=720&marky=50&mask=https%3A%2F%2Fsandbox-uploads.imgix.net%2Fu%2F1518514120-df16bf5e8f5e1617188cd9bc3b9c0a96%3Fw%3D1540&maskbg=%23000&auto=compress'
+      title: '?mark64=aHR0cHM6Ly9zYW5kYm94LXVwbG9hZHMuaW1naXgubmV0L3UvMTUxODUxNDAxNy05MTEwNmEyOTNlZjE2YTU4YmNjZmFlMmI1MzVmOGI1Mj93PTEzMA&markx=720&marky=100&mask=https%3A%2F%2Fsandbox-uploads.imgix.net%2Fu%2F1518514120-df16bf5e8f5e1617188cd9bc3b9c0a96%3Fw%3D1540&maskbg=%23000&auto=compress'
       alt: null
       url: 'https://www.datocms-assets.com/4204/1513927345-untitled-2.jpg'
     backgroundimagemobile:
@@ -95,7 +95,7 @@ homepagesections:
       size: 903150
       width: 1540
       height: 930
-      title: '?mark64=aHR0cHM6Ly9zYW5kYm94LXVwbG9hZHMuaW1naXgubmV0L3UvMTUxODUxNDAxNy05MTEwNmEyOTNlZjE2YTU4YmNjZmFlMmI1MzVmOGI1Mj93PTEzMA&markx=720&marky=50&mask=https%3A%2F%2Fsandbox-uploads.imgix.net%2Fu%2F1518514120-df16bf5e8f5e1617188cd9bc3b9c0a96%3Fw%3D1540&maskbg=%23000&auto=compress'
+      title: '?mark64=aHR0cHM6Ly9zYW5kYm94LXVwbG9hZHMuaW1naXgubmV0L3UvMTUxODUxNDAxNy05MTEwNmEyOTNlZjE2YTU4YmNjZmFlMmI1MzVmOGI1Mj93PTEzMA&markx=720&marky=150&mask=https%3A%2F%2Fsandbox-uploads.imgix.net%2Fu%2F1518514120-df16bf5e8f5e1617188cd9bc3b9c0a96%3Fw%3D1540&maskbg=%23000&auto=compress'
       alt: null
       url: 'https://www.datocms-assets.com/4204/1513927370-untitled-3.jpg'
     backgroundimagemobile:
@@ -156,7 +156,7 @@ homepagesections:
       size: 907849
       width: 1540
       height: 930
-      title: null
+      title: '?mark64=aHR0cHM6Ly9zYW5kYm94LXVwbG9hZHMuaW1naXgubmV0L3UvMTUxODUxNDAxNy05MTEwNmEyOTNlZjE2YTU4YmNjZmFlMmI1MzVmOGI1Mj93PTEzMA&markx=720&marky=150&mask=https%3A%2F%2Fsandbox-uploads.imgix.net%2Fu%2F1518514120-df16bf5e8f5e1617188cd9bc3b9c0a96%3Fw%3D1540&maskbg=%23000&auto=compress'
       alt: null
       url: 'https://www.datocms-assets.com/4204/1513927384-untitled-4.jpg'
     backgroundimagemobile:
