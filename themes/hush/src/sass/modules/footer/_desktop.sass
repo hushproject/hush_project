@@ -1,8 +1,8 @@
 @media screen and (min-width : 640px)
   .siteFooter
     min-height: inherit
-    padding-top: 60px
-    padding-bottom: 55px
+    padding-top: 55px
+    padding-bottom: 80px
     &::after
       background: url('/images-theme/footer-patern-left-desktop.png') no-repeat 0% 100%
     &::before
@@ -10,6 +10,13 @@
     &__container
       display: flex
       justify-content: space-between
+  .siteFooter__logo
+    margin-bottom: 42px
+  .siteFooter__cta
+    align-self: flex-end
+    padding-bottom: 0px
+    a
+      margin-top: 20px
   .siteFooter
     &__contactInformation
       width: calc(100% / 3 * 2)
