@@ -114,7 +114,7 @@ settings:
         size: 517575
         width: 609
         height: 497
-        title: Trigger keypress event with keycode
+        title: null
         alt: null
         url: 'https://www.datocms-assets.com/4204/1513857351-20150905-rsp-0060.png'
       text: |-
@@ -194,7 +194,7 @@ settings:
         size: 413125
         width: 629
         height: 459
-        title: null
+        title: '?exp=20?auto=compress'
         alt: '?exp=20?auto=compress'
         url: 'https://www.datocms-assets.com/4204/1513859210-katherine-ashdown-boho-shoot-207.png'
       text: |-

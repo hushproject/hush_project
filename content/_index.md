@@ -2,7 +2,7 @@
 homepageheadersection:
   id: '144704'
   itemType: homepageheadersection
-  updatedAt: '2018-02-12T09:27:53.025Z'
+  updatedAt: '2018-02-14T06:56:08.455Z'
   createdAt: '2017-12-15T08:33:35.174Z'
   visualpreferences:
     - id: '144999'
@@ -35,7 +35,7 @@ homepageheadersection:
     url: 'https://www.datocms-assets.com/4204/1513326985-home-1st-section.jpg'
   nextsectionid: two
   enquirebuttontext: Enquire
-  tagline: Be Yourself Together
+  tagline: Be Yourself  Together
 homepagesections:
   - id: '144897'
     itemType: homepagesection
@@ -75,7 +75,7 @@ homepagesections:
         title: 'Cream (text color) (#F8F1DE)'
   - id: '144912'
     itemType: homepagesection
-    updatedAt: '2018-02-13T15:48:50.150Z'
+    updatedAt: '2018-02-14T04:59:34.217Z'
     createdAt: '2017-12-15T13:04:06.364Z'
     position: 2
     buttons: []
@@ -97,7 +97,7 @@ homepagesections:
       size: 233998
       width: 378
       height: 812
-      title: title
+      title: null
       alt: null
       url: 'https://www.datocms-assets.com/4204/1513343008-exclusive-use.jpg'
     description: '*An experience to savour. Yours and your guest''s own woodland world for three nights. No need to rush – it''s all yours.*'
