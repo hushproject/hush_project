@@ -11,13 +11,17 @@ import slick from "slick-carousel";
         autoplay: true,
         autoplaySpeed: speed,
         fade: true,
+        adaptiveHeight: false,
         responsive: [
             {
-              breakpoint: 480,
+              breakpoint: 640,
               settings: {
                 slidesToShow: 1,
                 adaptiveHeight: true,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                autoplay: false,
+                fade: false,
+                adaptiveHeight: true
               }
             }
           ]
