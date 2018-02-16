@@ -41,9 +41,9 @@
       }).addTo(controller).triggerHook(0);
     });
     jQuery('.whiteMenu').each(function(item) {
-      jQuery(this).attr('id', `light-${item}`);
+      jQuery(this).attr('id', `white-${item}`);
       new ScrollMagic.Scene({
-        triggerElement: `#light-${item}`,
+        triggerElement: `#white-${item}`,
         duration: jQuery(this).outerHeight(),
       }).on("enter", function(e) {
         jQuery(trigeredClasses).removeClass('darkTheme');
