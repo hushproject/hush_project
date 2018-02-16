@@ -335,7 +335,7 @@ homepagesections:
 settings:
   id: '164152'
   itemType: homepageseo
-  updatedAt: '2018-01-24T11:26:37.830Z'
+  updatedAt: '2018-02-16T11:59:13.269Z'
   createdAt: '2018-01-24T11:26:37.792Z'
   seoMetaTags:
     - tagName: title
@@ -367,7 +367,7 @@ settings:
     - tagName: meta
       attributes:
         property: 'article:modified_time'
-        content: '2018-01-24T11:26:37Z'
+        content: '2018-02-16T11:59:13Z'
     - tagName: meta
       attributes:
         property: 'og:locale'
@@ -388,7 +388,7 @@ settings:
       attributes:
         name: 'twitter:image'
         content: 'https://www.datocms-assets.com/4204/1514390706-hush-venues-outdoor-summer-norfolk-wedding-112-848x566-1.jpg'
-  nofollow: null
+  nofollow: false
   noindex: true
   seofields:
     title: HOME
@@ -401,5 +401,6 @@ settings:
       title: null
       alt: null
       url: 'https://www.datocms-assets.com/4204/1514390706-hush-venues-outdoor-summer-norfolk-wedding-112-848x566-1.jpg'
+  canonicalurl: 'http://hush.netlify.com/home'
 ---
 

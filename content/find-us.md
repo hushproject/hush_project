@@ -5,7 +5,7 @@ type: find-us
 settings:
   id: '145925'
   itemType: contact
-  updatedAt: '2018-01-24T11:45:01.997Z'
+  updatedAt: '2018-02-16T11:59:28.273Z'
   createdAt: '2017-12-18T12:26:33.654Z'
   seoMetaTags:
     - tagName: title
@@ -37,7 +37,7 @@ settings:
     - tagName: meta
       attributes:
         property: 'article:modified_time'
-        content: '2018-01-24T11:45:01Z'
+        content: '2018-02-16T11:59:28Z'
     - tagName: meta
       attributes:
         property: 'og:locale'
@@ -80,7 +80,7 @@ settings:
     title: null
     alt: null
     url: 'https://www.datocms-assets.com/4204/1513782410-map-mobile.jpg'
-  nofollow: null
+  nofollow: false
   noindex: false
   seofields:
     title: Find US
@@ -93,6 +93,7 @@ settings:
       title: null
       alt: null
       url: 'https://www.datocms-assets.com/4204/1513782410-map-mobile.jpg'
+  canonicalurl: 'http://hush.netlify.com/find-us/'
   slug: find-us
   title: Find us
 ---

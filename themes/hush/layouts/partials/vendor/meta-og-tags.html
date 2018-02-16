@@ -24,4 +24,9 @@
   {{end}}
   {{end}}
   <meta name="robots" content="{{with .Params.settings.noindex}}{{if eq . true}}noindex{{else}}index{{end}}{{end}}{{with .Params.settings.nofollow}},{{if eq . true}}nofollow{{else}}follow{{end}}{{end}}">
-  <link rel="canonical" href="{{ .Site.BaseURL }}{{ .Params.slug }}" />
+
+  {{if .Params.settings.canonicalurl}}
+  <link rel="canonical" href="{{.Params.settings.canonicalurl}}" />
+  {{else}}
+  <link rel="canonical" href="{{ .Site.BaseURL }}/{{.Permalink}}" />
+  {{end}}
