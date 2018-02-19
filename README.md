@@ -53,6 +53,9 @@ if necessary.
 ### Admin tricks:
 > 1. Image prefences
 > ![](./docs/images-setup.png)
+> 1. Imgix parameters to be included in the Title Field.
+> 3. Changing the Imgix parameters will not trigger a new deployment action. Some other change (eg minor text change) is needed to trigger a new deployment.
+> 4. Separate PHYSICAL images required in the media library for Mobile and Desktop versions. It is suggested that filenames for all mobile images are preceeded with "m-". 
 > 2. Always follow behind tips which placed under input field (Sure if they are present)
 > ![](./docs/tips.png)
 
