@@ -1,6 +1,6 @@
 <div class="container--fluid homePageContentSection
   {{if .visualpreferences}}{{range .visualpreferences}}{{.class}} {{end}}{{end}}"
-  id="the-vibe" style="background-color: {{.backgroundcolor.hex}}">
+  id="the-vibe" style="background-color: {{with .backgroundcolor}}{{.hex}}{{end}}">
   {{if .colorbackgroundtoppattern}}
   <div class="homePageContentSection__pattern homePageContentSection__pattern--top"
     style="background-image: url('{{.colorbackgroundtoppattern.url}}{{if .title}}{{.title}}{{else}}?auto=compress{{end}}')"></div>
