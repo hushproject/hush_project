@@ -5,8 +5,8 @@ type: '404'
 settings:
   id: '148167'
   itemType: notfoundpage
-  updatedAt: '2018-02-16T11:59:44.414Z'
-  createdAt: '2017-12-20T14:05:26.052Z'
+  updatedAt: '2018-03-17T05:55:46.559Z'
+  createdAt: '2018-03-17T05:55:46.559Z'
   noindexnofollow: true
   buttonhref: /
   buttontext: TAKE ME HOME
@@ -18,7 +18,7 @@ settings:
     size: 934506
     width: 1540
     height: 1012
-    title: null
+    title: '?auto=compress&fp-y=.5&fp-x=.5&crop=focalpoint&fit=crop&w=1920'
     alt: null
     url: 'https://www.datocms-assets.com/4204/1513778709-desktop-not-found.png'
   backgroundimagemobile:
@@ -26,7 +26,7 @@ settings:
     size: 119468
     width: 374
     height: 845
-    title: null
+    title: '?auto=compress&fp-y=.5&fp-x=.5&crop=focalpoint&fit=crop&w=640'
     alt: null
     url: 'https://www.datocms-assets.com/4204/1513778663-not-found-background.jpg'
 ---

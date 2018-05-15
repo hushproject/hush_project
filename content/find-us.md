@@ -5,8 +5,8 @@ type: find-us
 settings:
   id: '145925'
   itemType: contact
-  updatedAt: '2018-02-16T11:59:28.273Z'
-  createdAt: '2017-12-18T12:26:33.654Z'
+  updatedAt: '2018-05-03T17:42:06.538Z'
+  createdAt: '2018-05-03T17:42:06.323Z'
   seoMetaTags:
     - tagName: title
       content: Find US | HUSH
@@ -37,7 +37,7 @@ settings:
     - tagName: meta
       attributes:
         property: 'article:modified_time'
-        content: '2018-02-16T11:59:28Z'
+        content: '2018-05-03T17:42:06Z'
     - tagName: meta
       attributes:
         property: 'og:locale'
@@ -59,27 +59,27 @@ settings:
         name: 'twitter:image'
         content: 'https://www.datocms-assets.com/4204/1513782410-map-mobile.jpg'
   googledirectionstext: Click Here For Google Directions
-  googledirectionslink: 'https://www.google.co.uk/maps/dir//Colts+Lodge+Bed+%26+Breakfast,+Oak''s+Ln,+Postwick,+Norwich+NR13+5HD/@52.6111019,1.3527108,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47d9fcabb0d65977:0x8c6db7a6ad5847fc!2m2!1d1.389797!2d52.612325?hl=en'
+  googledirectionslink: 'https://www.google.co.uk/maps/dir//Hush+Venues,+Colt''s+Lodge,+Fair+Lane,+Norwich+NR13+5FT,+United+Kingdom/@52.6123599,1.3197192,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47d9fcaae9531fa3:0x258fff268f55fd8c!2m2!1d1.3897593!2d52.6123806?hl=en'
   description: We may be only a stone's throw from Norwich but we're very well hidden in the gentle folds of the Yare Valley...
   pinterestlink: 'https://www.pinterest.co.uk/hushvenues/'
   instagramlink: 'https://www.instagram.com/hushvenues/'
   facebooklink: 'https://www.facebook.com/HushVenues/'
   mappicturedesktop:
-    format: png
-    size: 360546
-    width: 1406
-    height: 859
-    title: null
+    format: jpeg
+    size: 497060
+    width: 1932
+    height: 1443
+    title: '?w=1920&auto=compress'
     alt: null
-    url: 'https://www.datocms-assets.com/4204/1513782443-layer-771.png'
+    url: 'https://www.datocms-assets.com/4204/1525369307-norwich_map_landscape.jpeg'
   mappicturemobile:
     format: jpg
-    size: 41915
-    width: 379
-    height: 374
-    title: null
+    size: 42644
+    width: 675
+    height: 594
+    title: '?w=640&auto=compress'
     alt: null
-    url: 'https://www.datocms-assets.com/4204/1513782410-map-mobile.jpg'
+    url: 'https://www.datocms-assets.com/4204/1525280481-3xdone.jpg'
   nofollow: false
   noindex: false
   seofields:
@@ -93,7 +93,7 @@ settings:
       title: null
       alt: null
       url: 'https://www.datocms-assets.com/4204/1513782410-map-mobile.jpg'
-  canonicalurl: 'http://hush.netlify.com/find-us/'
+  canonicalurl: ''
   slug: find-us
   title: Find us
 ---

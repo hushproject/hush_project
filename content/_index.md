@@ -2,45 +2,51 @@
 homepageheadersection:
   id: '144704'
   itemType: homepageheadersection
-  updatedAt: '2018-02-14T06:56:08.455Z'
-  createdAt: '2017-12-15T08:33:35.174Z'
+  updatedAt: '2018-03-19T10:35:57.648Z'
+  createdAt: '2018-03-19T10:35:57.586Z'
   visualpreferences:
     - id: '144999'
       itemType: buttonsprefence
       updatedAt: '2018-01-09T11:51:19.824Z'
-      createdAt: '2017-12-15T14:28:02.845Z'
+      createdAt: '2018-01-09T11:51:19.824Z'
       class: button--bordered
       title: Bordered (buttons style)
     - id: '145000'
       itemType: buttonsprefence
       updatedAt: '2018-01-09T11:50:57.318Z'
-      createdAt: '2017-12-15T14:28:18.987Z'
+      createdAt: '2018-01-09T11:50:57.318Z'
       class: button--white
       title: Cream (buttons color)
+    - id: '153399'
+      itemType: visualpreference
+      updatedAt: '2018-01-09T13:54:10.147Z'
+      createdAt: '2018-01-09T13:54:10.147Z'
+      class: lightMenu
+      title: Light burger menu color
   backgroundimagedesktop:
     format: jpg
-    size: 1611485
-    width: 1540
-    height: 930
-    title: null
+    size: 1683863
+    width: 2000
+    height: 1328
+    title: '?w=1920&h=1300&blend64=aHR0cHM6Ly93d3cuZGF0b2Ntcy1hc3NldHMuY29tLzQyMDQvMTUyMTM2MDM5OS1wZGZfYmxlbmRzLnBkZj9wYWdlPTEmYnJpPS0xNg&bs=inherit&bm=multiply&fit=crop&ba=top&crop=focalpoint&fp-x=0.4&fp-y=0.5&auto=compress'
     alt: null
-    url: 'https://www.datocms-assets.com/4204/1513604379-desktophomepage.jpg'
+    url: 'https://www.datocms-assets.com/4204/1521023993-jhp_ej_1.jpg'
   backgroundimagemobile:
     format: jpg
-    size: 135809
-    width: 379
-    height: 826
-    title: null
-    alt: null
-    url: 'https://www.datocms-assets.com/4204/1513326985-home-1st-section.jpg'
+    size: 2847859
+    width: 2000
+    height: 3000
+    title: '?exp=-3&bm=burn&blend64=aHR0cHM6Ly93d3cuZGF0b2Ntcy1hc3NldHMuY29tLzQyMDQvMTUyMTQ0NzMyMS1ib3R0b20tdG9wLWJsZW5kLmpwZz9jb249LTQwJmJyaT01MCZ3PTY0MCZoPTY0MA&h=640&w=640&high=-10&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=.9&gam=30&vib=30&ba=top'
+    alt: '?bs=inherit&bm=multiply&blend64=aHR0cHM6Ly93d3cuZGF0b2Ntcy1hc3NldHMuY29tLzQyMDQvMTUyMTQ0OTIyNy1jZW50ZXJlZC1ibGVuZC5qcGc_YnJpPTI1JmNvbj0tNjA&fit=crop&h=600&w=640&high=-10&crop=focalpoint&fp-x=0.6&fp-y=.9&gam=30&vib=30'
+    url: 'https://www.datocms-assets.com/4204/1521023975-jhp_ej_1m.jpg'
   nextsectionid: two
   enquirebuttontext: Enquire
-  tagline: Be Yourself  Together
+  tagline: Be yourself together!
 homepagesections:
   - id: '144897'
     itemType: homepagesection
-    updatedAt: '2018-02-13T15:48:49.984Z'
-    createdAt: '2017-12-15T12:36:57.545Z'
+    updatedAt: '2018-03-19T07:22:26.806Z'
+    createdAt: '2018-03-19T07:22:26.756Z'
     position: 1
     buttons: []
     nextsectionid: '#three'
@@ -50,33 +56,33 @@ homepagesections:
     backgroundcolor: null
     backgroundimagedesktop:
       format: jpg
-      size: 1203088
-      width: 1540
-      height: 930
-      title: '?mark64=aHR0cHM6Ly9zYW5kYm94LXVwbG9hZHMuaW1naXgubmV0L3UvMTUxODUxNDAxNy05MTEwNmEyOTNlZjE2YTU4YmNjZmFlMmI1MzVmOGI1Mj93PTEzMA&markx=720&marky=100&mask=https%3A%2F%2Fsandbox-uploads.imgix.net%2Fu%2F1518514120-df16bf5e8f5e1617188cd9bc3b9c0a96%3Fw%3D1540&maskbg=%23000&auto=compress'
+      size: 3332590
+      width: 2048
+      height: 1365
+      title: '?exp=-3&auto=compress&fp-y=.5&fp-x=.5&crop=focalpoint&fit=crop&w=1920'
       alt: null
-      url: 'https://www.datocms-assets.com/4204/1513927345-untitled-2.jpg'
+      url: 'https://www.datocms-assets.com/4204/1521262472-rdp_lt_1.jpg'
     backgroundimagemobile:
       format: jpg
-      size: 353524
-      width: 379
-      height: 812
-      title: null
+      size: 1499537
+      width: 903
+      height: 1363
+      title: '?exp=-3&auto=compress&fp-y=.5&fp-x=.5&crop=focalpoint&fit=crop&w=640'
       alt: null
-      url: 'https://www.datocms-assets.com/4204/1513341719-yare-valley.jpg'
-    description: 'An area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yours An area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yoursAn area of outstanding beauty. Meadows, a secluded wood, a clearing surrounded by lush ferns – all yours.'
-    title: Breathtaking Views of the Yare Valley
+      url: 'https://www.datocms-assets.com/4204/1521262425-rdp_lt_1m.jpg'
+    description: 'Hush is unlike any other venue you can think of. Magical life long memories are made here. '
+    title: Extraordinary experiences in the natural world
     visualpreferences:
       - id: '153221'
         itemType: visualpreference
         updatedAt: '2018-02-12T05:29:12.764Z'
-        createdAt: '2018-01-09T08:28:47.634Z'
+        createdAt: '2018-02-12T05:29:12.764Z'
         class: textColor--cream
         title: 'Cream (text color) (#F8F1DE)'
   - id: '144912'
     itemType: homepagesection
-    updatedAt: '2018-02-14T04:59:34.217Z'
-    createdAt: '2017-12-15T13:04:06.364Z'
+    updatedAt: '2018-04-09T15:25:08.372Z'
+    createdAt: '2018-04-09T15:25:08.333Z'
     position: 2
     buttons: []
     nextsectionid: '#four'
@@ -86,53 +92,53 @@ homepagesections:
     backgroundcolor: null
     backgroundimagedesktop:
       format: jpg
-      size: 903150
-      width: 1540
-      height: 930
-      title: '?mark64=aHR0cHM6Ly9zYW5kYm94LXVwbG9hZHMuaW1naXgubmV0L3UvMTUxODUxNDAxNy05MTEwNmEyOTNlZjE2YTU4YmNjZmFlMmI1MzVmOGI1Mj93PTEzMA&markx=720&marky=150&mask=https%3A%2F%2Fsandbox-uploads.imgix.net%2Fu%2F1518514120-df16bf5e8f5e1617188cd9bc3b9c0a96%3Fw%3D1540&maskbg=%23000&auto=compress'
+      size: 8738377
+      width: 5596
+      height: 3323
+      title: '?exp=-4&w=1920&blend64=aHR0cHM6Ly93d3cuZGF0b2Ntcy1hc3NldHMuY29tLzQyMDQvMTUyMTM2MDM5OS1wZGZfYmxlbmRzLnBkZj9wYWdlPTEmYnJpPS0xNg&bs=inherit&bm=multiply&fit=crop&ba=top&crop=focalpoint&fp-x=0.5&fp-y=0.5&auto=compress'
       alt: null
-      url: 'https://www.datocms-assets.com/4204/1513927370-untitled-3.jpg'
+      url: 'https://www.datocms-assets.com/4204/1521261880-trp_1.jpg'
     backgroundimagemobile:
       format: jpg
-      size: 233998
-      width: 378
-      height: 812
-      title: null
+      size: 3100351
+      width: 1971
+      height: 3249
+      title: '?exp=-6&w=640&auto=compress&fit=crop&fp-x=.5&fp-y=.5&bm=multiply&ba=top&blend64=aHR0cHM6Ly93d3cuZGF0b2Ntcy1hc3NldHMuY29tLzQyMDQvMTUyMTQ0NzMyMS1ib3R0b20tdG9wLWJsZW5kLmpwZz93PTY0MCZicmk9NTAmY29uPS00MCZmbGlwPXY&crop=focalpoint'
       alt: null
-      url: 'https://www.datocms-assets.com/4204/1513343008-exclusive-use.jpg'
-    description: '*An experience to savour. Yours and your guest''s own woodland world for three nights. No need to rush – it''s all yours.*'
-    title: 3 Nights Exclusive Use
+      url: 'https://www.datocms-assets.com/4204/1521261874-trp_1m.jpg'
+    description: An experience to savour in the wild. Yours and your guest's own world for three days. No need to rush – it's all yours.
+    title: 3 Days Exclusive Use
     visualpreferences:
       - id: '153221'
         itemType: visualpreference
         updatedAt: '2018-02-12T05:29:12.764Z'
-        createdAt: '2018-01-09T08:28:47.634Z'
+        createdAt: '2018-02-12T05:29:12.764Z'
         class: textColor--cream
         title: 'Cream (text color) (#F8F1DE)'
   - id: '144957'
     itemType: homepagesection
-    updatedAt: '2018-02-13T15:48:50.073Z'
-    createdAt: '2017-12-15T13:35:38.040Z'
+    updatedAt: '2018-04-10T05:52:26.782Z'
+    createdAt: '2018-04-10T05:52:26.670Z'
     position: 3
     buttons:
       - id: '153324'
         itemType: button
-        updatedAt: '2018-02-12T06:15:51.850Z'
-        createdAt: '2018-01-09T11:52:58.250Z'
+        updatedAt: '2018-04-10T05:52:26.049Z'
+        createdAt: '2018-04-10T05:52:26.039Z'
         setting:
           - id: '144999'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:51:19.824Z'
-            createdAt: '2017-12-15T14:28:02.845Z'
+            createdAt: '2018-01-09T11:51:19.824Z'
             class: button--bordered
             title: Bordered (buttons style)
           - id: '145000'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:50:57.318Z'
-            createdAt: '2017-12-15T14:28:18.987Z'
+            createdAt: '2018-01-09T11:50:57.318Z'
             class: button--white
             title: Cream (buttons color)
-        url: /
+        url: /your_wedding
         title: More
     nextsectionid: '#vibe'
     sectionid: four
@@ -141,27 +147,27 @@ homepagesections:
     backgroundcolor: null
     backgroundimagedesktop:
       format: jpg
-      size: 907849
-      width: 1540
-      height: 930
-      title: '?mark64=aHR0cHM6Ly9zYW5kYm94LXVwbG9hZHMuaW1naXgubmV0L3UvMTUxODUxNDAxNy05MTEwNmEyOTNlZjE2YTU4YmNjZmFlMmI1MzVmOGI1Mj93PTEzMA&markx=720&marky=150&mask=https%3A%2F%2Fsandbox-uploads.imgix.net%2Fu%2F1518514120-df16bf5e8f5e1617188cd9bc3b9c0a96%3Fw%3D1540&maskbg=%23000&auto=compress'
+      size: 1064023
+      width: 2048
+      height: 1365
+      title: '?exp=-4&w=1920&blend64=aHR0cHM6Ly93d3cuZGF0b2Ntcy1hc3NldHMuY29tLzQyMDQvMTUyMTM2MDM5OS1wZGZfYmxlbmRzLnBkZj9wYWdlPTEmYnJpPS0xNg&bs=inherit&bm=multiply&fit=crop&ba=top&crop=focalpoint&fp-x=0.5&fp-y=0.5&auto=compress'
       alt: null
-      url: 'https://www.datocms-assets.com/4204/1513927384-untitled-4.jpg'
+      url: 'https://www.datocms-assets.com/4204/1521262982-mjp_sr_1.jpg'
     backgroundimagemobile:
       format: jpg
-      size: 248084
-      width: 374
-      height: 812
-      title: null
+      size: 461313
+      width: 846
+      height: 1358
+      title: '?exp=-2&crop=focalpoint&blend64=aHR0cHM6Ly93d3cuZGF0b2Ntcy1hc3NldHMuY29tLzQyMDQvMTUyMTQ0OTIyNy1jZW50ZXJlZC1ibGVuZC5qcGc_YnJpPTIwJmNvbj0tNjA&ba=centre&bm=multiply&fp-y=.5&fp-x=.5&fit=crop&auto=compress&w=640&bs=inherit'
       alt: null
-      url: 'https://www.datocms-assets.com/4204/1513344905-your-ceremony.jpg'
-    description: '*The Olde Woodshood under a canopy of beech, the drawing room at Colt''s Lodge, All Saints Church. The ceremony of your choice, a moment that is all yours.*'
-    title: Your Ceremony
+      url: 'https://www.datocms-assets.com/4204/1521262968-mjp_sr_1m.jpg'
+    description: 'Its yours to create. We supply the time, the space, the accomodation and key essentials. And if you need some help - we''re always here for you.'
+    title: Your wedding
     visualpreferences:
       - id: '153221'
         itemType: visualpreference
         updatedAt: '2018-02-12T05:29:12.764Z'
-        createdAt: '2018-01-09T08:28:47.634Z'
+        createdAt: '2018-02-12T05:29:12.764Z'
         class: textColor--cream
         title: 'Cream (text color) (#F8F1DE)'
       - id: '153399'
@@ -172,27 +178,27 @@ homepagesections:
         title: Light burger menu color
   - id: '144975'
     itemType: homepagesection
-    updatedAt: '2018-02-11T08:00:03.590Z'
-    createdAt: '2017-12-15T13:51:18.672Z'
+    updatedAt: '2018-05-10T20:46:14.078Z'
+    createdAt: '2018-05-10T20:46:14.024Z'
     position: 4
     buttons:
       - id: '153258'
         itemType: button
-        updatedAt: '2018-02-11T08:00:01.596Z'
-        createdAt: '2018-01-09T09:38:56.480Z'
+        updatedAt: '2018-05-10T20:46:12.355Z'
+        createdAt: '2018-05-10T20:46:12.343Z'
         setting:
           - id: '144999'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:51:19.824Z'
-            createdAt: '2017-12-15T14:28:02.845Z'
+            createdAt: '2018-01-09T11:51:19.824Z'
             class: button--bordered
             title: Bordered (buttons style)
-          - id: '145000'
+          - id: '145001'
             itemType: buttonsprefence
-            updatedAt: '2018-01-09T11:50:57.318Z'
-            createdAt: '2017-12-15T14:28:18.987Z'
-            class: button--white
-            title: Cream (buttons color)
+            updatedAt: '2018-01-09T11:50:38.686Z'
+            createdAt: '2018-01-09T11:50:38.686Z'
+            class: button--brown
+            title: Brown (buttons color)
         url: /vibe
         title: More
     nextsectionid: '#accomodation'
@@ -222,20 +228,15 @@ homepagesections:
     backgroundimagedesktop: null
     backgroundimagemobile: null
     description: |-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+      Hush is more than just a venue to host your ceremony or reception. It’s a home for your wedding, where outstanding natural beauty meets flexibility, space, time, and convenience. Our gorgeous landscape is a space for couples to be creative, connect with their loved ones and take the time to enjoy the magic of getting married. 
 
-      Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
-
-      Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
-
-      Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      If you’d like, Hush can be yours for a long weekend, so there’s no rush in getting things over and done with. This ethereal setting is a blank canvas, capable of transforming into anything from a makeshift wedding festival to an open-air banquet.
     title: The Vibe
     visualpreferences:
       - id: '153224'
         itemType: visualpreference
         updatedAt: '2018-02-12T05:29:49.251Z'
-        createdAt: '2018-01-09T08:30:44.137Z'
+        createdAt: '2018-02-12T05:29:49.251Z'
         class: textColor--brown--dark
         title: 'Brown-dark (text color) (#5D5139)'
       - id: '153400'
@@ -246,47 +247,47 @@ homepagesections:
         title: Dark burger menu color
   - id: '144998'
     itemType: homepagesection
-    updatedAt: '2018-02-12T08:10:16.750Z'
-    createdAt: '2017-12-15T14:17:03.430Z'
+    updatedAt: '2018-04-09T15:27:59.595Z'
+    createdAt: '2018-04-09T15:27:59.539Z'
     position: 5
     buttons:
       - id: '153259'
         itemType: button
-        updatedAt: '2018-02-12T06:15:51.906Z'
-        createdAt: '2018-01-09T09:40:17.601Z'
+        updatedAt: '2018-04-09T15:27:58.531Z'
+        createdAt: '2018-04-09T15:27:58.521Z'
         setting:
           - id: '145000'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:50:57.318Z'
-            createdAt: '2017-12-15T14:28:18.987Z'
+            createdAt: '2018-01-09T11:50:57.318Z'
             class: button--white
             title: Cream (buttons color)
           - id: '144999'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:51:19.824Z'
-            createdAt: '2017-12-15T14:28:02.845Z'
+            createdAt: '2018-01-09T11:51:19.824Z'
             class: button--bordered
             title: Bordered (buttons style)
-        url: /content-page-dato
+        url: /coltslodge
         title: Colts Lodge
       - id: '153260'
         itemType: button
-        updatedAt: '2018-02-12T08:10:15.639Z'
-        createdAt: '2018-01-09T09:40:17.734Z'
+        updatedAt: '2018-04-09T15:27:58.522Z'
+        createdAt: '2018-04-09T15:27:58.513Z'
         setting:
           - id: '144999'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:51:19.824Z'
-            createdAt: '2017-12-15T14:28:02.845Z'
+            createdAt: '2018-01-09T11:51:19.824Z'
             class: button--bordered
             title: Bordered (buttons style)
           - id: '145000'
             itemType: buttonsprefence
             updatedAt: '2018-01-09T11:50:57.318Z'
-            createdAt: '2017-12-15T14:28:18.987Z'
+            createdAt: '2018-01-09T11:50:57.318Z'
             class: button--white
             title: Cream (buttons color)
-        url: /content-page-dato
+        url: /glamping
         title: ' Glamping '
     nextsectionid: null
     sectionid: accomodation
@@ -315,15 +316,15 @@ homepagesections:
     backgroundimagedesktop: null
     backgroundimagemobile: null
     description: |-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+      Both you and your loved ones will need a place to rest during your adventures at Hush. With Colts Lodge and the Glamping Meadow we've crafted the perfect balance of fun and luxury.
 
-      Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Give yourself a cosy nest at Colts Lodge with room for up to eleven of your nearest and dearest. Spread out with tents and tipis in the Glamping Meadow to enjoy fireside chats and breakfast.
     title: Accomodation
     visualpreferences:
       - id: '153221'
         itemType: visualpreference
         updatedAt: '2018-02-12T05:29:12.764Z'
-        createdAt: '2018-01-09T08:28:47.634Z'
+        createdAt: '2018-02-12T05:29:12.764Z'
         class: textColor--cream
         title: 'Cream (text color) (#F8F1DE)'
       - id: '153399'
@@ -336,7 +337,7 @@ settings:
   id: '164152'
   itemType: homepageseo
   updatedAt: '2018-02-16T11:59:13.269Z'
-  createdAt: '2018-01-24T11:26:37.792Z'
+  createdAt: '2018-02-16T11:59:13.269Z'
   seoMetaTags:
     - tagName: title
       content: HOME | HUSH
@@ -398,7 +399,7 @@ settings:
       size: 221505
       width: 848
       height: 566
-      title: null
+      title: '?mark64=aHR0cHM6Ly9zYW5kYm94LXVwbG9hZHMuaW1naXgubmV0L3UvMTUxOTIyNDk1Mi04MjExZGY2ZTdhYmJjY2U0OTE2MGQ0MTJjZDAwYjA1NT93PTEzMA&markx=705&marky=50&maskbg=%237F8C8D&mask=https%3A%2F%2Fsandbox-uploads.imgix.net%2Fu%2F1519226894-307d7f5a7f75b725a9d553ca6821a10a%3Fw%3D1540&auto=compress'
       alt: null
       url: 'https://www.datocms-assets.com/4204/1514390706-hush-venues-outdoor-summer-norfolk-wedding-112-848x566-1.jpg'
   canonicalurl: 'http://hush.netlify.com/home'

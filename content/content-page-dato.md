@@ -6,7 +6,7 @@ settings:
   id: '145854'
   itemType: contentpage
   updatedAt: '2017-12-21T12:28:26.098Z'
-  createdAt: '2017-12-18T10:02:15.879Z'
+  createdAt: '2017-12-21T12:28:26.098Z'
   seoMetaTags:
     - tagName: title
       content: Content page | HUSH
@@ -68,7 +68,7 @@ settings:
     - id: '148512'
       itemType: patternedsection
       updatedAt: '2017-12-21T11:26:34.672Z'
-      createdAt: '2017-12-21T08:54:35.760Z'
+      createdAt: '2017-12-21T11:26:34.672Z'
       maxtitlewidth: null
       dontshowpattern: null
       manualbackground: null
@@ -83,7 +83,7 @@ settings:
     - id: '148513'
       itemType: presentationsection
       updatedAt: '2017-12-21T10:01:21.032Z'
-      createdAt: '2017-12-21T08:56:35.077Z'
+      createdAt: '2017-12-21T10:01:21.032Z'
       maxtitlewidth: null
       backgroundimagedesktop:
         format: jpg
@@ -107,7 +107,7 @@ settings:
     - id: '148515'
       itemType: itemsection
       updatedAt: '2017-12-21T11:55:59.264Z'
-      createdAt: '2017-12-21T09:00:04.195Z'
+      createdAt: '2017-12-21T11:55:59.264Z'
       manualbackground: null
       picture:
         format: png
@@ -127,7 +127,7 @@ settings:
     - id: '148514'
       itemType: itemsection
       updatedAt: '2017-12-21T11:55:59.341Z'
-      createdAt: '2017-12-21T09:00:04.178Z'
+      createdAt: '2017-12-21T11:55:59.341Z'
       manualbackground: null
       picture:
         format: png
@@ -147,7 +147,7 @@ settings:
     - id: '148565'
       itemType: itemsection
       updatedAt: '2017-12-21T12:00:26.864Z'
-      createdAt: '2017-12-21T12:00:26.813Z'
+      createdAt: '2017-12-21T12:00:26.864Z'
       manualbackground: null
       picture:
         format: png
@@ -167,7 +167,7 @@ settings:
     - id: '148591'
       itemType: itemsection
       updatedAt: '2017-12-21T12:28:24.967Z'
-      createdAt: '2017-12-21T12:28:24.918Z'
+      createdAt: '2017-12-21T12:28:24.967Z'
       manualbackground: null
       picture:
         format: png
@@ -187,7 +187,7 @@ settings:
     - id: '148592'
       itemType: itemsection
       updatedAt: '2017-12-21T12:28:25.084Z'
-      createdAt: '2017-12-21T12:28:25.052Z'
+      createdAt: '2017-12-21T12:28:25.084Z'
       manualbackground: null
       picture:
         format: png
@@ -207,7 +207,7 @@ settings:
     - id: '148593'
       itemType: itemsection
       updatedAt: '2017-12-21T12:28:25.104Z'
-      createdAt: '2017-12-21T12:28:25.071Z'
+      createdAt: '2017-12-21T12:28:25.104Z'
       manualbackground: null
       picture:
         format: png
@@ -227,7 +227,7 @@ settings:
     - id: '148594'
       itemType: presentationsection
       updatedAt: '2017-12-21T12:28:25.276Z'
-      createdAt: '2017-12-21T12:28:25.201Z'
+      createdAt: '2017-12-21T12:28:25.276Z'
       maxtitlewidth: null
       backgroundimagedesktop:
         format: jpg
@@ -251,7 +251,7 @@ settings:
     - id: '148531'
       itemType: patternedsection
       updatedAt: '2017-12-21T11:26:34.694Z'
-      createdAt: '2017-12-21T10:24:13.999Z'
+      createdAt: '2017-12-21T11:26:34.694Z'
       maxtitlewidth: null
       dontshowpattern: null
       manualbackground: null
