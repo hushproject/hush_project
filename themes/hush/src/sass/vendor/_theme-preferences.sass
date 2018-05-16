@@ -56,18 +56,43 @@ body.noScroll
     font-size: 0px
     width: 30px
     height: 30px
-    border: 0px
-    border-left: 3px solid $brown-1
-    border-top: 3px solid $brown-1
-    background: transparent
+    // border: 0px
+    // border-left: 3px solid $brown-1
+    // border-top: 3px solid $brown-1
+    // background: transparent
+    background-image: url(../images-theme/arrow.svg)
+    background-color: transparent
+    background-size: 23px
+    background-repeat: no-repeat
+    background-position: 50% 50%
     z-index: 2
-    opacity: 0.3
+    //opacity: 0.3
+    border: 2px solid $brown-1
+    border-radius: 50%
   .slick-prev
     left: 20px
-    transform: rotate(-45deg)
+    //transform: rotate(-45deg)
   .slick-next
     right: 20px
-    transform: rotate(135deg)
+    //transform: rotate(135deg)
+
+.slick-dots
+  margin-top: 10px
+  li
+    display: inline-block
+    margin: 0 2px
+    &.slick-active
+      button
+        background-color: #5d5139
+    button
+      display: inline-block
+      width: 16px
+      height: 16px
+      background-color: #b09e7b
+      margin: 0 3px
+      color: transparent
+      border: none
+      border-radius: 50%      
 @keyframes jump
   0%
     transform: translate3d(0, 0, 0)
@@ -119,7 +144,7 @@ body.noScroll
       height: 40px
     .slick-prev
       left: 50px
-      transform: rotate(-45deg)
+      transform: rotate(-180deg)
     .slick-next
       right: 50px
-      transform: rotate(135deg)
+      //transform: rotate(135deg)
