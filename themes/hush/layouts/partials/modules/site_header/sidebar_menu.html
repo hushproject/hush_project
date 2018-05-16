@@ -1,38 +1,25 @@
-{{$siteMenu := .Site.Params.siteMenu}}
-{{$active := replace .Params.slug "/" ""}}
+{{$siteMenu := .Site.Params.siteMenu}} {{$active := replace .Params.slug "/" ""}}
 <div class="siteSidebarMenu">
-  <div class="siteSidebarMenu__inner">
-    {{range $siteMenu.menugroup}}
-      <ul>
-        <span>{{.grouptitle}}</span>
-        {{if .link}}
-          {{range .link}}
+    <div class="siteSidebarMenu__inner">
+        {{range $siteMenu.menugroup}}
+        <ul>
+            <span>{{.menugroup}}</span> {{if .link}} {{range .link}}
             <li>
-            {{$url := replace .url "/" ""}}
-            {{if eq $active $url}}
-              <a href="{{.url}}" class="active {{range .buttonstyle}} {{.class}} {{end}}">{{.title}}</a>
-              {{else}}
-              <a href="{{.url}}" class="{{range .buttonstyle}} {{.class}} {{end}}">{{.title}}</a>
-            {{end}}
+                {{$url := replace .url "/" ""}} {{if eq $active $url}}
+                <a href="{{.url}}" class="active {{range .buttonstyle}} {{.class}} {{end}}">{{.title}}</a> {{else}}
+                <a href="{{.url}}" class="{{range .buttonstyle}} {{.class}} {{end}}">{{.title}}</a> {{end}}
             </li>
-          {{end}}
-        {{end}}
-        {{if .selectfrompages}}
-          {{range .selectfrompages}}
+            {{end}} {{end}} {{if .selectfrompages}} {{range .selectfrompages}}
             <li>
-              {{$url := replace .url "/" ""}}
-              {{if eq $active $url}}
-                <a href="{{.url}}" class="active {{range .buttonstyle}} {{.class}} {{end}}">{{.title}}</a>
-                {{else}}
-                <a href="{{.url}}" class="{{range .buttonstyle}} {{.class}} {{end}}">{{.title}}</a>
-              {{end}}
+                {{$url := replace .url "/" ""}} {{if eq $active $url}}
+                <a href="{{.url}}" class="active {{range .buttonstyle}} {{.class}} {{end}}">{{.title}}</a> {{else}}
+                <a href="{{.url}}" class="{{range .buttonstyle}} {{.class}} {{end}}">{{.title}}</a> {{end}}
             </li>
-          {{end}}
+            {{end}} {{end}}
+        </ul>
         {{end}}
-      </ul>
-    {{end}}
-    <a href="/" class="siteSidebarMenu__innerLogo">
-      <img src="/images-theme/sidebar-menu-logo.svg" alt="Hush">
-    </a>
-  </div>
+        <a href="/" class="siteSidebarMenu__innerLogo">
+            <img src="/images-theme/sidebar-menu-logo.svg" alt="Hush">
+        </a>
+    </div>
 </div>

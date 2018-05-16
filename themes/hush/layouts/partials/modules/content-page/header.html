@@ -1,37 +1,33 @@
-{{$headerSection := .Params.settings}}
-
-{{with $headerSection.headerbackgroundimagemobile}}
-  <style>
+{{$headerSection := .Params.settings}} {{with $headerSection.headerbackgroundimagemobile}}
+<style>
     .contentPage__header__pattern {
-      background-image: url('{{.url}}{{if .title}}{{.title}}{{else}}?auto=compress{{end}}');
-      height: 100vh;
-    }
-  </style>
-{{end}}
-{{with $headerSection.headerbackgroundimagedesktop}}
-  <style>
-    @media screen and (min-width : 640px) {
-      .contentPage__header__pattern {
         background-image: url('{{.url}}{{if .title}}{{.title}}{{else}}?auto=compress{{end}}');
-      }
+        height: 100vh;
     }
-  </style>
+</style>
+{{end}} {{with $headerSection.headerbackgroundimagedesktop}}
+<style>
+    @media screen and (min-width: 640px) {
+        .contentPage__header__pattern {
+            background-image: url('{{.url}}{{if .title}}{{.title}}{{else}}?auto=compress{{end}}');
+        }
+    }
+</style>
 {{end}}
 <div class="container--fluid contentPage__header
   {{with $headerSection.visualpreferencesheader}}{{range .}}{{.class}} {{end}}{{end}}" id="contentPageHeader">
-  <div class="contentPage__header__pattern"></div>
-  <div class="container">
-    <div class="contentPage__header__text pinHeader">
-      {{with $headerSection.headertitle}}
-      <div class="contentPage__header__title animate">
-        <h1>{{.}}</h1>
-      </div>
-      {{end}}
-      {{with $headerSection.headerdescription}}
-      <div class="contentPage__header__tagline animate">
-        <p>{{.}}</p>
-      </div>
-      {{end}}
+    <div class="contentPage__header__pattern"></div>
+    <div class="container">
+        <div class="contentPage__header__text pinHeader">
+            {{with $headerSection.headertitle}}
+            <div class="contentPage__header__title animate">
+                <h1>{{.}}</h1>
+            </div>
+            {{end}} {{with $headerSection.headerdescription}}
+            <div class="contentPage__header__tagline animate">
+                <p>{{.}}</p>
+            </div>
+            {{end}}
+        </div>
     </div>
-  </div>
 </div>

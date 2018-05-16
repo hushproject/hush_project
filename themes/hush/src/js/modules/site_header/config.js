@@ -3,6 +3,7 @@
         let controller = new ScrollMagic.Controller(),
             trigeredClasses = ".homeHeader__description .siteLogo, .siteHeader__burgerMenu__button, .siteHeader__logo",
             hideMenuWord = ".pinHeader";
+        console.log(hideMenuWord.length);
         if (jQuery(hideMenuWord).length) {
             new ScrollMagic.Scene({
                     triggerElement: hideMenuWord,
@@ -115,5 +116,28 @@
             menu.find('i').css('display', 'block')
         }
     })
+
+    jQuery(window).bind("load resize", function() {
+
+        if (jQuery(window).width() < 600) {
+            jQuery('.siteHeader__logo.fixedTop').css('opacity', 1);
+            jQuery('.siteHeader__burgerMenu__button.fixedTop i').css('opacity', 1);
+            jQuery(window).scroll(function() {
+                var $this = jQuery(this),
+                    menu = jQuery('body');
+                if ($this.scrollTop() > 200) {
+                    jQuery('.siteHeader__logo.fixedTop').css('opacity', 0);
+                    jQuery('.siteHeader__burgerMenu__button.fixedTop i').css('opacity', 0);
+                } else {
+                    jQuery('.siteHeader__logo.fixedTop').css('opacity', 1);
+                    jQuery('.siteHeader__burgerMenu__button.fixedTop i').css('opacity', 1);
+                }
+            })
+
+        } else {
+            $('.aside-panel').removeClass('mobile');
+        }
+    });
+
 
 }
