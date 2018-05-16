@@ -23,11 +23,15 @@
             <div class="contentPage__header__title animate">
                 <h1>{{.}}</h1>
             </div>
-            {{end}} {{with $headerSection.headerDescription}}
+            {{end}} {{with $headerSection.headerdescription}}
+            <div class="contentPage__header__tagline animate">
+                <p>{{.}}</p>
+            </div>
+            {{end}} {{with $headerSection.header_description_full}}
             <div class="contentPage__header__tagline animate">
                 <p>{{.}}</p>
             </div>
             {{end}}
         </div>
     </div>
-</div>
+</div>git
