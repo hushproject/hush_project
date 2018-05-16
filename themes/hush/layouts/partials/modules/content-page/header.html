@@ -23,12 +23,8 @@
             <div class="contentPage__header__title animate">
                 <h1>{{.}}</h1>
             </div>
-            {{end}} {{with $headerSection.headerdescription}}
-            <div class="contentPage__header__tagline animate">
-                <p>{{.}}</p>
-            </div>
-            {{end}} {{with $headerSection.header_description_full}}
-            <div class="contentPage__header__tagline animate">
+            {{end}} {{with $headerSection.headerDescriptionFull}}
+            <div class="contentPage__header__tagline animate test-class">
                 <p>{{.}}</p>
             </div>
             {{end}}
