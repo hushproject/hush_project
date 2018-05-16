@@ -280,7 +280,7 @@ settings:
     title: null
     alt: null
     url: 'https://www.datocms-assets.com/4204/1513845731-layer-8.jpg'
-  headerDescriptionFull: 'Unique, outdoor weddings in the heart of rural Norfolk'
+  headerdescription: 'Unique, outdoor weddings in the heart of rural Norfolk'
   headertitle: A Beautiful Outdoor Wedding Venue
   canonicalurl: null
   slug: content-page-dato
