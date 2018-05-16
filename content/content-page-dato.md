@@ -5,8 +5,8 @@ type: content-page
 settings:
   id: '145854'
   itemType: contentpage
-  updatedAt: '2017-12-21T12:28:26.098Z'
-  createdAt: '2017-12-21T12:28:26.098Z'
+  updatedAt: '2018-05-16T12:49:40.255Z'
+  createdAt: '2018-05-16T12:49:40.209Z'
   seoMetaTags:
     - tagName: title
       content: Content page | HUSH
@@ -37,7 +37,7 @@ settings:
     - tagName: meta
       attributes:
         property: 'article:modified_time'
-        content: '2017-12-21T12:28:26Z'
+        content: '2018-05-16T12:49:40Z'
     - tagName: meta
       attributes:
         property: 'og:locale'
@@ -58,19 +58,19 @@ settings:
       attributes:
         name: 'twitter:image'
         content: 'https://www.datocms-assets.com/4204/1513845459-content-page-header.jpg'
-  nofollow: null
-  noindex: null
-  hidelogoyn: null
-  hideheadersectionyn: null
-  hidetestimonialsyn: null
+  nofollow: false
+  noindex: false
+  hidelogoyn: false
+  hideheadersectionyn: false
+  hidetestimonialsyn: false
   seofields: null
   pagebloks:
     - id: '148512'
       itemType: patternedsection
-      updatedAt: '2017-12-21T11:26:34.672Z'
-      createdAt: '2017-12-21T11:26:34.672Z'
+      updatedAt: '2018-05-16T12:49:38.121Z'
+      createdAt: '2018-05-16T12:49:38.109Z'
       maxtitlewidth: null
-      dontshowpattern: null
+      dontshowpattern: false
       manualbackground: null
       fullwidthtext: null
       rightcolumn: |
@@ -82,8 +82,8 @@ settings:
       visualpreferences: []
     - id: '148513'
       itemType: presentationsection
-      updatedAt: '2017-12-21T10:01:21.032Z'
-      createdAt: '2017-12-21T10:01:21.032Z'
+      updatedAt: '2018-05-16T12:49:38.174Z'
+      createdAt: '2018-05-16T12:49:38.127Z'
       maxtitlewidth: null
       backgroundimagedesktop:
         format: jpg
@@ -106,8 +106,8 @@ settings:
       visualpreferences: []
     - id: '148515'
       itemType: itemsection
-      updatedAt: '2017-12-21T11:55:59.264Z'
-      createdAt: '2017-12-21T11:55:59.264Z'
+      updatedAt: '2018-05-16T12:49:38.163Z'
+      createdAt: '2018-05-16T12:49:38.132Z'
       manualbackground: null
       picture:
         format: png
@@ -126,8 +126,8 @@ settings:
       visualpreferences: []
     - id: '148514'
       itemType: itemsection
-      updatedAt: '2017-12-21T11:55:59.341Z'
-      createdAt: '2017-12-21T11:55:59.341Z'
+      updatedAt: '2018-05-16T12:49:38.142Z'
+      createdAt: '2018-05-16T12:49:38.119Z'
       manualbackground: null
       picture:
         format: png
@@ -146,8 +146,8 @@ settings:
       visualpreferences: []
     - id: '148565'
       itemType: itemsection
-      updatedAt: '2017-12-21T12:00:26.864Z'
-      createdAt: '2017-12-21T12:00:26.864Z'
+      updatedAt: '2018-05-16T12:49:38.163Z'
+      createdAt: '2018-05-16T12:49:38.136Z'
       manualbackground: null
       picture:
         format: png
@@ -166,8 +166,8 @@ settings:
       visualpreferences: []
     - id: '148591'
       itemType: itemsection
-      updatedAt: '2017-12-21T12:28:24.967Z'
-      createdAt: '2017-12-21T12:28:24.967Z'
+      updatedAt: '2018-05-16T12:49:38.406Z'
+      createdAt: '2018-05-16T12:49:38.380Z'
       manualbackground: null
       picture:
         format: png
@@ -186,8 +186,8 @@ settings:
       visualpreferences: []
     - id: '148592'
       itemType: itemsection
-      updatedAt: '2017-12-21T12:28:25.084Z'
-      createdAt: '2017-12-21T12:28:25.084Z'
+      updatedAt: '2018-05-16T12:49:38.644Z'
+      createdAt: '2018-05-16T12:49:38.595Z'
       manualbackground: null
       picture:
         format: png
@@ -206,8 +206,8 @@ settings:
       visualpreferences: []
     - id: '148593'
       itemType: itemsection
-      updatedAt: '2017-12-21T12:28:25.104Z'
-      createdAt: '2017-12-21T12:28:25.104Z'
+      updatedAt: '2018-05-16T12:49:38.626Z'
+      createdAt: '2018-05-16T12:49:38.603Z'
       manualbackground: null
       picture:
         format: png
@@ -226,8 +226,8 @@ settings:
       visualpreferences: []
     - id: '148594'
       itemType: presentationsection
-      updatedAt: '2017-12-21T12:28:25.276Z'
-      createdAt: '2017-12-21T12:28:25.276Z'
+      updatedAt: '2018-05-16T12:49:38.717Z'
+      createdAt: '2018-05-16T12:49:38.660Z'
       maxtitlewidth: null
       backgroundimagedesktop:
         format: jpg
@@ -250,10 +250,10 @@ settings:
       visualpreferences: []
     - id: '148531'
       itemType: patternedsection
-      updatedAt: '2017-12-21T11:26:34.694Z'
-      createdAt: '2017-12-21T11:26:34.694Z'
+      updatedAt: '2018-05-16T12:49:38.778Z'
+      createdAt: '2018-05-16T12:49:38.759Z'
       maxtitlewidth: null
-      dontshowpattern: null
+      dontshowpattern: false
       manualbackground: null
       fullwidthtext: null
       rightcolumn: |
@@ -280,6 +280,7 @@ settings:
     title: null
     alt: null
     url: 'https://www.datocms-assets.com/4204/1513845731-layer-8.jpg'
+  headerDescriptionFull: 'Unique, outdoor weddings in the heart of rural Norfolk'
   headerdescription: 'Unique, outdoor weddings in the heart of rural Norfolk'
   headertitle: A Beautiful Outdoor Wedding Venue
   canonicalurl: null
