@@ -18,10 +18,10 @@ import slick from "slick-carousel"; {
                     settings: {
                         slidesToShow: 1,
                         adaptiveHeight: true,
-                        slidesToScroll: 1,
                         autoplay: false,
                         fade: false,
-                        adaptiveHeight: true
+                        centerMode: true,
+                        centerPadding: '0px'
                     }
                 }]
             });

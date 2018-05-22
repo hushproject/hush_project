@@ -60,20 +60,26 @@ body.noScroll
     // border-left: 3px solid $brown-1
     // border-top: 3px solid $brown-1
     // background: transparent
-    background-image: url(../images-theme/arrow.svg)
+    background-image: url(../images-theme/sprites.png)
     background-color: transparent
-    background-size: 23px
+    background-size: 60px
     background-repeat: no-repeat
-    background-position: 50% 50%
+    background-position: -10% 50%
     z-index: 2
     //opacity: 0.3
     border: 2px solid $brown-1
     border-radius: 50%
+    transition: background-color 0.3s ease
   .slick-prev
     left: 20px
-    //transform: rotate(-45deg)
+    &:hover
+      background-color: $brown-1
+      background-position: 111% 50%
   .slick-next
     right: 20px
+    &:hover
+      background-color: $brown-1
+      background-position: 111% 50%
     //transform: rotate(135deg)
 
 .slick-dots
