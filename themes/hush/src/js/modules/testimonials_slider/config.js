@@ -9,7 +9,7 @@ import slick from "slick-carousel"; {
                 speed: 600,
                 autoplay: true,
                 autoplaySpeed: speed,
-                //fade: true,
+                fade: true,
                 adaptiveHeight: false,
                 centerMode: true,
                 centerPadding: '60px',
