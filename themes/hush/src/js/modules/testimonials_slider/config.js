@@ -24,6 +24,14 @@ import slick from "slick-carousel"; {
                         centerPadding: '0px'
                     }
                 }]
+            }).on('afterChange', function(event, slick,
+                currentSlide, nextSlide) {
+                if ($(window).width() < 600) {
+                    $('html, body').animate({
+                        scrollTop: $("#testimonialSlider").offset().top - 100
+                    }, 500);
+                }
+
             });
         }
     }
