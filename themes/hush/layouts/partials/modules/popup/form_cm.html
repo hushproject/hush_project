@@ -79,7 +79,7 @@
     {{with $formSettings.getuserlocation}}
       <input type="text" name="{{$formSettings.getuserlocationfieldname}}" id="getuserlocation" value="" hidden="hidden">
     {{end}}
-	<div class="g-recaptcha" data-sitekey="6LdN6mwUAAAAAOdv00bPwKx6M22twUPj_7t9VCxD"></div>
+	<div id="recaptchaField" class="g-recaptcha" data-sitekey="6LdN6mwUAAAAAOdv00bPwKx6M22twUPj_7t9VCxD"></div>
     {{with $formSettings.okaystring}}
       <button type="submit" name="button" class="sendRequest__submit">{{.}}</button>
     {{end}}
