@@ -10,7 +10,7 @@
     <p>{{.}}</p>
   </div>
   {{end}}
-    <form class="sendRequest getLocation" action="{{$formSettings.actionurl}}" method="post" id="subForm">
+    <form class="sendRequest getLocation" action="{{$formSettings.actionurl}}" method="post" id="subForm" netlify-recaptcha netlify>
     {{with $formSettings.yourname}}
       <input type="text" name="{{$formSettings.yournameinputname}}"
         class="sendRequest__input yourname" value="" placeholder="{{.}}">
