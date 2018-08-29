@@ -78,7 +78,7 @@ import validate from "jquery-validation"; {
 
     function sendForm(_this) {
 		let _formData = $(_this).serialize();
-		_formData['g-recaptcha-response'] = grecaptcha.getResponse('recaptchaField');
+		_formData['g-recaptcha-response'] = grecaptcha.getResponse();
         $.getJSON(
             _this.action + "?callback=?",
             _formData,
