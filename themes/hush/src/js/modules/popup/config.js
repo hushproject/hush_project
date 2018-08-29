@@ -77,9 +77,11 @@ import validate from "jquery-validation"; {
 
 
     function sendForm(_this) {
+		var _formData = $(_this).serialize();
+		_formData['g-recaptcha-response'] = grecaptcha.getResponse();
         $.getJSON(
             _this.action + "?callback=?",
-            $(_this).serialize(),
+            _formData,
             function(data) {
                 if (data.Status === 400) {
                     jQuery('.formSending').hide(300);
