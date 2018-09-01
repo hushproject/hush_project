@@ -33,7 +33,7 @@
     {{end}}
     {{with $formSettings.emailstring}}
       <input type="email" name="{{$formSettings.emailinputname}}"
-        class="sendRequest__input" value="" placeholder="{{.}}">
+        class="sendRequest__input js-cm-email-input" value="" placeholder="{{.}}">
     {{end}}
     {{with $formSettings.pleasesendmeabrochurestring}}
       <div class="sendRequest__radio">
@@ -80,7 +80,7 @@
       <input type="text" name="{{$formSettings.getuserlocationfieldname}}" id="getuserlocation" value="" hidden="hidden">
     {{end}}
     {{with $formSettings.okaystring}}
-      <button type="submit" name="button" class="js-cm-submit-button">{{.}}</button>
+      <button type="submit" name="button" class="sendRequest__submit js-cm-submit-button">{{.}}</button>
     {{end}}
     {{with $formSettings.privacypolicystring}}
       <p class="sendRequest__copyright">{{$formSettings.yourprivacyiskeystring}}
