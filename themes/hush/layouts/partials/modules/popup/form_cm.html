@@ -10,7 +10,7 @@
     <p>{{.}}</p>
   </div>
   {{end}}
-    <form class="sendRequest getLocation" action="{{$formSettings.actionurl}}" method="post" id="subForm" netlify-recaptcha netlify>
+    <form id="subForm" class="sendRequest getLocation js-cm-form" action="{{$formSettings.actionurl}}" method="post" data-id="2BE4EF332AA2E32596E38B640E905619D20C67A0F7EA9CAEB3132DC245B61BA75CD68FBABB3D0E7A7B95782446EAA3B4032BBEB996145903ADA5B97052EB32DA">
     {{with $formSettings.yourname}}
       <input type="text" name="{{$formSettings.yournameinputname}}"
         class="sendRequest__input yourname" value="" placeholder="{{.}}">
@@ -79,19 +79,17 @@
     {{with $formSettings.getuserlocation}}
       <input type="text" name="{{$formSettings.getuserlocationfieldname}}" id="getuserlocation" value="" hidden="hidden">
     {{end}}
-	<div id="recaptchaField" class="g-recaptcha" data-sitekey="6LdN6mwUAAAAAOdv00bPwKx6M22twUPj_7t9VCxD"></div>
     {{with $formSettings.okaystring}}
-      <button type="submit" name="button" class="sendRequest__submit">{{.}}</button>
+      <button type="submit" name="button" class="js-cm-submit-button">{{.}}</button>
     {{end}}
     {{with $formSettings.privacypolicystring}}
       <p class="sendRequest__copyright">{{$formSettings.yourprivacyiskeystring}}
         <a href="{{$formSettings.privacypolicylink}}" target="_blank">{{.}}</a></p>
     {{end}}
   </form>
+  <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
   {{with $formSettings.utmprefences}}
     {{. | safeHTML}}
     <script src="https://d12ue6f2329cfl.cloudfront.net/resources/utm_form-1.0.2.min.js"></script>
   {{end}}
-  <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js"></script>
 </div>

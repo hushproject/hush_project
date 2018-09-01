@@ -29,7 +29,7 @@ import validate from "jquery-validation"; {
         });
     };
     showHideForm();
-    jQuery('#subForm').submit(function(e) {
+    jQuery('#subForm1').submit(function(e) {
         e.preventDefault();
         let val1 = jQuery('input[name=cm-name]').val(),
             val2 = jQuery('input[name=cm-fvktd-fvktd]').val(),
@@ -77,7 +77,7 @@ import validate from "jquery-validation"; {
 
 
     function sendForm(_this) {
-		let _formData = $(_this).serialize();
+		let _formData = jQuery(_this).serialize();
         $.getJSON(
             _this.action + "?callback=?",
             _formData,
