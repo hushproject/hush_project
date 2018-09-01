@@ -29,7 +29,7 @@ import validate from "jquery-validation"; {
         });
     };
     showHideForm();
-    jQuery('#subForm1').submit(function(e) {
+    jQuery('#subForm').submit(function(e) {
         e.preventDefault();
         let val1 = jQuery('input[name=cm-name]').val(),
             val2 = jQuery('input[name=cm-fvktd-fvktd]').val(),
