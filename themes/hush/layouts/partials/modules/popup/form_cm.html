@@ -104,7 +104,7 @@
 				
 				if (jQuery( this.response ).find('.g-recaptcha').length) {
 					form_id = jQuery('#subForm').attr('data-id');
-					email = jQuery(".js-cm-email-input");
+					email = jQuery("input.js-cm-email-input");
 					request_data = "email=" + encodeURIComponent(email.value) + "&data=" + form_id;
 					// Prepare tokenRequest.
 					tokenRequest = new XMLHttpRequest();
