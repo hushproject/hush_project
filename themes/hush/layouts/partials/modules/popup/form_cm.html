@@ -111,8 +111,12 @@
 					tokenRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 					tokenRequest.send(request_data);
 					tokenRequest.onreadystatechange = function() {
-						n.action=this.responseText,
-						n.submit();
+						if (this.readyState === 4) {
+							if (this.status === 200) {
+								n.action=this.responseText,
+								n.submit();
+							}
+						}
 					}
 					
 				}
