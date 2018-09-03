@@ -100,7 +100,7 @@
 			if (this.readyState === 4) {
 			  if (this.status === 200) {
 				jQuery('.sendRequest__wrapper').hide();
-				jQuery('.sitePopup__content__thankU').html(this.response)
+				jQuery('.sitePopup__content__thankU').html("<iframe>"+this.response+"</iframe>")
                 jQuery('.sitePopup__content__thankU').addClass('active');
 			  } else {
 				console.log(this.readyState);
