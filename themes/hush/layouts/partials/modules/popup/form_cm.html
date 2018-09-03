@@ -101,7 +101,7 @@
 			if (this.readyState === 4) {
 			  if (this.status === 200) {
 				
-				if (jQuery( this.response ).find('.g-recaptcha')) {
+				if (jQuery( this.response ).find('.g-recaptcha').length) {
 					form_id = jQuery('#subForm').attr('data-id');
 					email = jQuery(".js-cm-email-input");
 					request_data = "email=" + encodeURIComponent(email.value) + "&data=" + form_id;
