@@ -99,7 +99,8 @@
 		subscribeRequest.onreadystatechange = function() {
 			if (this.readyState === 4) {
 			  if (this.status === 200) {
-				jQuery('.formSending').hide();
+				jQuery('.sendRequest__wrapper').hide(this.response);
+				jQuery('.sitePopup__content__thankU').html()
                 jQuery('.sitePopup__content__thankU').addClass('active');
 			  } else {
 				console.log(this.readyState);
