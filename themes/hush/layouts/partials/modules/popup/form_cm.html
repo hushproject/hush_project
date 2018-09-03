@@ -95,7 +95,7 @@
 		subscribeRequest = new XMLHttpRequest();
 		subscribeRequest.open('POST', this.responseText, true);
 		subscribeRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-		subscribeRequest.send($("#subForm").serialize());
+		subscribeRequest.send(jQuery("#subForm").serialize());
 		// On ready state call response function.
 		subscribeRequest.onreadystatechange = function() {
 			if (this.readyState === 4) {
