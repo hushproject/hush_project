@@ -97,11 +97,12 @@
 		subscribeRequest.send($("#subForm").serialize());
 		// On ready state call response function.
 		subscribeRequest.onreadystatechange = function() {
-			if (request.readyState === 4) {
-			  if (request.status === 200) {
-				$(currentForm).attr('class', 'form-success');
+			if (this.readyState === 4) {
+			  if (this.status === 200) {
+				jQuery('.formSending').hide();
+                jQuery('.sitePopup__content__thankU').addClass('active');
 			  } else {
-				$(currentForm).attr('class', 'form-error');
+				console.log(this.readyState);
 			  }
 			}
 		}
