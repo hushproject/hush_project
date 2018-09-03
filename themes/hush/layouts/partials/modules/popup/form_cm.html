@@ -92,7 +92,7 @@
 		if (this.status === 200) {
 		// Having token and new submit url we can create new request to subscribe a user.
 		subscribeRequest = new XMLHttpRequest();
-		var url = this.responseText;
+		var responseText = this.responseText;
 		subscribeRequest.open('POST', this.responseText, true);
 		subscribeRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		subscribeRequest.send($("#subForm").serialize());
@@ -102,7 +102,7 @@
 			  if (this.status === 200) {
 				
 				if (jQuery( this.response ).find('.g-recaptcha')) {
-					n.action=this.url,n.submit()
+					n.action=responseText,n.submit()
 				}
 				else {
 					jQuery('.sendRequest__wrapper').hide();
