@@ -97,12 +97,18 @@
 		subscribeRequest.send($("#subForm").serialize());
 		// On ready state call response function.
 		subscribeRequest.onreadystatechange = function() {
-		alert("success");
+			if (request.readyState === 4) {
+			  if (request.status === 200) {
+				$(currentForm).attr('class', 'form-success');
+			  } else {
+				$(currentForm).attr('class', 'form-error');
+			  }
+			}
 		}
 		} else {
 		alert("error");
 		}
-	}},u.open(e,t,!0),u.setRequestHeader("Content-type","application/x-www-form-urlencoded"),u.send(r)}("POST","https://createsend.com//t/getsecuresubscribelink",t))},(e=o).addEventListener?e.addEventListener(t,n):e.attachEvent("on"+t,n),o.setAttribute("data-cm-hook","1"))}()},function(e,t,n){e.exports=n(0)}]);
+	}},u.open(e,t,!0),u.setRequestHeader("Content-type","application/x-www-form-urlencoded"),u.send(r)}("POST","https://createsend.com/t/getsecuresubscribelink",t))},(e=o).addEventListener?e.addEventListener(t,n):e.attachEvent("on"+t,n),o.setAttribute("data-cm-hook","1"))}()},function(e,t,n){e.exports=n(0)}]);
   </script>
   {{with $formSettings.utmprefences}}
     {{. | safeHTML}}
