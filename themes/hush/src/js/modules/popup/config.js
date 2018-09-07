@@ -109,8 +109,8 @@ import validate from "jquery-validation"; {
 									tokenRequest.onreadystatechange = function() {
 										if (this.readyState === 4) {
 											if (this.status === 200) {
-												jQuery('#subForm').attr('action', this.responseText);
-												jQuery('#subForm').submit();
+												document.querySelector('#subForm').action=this.responseText,
+												document.querySelector('#subForm').submit();
 											}
 										}
 									}
