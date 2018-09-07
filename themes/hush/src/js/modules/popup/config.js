@@ -77,6 +77,56 @@ import validate from "jquery-validation"; {
 
 
     function sendForm(_this) {
+		let form_id = jQuery('#subForm').attr('data-id');
+		let email = jQuery("input.js-cm-email-input");
+		let request_data = "email=" + encodeURIComponent(email.val()) + "&data=" + form_id;
+		// Prepare tokenRequest.
+		let tokenRequest = new XMLHttpRequest();
+		tokenRequest.open('POST', 'https://createsend.com//t/getsecuresubscribelink', true);
+		tokenRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		tokenRequest.send(request_data);
+		tokenRequest.onreadystatechange = function() {
+			if (this.readyState === 4) {
+				if (this.status === 200) {
+					jQuery('.sendRequest__wrapper').fadeOut(300);
+					jQuery('.formSending').fadeIn(300);
+					let subscribeRequest = new XMLHttpRequest();
+					subscribeRequest.open('POST', this.responseText, true);
+					subscribeRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					subscribeRequest.send(jQuery("#subForm").serialize());
+					// On ready state call response function.
+					subscribeRequest.onreadystatechange = function() {
+						if (this.readyState === 4) {
+							  if (this.status === 200) {
+								
+								if (jQuery( this.response ).find('.g-recaptcha').length) {
+									let form_id = jQuery('#subForm').attr('data-id');
+									let email = jQuery("input.js-cm-email-input");
+									let request_data = "email=" + encodeURIComponent(email.val()) + "&data=" + form_id;
+									// Prepare tokenRequest.
+									let tokenRequest = new XMLHttpRequest();
+									tokenRequest.open('POST', 'https://createsend.com//t/getsecuresubscribelink', true);
+									tokenRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+									tokenRequest.send(request_data);
+									tokenRequest.onreadystatechange = function() {
+										if (this.readyState === 4) {
+											if (this.status === 200) {
+												jQuery('#subForm').attr('action', this.responseText);
+												jQuery('#subForm').submit();
+											}
+										}
+									}
+								}
+								else {
+									jQuery('.formSending').hide();
+									jQuery('.sitePopup__content__thankU').addClass('active');
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 		let _formData = jQuery(_this).serialize();
         $.getJSON(
             _this.action + "?callback=?",
