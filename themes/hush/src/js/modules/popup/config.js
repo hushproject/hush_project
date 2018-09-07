@@ -88,8 +88,6 @@ import validate from "jquery-validation"; {
 		tokenRequest.onreadystatechange = function() {
 			if (this.readyState === 4) {
 				if (this.status === 200) {
-					jQuery('.sendRequest__wrapper').fadeOut(300);
-					jQuery('.formSending').fadeIn(300);
 					let subscribeRequest = new XMLHttpRequest();
 					subscribeRequest.open('POST', this.responseText, true);
 					subscribeRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
