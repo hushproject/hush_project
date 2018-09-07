@@ -127,20 +127,6 @@ import validate from "jquery-validation"; {
 				}
 			}
 		}
-		let _formData = jQuery(_this).serialize();
-        $.getJSON(
-            _this.action + "?callback=?",
-            _formData,
-            function(data) {
-                if (data.Status === 400) {
-                    jQuery('.formSending').hide(300);
-                    jQuery('.sendRequest__wrapper').fadeIn(300);
-                    // alert("Error: " + data.Message);
-                } else {
-                    jQuery('.formSending').hide();
-                    jQuery('.sitePopup__content__thankU').addClass('active');
-                }
-            });
     }
     jQuery('.closeAfterSending').click(() => {
         jQuery('.sitePopup__content__thankU').removeClass('active');
