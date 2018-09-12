@@ -34,27 +34,28 @@ import validate from "jquery-validation"; {
         let val1 = jQuery('input[name=cm-name]').val(),
             val2 = jQuery('input[name=cm-fvktd-fvktd]').val(),
             val3 = jQuery('select[name=cm-fo-vjldkt]').val(),
+            val4 = jQuery('select[name=cm-fo-vjldkh]').val(),
             email = /\S+@\S+\.\S+/.test(val2);
-        if (val1.length > 2 && email === true && val3 !== null) {
-			var getPosition = function() {
-				return new Promise(function(resolve, reject) {
-					return navigator.geolocation.getCurrentPosition(resolve, reject);
-				});
-			};
-			let _this = this;
-			e.preventDefault();
-			jQuery('.sendRequest__wrapper').fadeOut(300);
-			jQuery('.formSending').fadeIn(300);
-			if (jQuery('#getuserlocation').length) {
-				getPosition().then((position) => {
-					jQuery('#getuserlocation').val(`${position.coords.latitude},${position.coords.longitude}`);
-					sendForm(_this)
-				}).catch((err) => {
-					sendForm(_this)
-				});
-			} else {
-				sendForm(_this)
-			}
+        if (val1.length > 2 && email === true && val3 !== null && val4 !== null) {
+            var getPosition = function() {
+                return new Promise(function(resolve, reject) {
+                    return navigator.geolocation.getCurrentPosition(resolve, reject);
+                });
+            };
+            let _this = this;
+            e.preventDefault();
+            jQuery('.sendRequest__wrapper').fadeOut(300);
+            jQuery('.formSending').fadeIn(300);
+            if (jQuery('#getuserlocation').length) {
+                getPosition().then((position) => {
+                    jQuery('#getuserlocation').val(`${position.coords.latitude},${position.coords.longitude}`);
+                    sendForm(_this)
+                }).catch((err) => {
+                    sendForm(_this)
+                });
+            } else {
+                sendForm(_this)
+            }
         }
         if (val1.length < 2) {
             jQuery('input[name=cm-name]').addClass('error');
@@ -71,58 +72,62 @@ import validate from "jquery-validation"; {
         } else {
             jQuery('select[name=cm-fo-vjldkt]').removeClass('error');
         }
+        if (val4 === null) {
+            jQuery('select[name=cm-fo-vjldkh]').addClass('error');
+        } else {
+            jQuery('select[name=cm-fo-vjldkh]').removeClass('error');
+        }
     });
 
 
     function sendForm(_this) {
-		let form_id = jQuery('#subForm').attr('data-id');
-		let email = jQuery("input.js-cm-email-input");
-		let request_data = "email=" + encodeURIComponent(email.val()) + "&data=" + form_id;
-		// Prepare tokenRequest.
-		let tokenRequest = new XMLHttpRequest();
-		tokenRequest.open('POST', 'https://createsend.com//t/getsecuresubscribelink', true);
-		tokenRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-		tokenRequest.send(request_data);
-		tokenRequest.onreadystatechange = function() {
-			if (this.readyState === 4) {
-				if (this.status === 200) {
-					let subscribeRequest = new XMLHttpRequest();
-					subscribeRequest.open('POST', this.responseText, true);
-					subscribeRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-					subscribeRequest.send(jQuery("#subForm").serialize());
-					// On ready state call response function.
-					subscribeRequest.onreadystatechange = function() {
-						if (this.readyState === 4) {
-							  if (this.status === 200) {
-								
-								if (jQuery( this.response ).find('.g-recaptcha').length) {
-									let form_id = jQuery('#subForm').attr('data-id');
-									let email = jQuery("input.js-cm-email-input");
-									let request_data = "email=" + encodeURIComponent(email.val()) + "&data=" + form_id;
-									// Prepare tokenRequest.
-									let tokenRequest2 = new XMLHttpRequest();
-									tokenRequest2.open('POST', 'https://createsend.com//t/getsecuresubscribelink', true);
-									tokenRequest2.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-									tokenRequest2.send(request_data);
-									tokenRequest2.onreadystatechange = function() {
-										if (this.readyState === 4) {
-											if (this.status === 200) {
-												document.querySelector('#subForm').action=this.responseText,
-												document.querySelector('#subForm').submit();
-											}
-										}
-									}
-								}
-								else {
-									jQuery('.formSending').hide();
-									jQuery('.sitePopup__content__thankU').addClass('active');
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+        let form_id = jQuery('#subForm').attr('data-id');
+        let email = jQuery("input.js-cm-email-input");
+        let request_data = "email=" + encodeURIComponent(email.val()) + "&data=" + form_id;
+        // Prepare tokenRequest.
+        let tokenRequest = new XMLHttpRequest();
+        tokenRequest.open('POST', 'https://createsend.com//t/getsecuresubscribelink', true);
+        tokenRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        tokenRequest.send(request_data);
+        tokenRequest.onreadystatechange = function() {
+            if (this.readyState === 4) {
+                if (this.status === 200) {
+                    let subscribeRequest = new XMLHttpRequest();
+                    subscribeRequest.open('POST', this.responseText, true);
+                    subscribeRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                    subscribeRequest.send(jQuery("#subForm").serialize());
+                    // On ready state call response function.
+                    subscribeRequest.onreadystatechange = function() {
+                        if (this.readyState === 4) {
+                            if (this.status === 200) {
+
+                                if (jQuery(this.response).find('.g-recaptcha').length) {
+                                    let form_id = jQuery('#subForm').attr('data-id');
+                                    let email = jQuery("input.js-cm-email-input");
+                                    let request_data = "email=" + encodeURIComponent(email.val()) + "&data=" + form_id;
+                                    // Prepare tokenRequest.
+                                    let tokenRequest2 = new XMLHttpRequest();
+                                    tokenRequest2.open('POST', 'https://createsend.com//t/getsecuresubscribelink', true);
+                                    tokenRequest2.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                                    tokenRequest2.send(request_data);
+                                    tokenRequest2.onreadystatechange = function() {
+                                        if (this.readyState === 4) {
+                                            if (this.status === 200) {
+                                                document.querySelector('#subForm').action = this.responseText,
+                                                    document.querySelector('#subForm').submit();
+                                            }
+                                        }
+                                    }
+                                } else {
+                                    jQuery('.formSending').hide();
+                                    jQuery('.sitePopup__content__thankU').addClass('active');
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     jQuery('.closeAfterSending').click(() => {
         jQuery('.sitePopup__content__thankU').removeClass('active');

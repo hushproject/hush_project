@@ -32,6 +32,10 @@ settings:
         content: Find US
     - tagName: meta
       attributes:
+        name: robots
+        content: noindex
+    - tagName: meta
+      attributes:
         name: 'twitter:card'
         content: summary
     - tagName: meta

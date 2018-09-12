@@ -32,6 +32,10 @@ settings:
         content: 'The Olde Woodshood under a canopy of beech, the drawing room at Colt’s Lodge, All Saints Church. The ceremony of your choice, a moment that is all yours.'
     - tagName: meta
       attributes:
+        name: robots
+        content: noindex
+    - tagName: meta
+      attributes:
         name: 'twitter:card'
         content: summary
     - tagName: meta

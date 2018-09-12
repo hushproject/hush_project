@@ -363,6 +363,10 @@ settings:
         content: HOME HUSH
     - tagName: meta
       attributes:
+        name: robots
+        content: noindex
+    - tagName: meta
+      attributes:
         name: 'twitter:card'
         content: summary
     - tagName: meta
