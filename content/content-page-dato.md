@@ -76,7 +76,7 @@ settings:
       maxtitlewidth: null
       dontshowpattern: false
       manualbackground: null
-      fullwidthtext: null
+      fullwidthtext: ''
       rightcolumn: |
         With plenty of fresh air and open space, your party can experience something unique, with no interruptions.
 
@@ -259,7 +259,7 @@ settings:
       maxtitlewidth: null
       dontshowpattern: false
       manualbackground: null
-      fullwidthtext: null
+      fullwidthtext: ''
       rightcolumn: |
         With plenty of fresh air and open space, your party can experience something unique, with no interruptions.
 
@@ -286,7 +286,7 @@ settings:
     url: 'https://www.datocms-assets.com/4204/1513845731-layer-8.jpg'
   headerdescription: 'Unique, outdoor weddings in the heart of rural Norfolk'
   headertitle: A Beautiful Outdoor Wedding Venue
-  canonicalurl: null
+  canonicalurl: ''
   slug: content-page-dato
   title: Content page
 ---

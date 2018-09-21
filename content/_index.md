@@ -289,7 +289,7 @@ homepagesections:
             title: Cream (buttons color)
         url: /glamping
         title: ' Glamping '
-    nextsectionid: null
+    nextsectionid: ''
     sectionid: accomodation
     colorbackgroundbottompattern:
       format: png
