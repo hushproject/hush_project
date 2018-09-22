@@ -1,95 +1,98 @@
 {{$formSettings := .Site.Params.formSetting}}
 <div class="sendRequest__wrapper">
   {{with $formSettings.formtitle}}
-    <div class="sitePopup__content__title">
-      <p>{{.}}</p>
-    </div>
+  <div class="sitePopup__content__title">
+    <p>{{.}}</p>
+  </div>
   {{end}}
   {{with $formSettings.formdescription}}
   <div class="sitePopup__content__description">
     <p>{{.}}</p>
   </div>
   {{end}}
-    <form id="subForm" class="sendRequest getLocation js-cm-form" action="{{$formSettings.actionurl}}" method="post" data-id="2BE4EF332AA2E32596E38B640E905619D20C67A0F7EA9CAEB3132DC245B61BA75CD68FBABB3D0E7A7B95782446EAA3B4032BBEB996145903ADA5B97052EB32DA">
+  <form id="subForm" class="sendRequest getLocation js-cm-form" action="{{$formSettings.actionurl}}" method="post"
+    data-id="2BE4EF332AA2E32596E38B640E905619D20C67A0F7EA9CAEB3132DC245B61BA75CD68FBABB3D0E7A7B95782446EAA3B4032BBEB996145903ADA5B97052EB32DA">
     {{with $formSettings.yourname}}
-      <input type="text" name="{{$formSettings.yournameinputname}}"
-        class="sendRequest__input yourname" value="" placeholder="{{.}}">
+    <input type="text" name="{{$formSettings.yournameinputname}}" class="sendRequest__input yourname" value=""
+      placeholder="{{.}}">
     {{end}}
     {{with $formSettings.whenareyouthinkingstring}}
-      <select name="{{$formSettings.whenareyouthinkinginputname}}" class="sendRequest__input">
-        <option value="" disabled selected hidden>{{.}}</option>
-        {{with $formSettings.whenareyouthinkingoptions}}
-          {{. | safeHTML}}
-        {{end}}
-      </select>
+    <select name="{{$formSettings.whenareyouthinkinginputname}}" class="sendRequest__input">
+      <option value="" disabled selected hidden>{{.}}</option>
+      {{with $formSettings.whenareyouthinkingoptions}}
+      {{. | safeHTML}}
+      {{end}}
+    </select>
     {{end}}
     {{with $formSettings.howmanypeoplestring}}
-      <select name="{{$formSettings.howmanypeopleinputname}}" class="sendRequest__input">
-        <option value="" disabled selected hidden>{{.}}</option>
-        {{with $formSettings.howmanypeopleoptions}}
-          {{. | safeHTML}}
-        {{end}}
-      </select>
+    <select name="{{$formSettings.howmanypeopleinputname}}" class="sendRequest__input">
+      <option value="" disabled selected hidden>{{.}}</option>
+      {{with $formSettings.howmanypeopleoptions}}
+      {{. | safeHTML}}
+      {{end}}
+    </select>
     {{end}}
     {{with $formSettings.emailstring}}
-      <input type="email" name="{{$formSettings.emailinputname}}"
-        class="sendRequest__input js-cm-email-input" value="" placeholder="{{.}}">
+    <input type="email" name="{{$formSettings.emailinputname}}" class="sendRequest__input js-cm-email-input" value=""
+      placeholder="{{.}}">
     {{end}}
     {{with $formSettings.pleasesendmeabrochurestring}}
-      <div class="sendRequest__radio">
-        <input type="checkbox" name="{{$formSettings.pleasesendmeabrochureinputname}}"
-          value="{{$formSettings.pleasesendmeabrochureyesvalue}}" checked="checked"
-          data-yes="{{$formSettings.pleasesendmeabrochureyesvalue}}"
-          data-no="{{$formSettings.pleasesendmeabrochurenovalue}}"
-          id="brochureInput">
-        <label><p>{{.}}</p>
-        <div></div></label>
-      </div>
+    <div class="sendRequest__radio">
+      <input type="checkbox" name="{{$formSettings.pleasesendmeabrochureinputname}}" value="{{$formSettings.pleasesendmeabrochureyesvalue}}"
+        checked="checked" data-yes="{{$formSettings.pleasesendmeabrochureyesvalue}}" data-no="{{$formSettings.pleasesendmeabrochurenovalue}}"
+        id="brochureInput">
+      <label>
+        <p>{{.}}</p>
+        <div></div>
+      </label>
+    </div>
     {{end}}
     {{with $formSettings.message}}
-      <textarea name="{{$formSettings.messageinputname}}" class="sendRequest__input" placeholder="{{.}}"></textarea>
+    <textarea name="{{$formSettings.messageinputname}}" class="sendRequest__input" placeholder="{{.}}"></textarea>
     {{end}}
     {{with $formSettings.pleaseaddmetoyourmailingliststring}}
-      <div class="sendRequest__radio">
-        <input type="checkbox" name="{{$formSettings.pleaseaddmetoyourmailinglistinputname}}">
-        <label><p>{{.}}</p>
-        <div></div></label>
-      </div>
+    <div class="sendRequest__radio">
+      <input type="checkbox" name="{{$formSettings.pleaseaddmetoyourmailinglistinputname}}">
+      <label>
+        <p>{{.}}</p>
+        <div></div>
+      </label>
+    </div>
     {{end}}
     {{with $formSettings.formversioninputname}}
-      <input type="text" name="{{.}}" value="{{$formSettings.formversionvalue}}" hidden="hidden">
+    <input type="text" name="{{.}}" value="{{$formSettings.formversionvalue}}" hidden="hidden">
     {{end}}
     {{with $formSettings.buttonidinputname}}
-      <input type="text" name="{{.}}" value="" id="buttonidinputname" hidden="hidden">
+    <input type="text" name="{{.}}" value="" id="buttonidinputname" hidden="hidden">
     {{end}}
     {{with $formSettings.hashtaginputname}}
-      <input type="text" name="{{.}}" value="" id="hashtaginputname" hidden="hidden">
-      <script type="text/javascript">
-        if(window.location.hash) {
-          var hash = window.location.hash.substring(1),
-            now = new Date();
-          now.setTime(now.getTime() + 20000);
-          document.cookie = "_hashtaginputname=" + hash + "; expires=" + now.toUTCString() + "; path=/";
-        }
-      </script>
+    <input type="text" name="{{.}}" value="" id="hashtaginputname" hidden="hidden">
+    <script type="text/javascript">
+      if (window.location.hash) {
+        var hash = window.location.hash.substring(1),
+          now = new Date();
+        now.setTime(now.getTime() + 20000);
+        document.cookie = "_hashtaginputname=" + hash + "; expires=" + now.toUTCString() + "; path=/";
+      }
+    </script>
     {{end}}
     {{with $formSettings.liststatusinputname}}
-      <input type="text" name="{{.}}" value="{{$formSettings.liststatusvalue}}" hidden="hidden">
+    <input type="text" name="{{.}}" value="{{$formSettings.liststatusvalue}}" hidden="hidden">
     {{end}}
     {{with $formSettings.getuserlocation}}
-      <input type="text" name="{{$formSettings.getuserlocationfieldname}}" id="getuserlocation" value="" hidden="hidden">
+    <input type="text" name="{{$formSettings.getuserlocationfieldname}}" id="getuserlocation" value="" hidden="hidden">
     {{end}}
     {{with $formSettings.okaystring}}
-      <button type="submit" name="button" class="sendRequest__submit js-cm-submit-button">{{.}}</button>
+    <button type="submit" name="button" class="sendRequest__submit js-cm-submit-button">{{.}}</button>
     {{end}}
     {{with $formSettings.privacypolicystring}}
-      <p class="sendRequest__copyright">{{$formSettings.yourprivacyiskeystring}}
-        <a href="{{$formSettings.privacypolicylink}}" target="_blank">{{.}}</a></p>
+    <p class="sendRequest__copyright">{{$formSettings.yourprivacyiskeystring}}
+      <a href="{{$formSettings.privacypolicylink}}" target="_blank">{{.}}</a></p>
     {{end}}
   </form>
 
   {{with $formSettings.utmprefences}}
-    {{. | safeHTML}}
-    <script src="https://d12ue6f2329cfl.cloudfront.net/resources/utm_form-1.0.2.min.js"></script>
+  {{. | safeHTML}}
+  <script src="https://d12ue6f2329cfl.cloudfront.net/resources/utm_form-1.0.2.min.js"></script>
   {{end}}
 </div>

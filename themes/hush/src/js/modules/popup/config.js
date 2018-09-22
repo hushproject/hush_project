@@ -1,9 +1,10 @@
-import validate from "jquery-validation"; {
+import validate from "jquery-validation";
+{
     function showHideForm(scrollPosition) {
         if (!scrollPosition) {
             scrollPosition = jQuery(window).scrollTop();
         }
-        jQuery('.enquireCallForm').click(function(e) {
+        jQuery('.enquireCallForm').click(function (e) {
             scrollPosition = jQuery(window).scrollTop();
             jQuery('.sitePopup').addClass('active');
             jQuery("body").addClass('noScroll');
@@ -21,7 +22,7 @@ import validate from "jquery-validation"; {
                 jQuery("body").removeClass('noScroll');
                 $("html, body").animate({
                     scrollTop: scrollPosition
-                }, 0, function() {
+                }, 0, function () {
                     jQuery('.sitePopup').removeClass('active');
                     scrollPosition = 0;
                 });
@@ -29,16 +30,16 @@ import validate from "jquery-validation"; {
         });
     };
     showHideForm();
-    jQuery('#subForm').submit(function(e) {
+    jQuery('#subForm').submit(function (e) {
         e.preventDefault();
-        let val1 = jQuery('input[name=cm-name]').val(),
-            val2 = jQuery('input[name=cm-fvktd-fvktd]').val(),
-            val3 = jQuery('select[name=cm-fo-vjldkt]').val(),
-            val4 = jQuery('select[name=cm-fo-vjldkh]').val(),
+        let val1 = jQuery('input[name=name]').val(),
+            val2 = jQuery('input[name=email]').val(),
+            val3 = jQuery('select[name=how-many-people]').val(),
+            val4 = jQuery('select[name=when-are-you-thinking]').val(),
             email = /\S+@\S+\.\S+/.test(val2);
         if (val1.length > 2 && email === true && val3 !== null && val4 !== null) {
-            var getPosition = function() {
-                return new Promise(function(resolve, reject) {
+            var getPosition = function () {
+                return new Promise(function (resolve, reject) {
                     return navigator.geolocation.getCurrentPosition(resolve, reject);
                 });
             };
@@ -58,76 +59,43 @@ import validate from "jquery-validation"; {
             }
         }
         if (val1.length < 2) {
-            jQuery('input[name=cm-name]').addClass('error');
+            jQuery('input[name=name]').addClass('error');
         } else {
-            jQuery('input[name=cm-name]').removeClass('error');
+            jQuery('input[name=name]').removeClass('error');
         }
         if (!email) {
-            jQuery('input[name=cm-fvktd-fvktd]').addClass('error');
+            jQuery('input[name=email]').addClass('error');
         } else {
-            jQuery('input[name=cm-fvktd-fvktd]').removeClass('error');
+            jQuery('input[name=email]').removeClass('error');
         }
         if (val3 === null) {
-            jQuery('select[name=cm-fo-vjldkt]').addClass('error');
+            jQuery('select[name=how-many-people]').addClass('error');
         } else {
-            jQuery('select[name=cm-fo-vjldkt]').removeClass('error');
+            jQuery('select[name=how-many-people]').removeClass('error');
         }
         if (val4 === null) {
-            jQuery('select[name=cm-fo-vjldkh]').addClass('error');
+            jQuery('select[name=when-are-you-thinking]').addClass('error');
         } else {
-            jQuery('select[name=cm-fo-vjldkh]').removeClass('error');
+            jQuery('select[name=when-are-you-thinking]').removeClass('error');
         }
     });
 
 
     function sendForm(_this) {
-        let form_id = jQuery('#subForm').attr('data-id');
-        let email = jQuery("input.js-cm-email-input");
-        let request_data = "email=" + encodeURIComponent(email.val()) + "&data=" + form_id;
-        // Prepare tokenRequest.
-        let tokenRequest = new XMLHttpRequest();
-        tokenRequest.open('POST', 'https://createsend.com//t/getsecuresubscribelink', true);
-        tokenRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        tokenRequest.send(request_data);
-        tokenRequest.onreadystatechange = function() {
-            if (this.readyState === 4) {
-                if (this.status === 200) {
-                    let subscribeRequest = new XMLHttpRequest();
-                    subscribeRequest.open('POST', this.responseText, true);
-                    subscribeRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                    subscribeRequest.send(jQuery("#subForm").serialize());
-                    // On ready state call response function.
-                    subscribeRequest.onreadystatechange = function() {
-                        if (this.readyState === 4) {
-                            if (this.status === 200) {
-
-                                if (jQuery(this.response).find('.g-recaptcha').length) {
-                                    let form_id = jQuery('#subForm').attr('data-id');
-                                    let email = jQuery("input.js-cm-email-input");
-                                    let request_data = "email=" + encodeURIComponent(email.val()) + "&data=" + form_id;
-                                    // Prepare tokenRequest.
-                                    let tokenRequest2 = new XMLHttpRequest();
-                                    tokenRequest2.open('POST', 'https://createsend.com//t/getsecuresubscribelink', true);
-                                    tokenRequest2.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                                    tokenRequest2.send(request_data);
-                                    tokenRequest2.onreadystatechange = function() {
-                                        if (this.readyState === 4) {
-                                            if (this.status === 200) {
-                                                document.querySelector('#subForm').action = this.responseText,
-                                                    document.querySelector('#subForm').submit();
-                                            }
-                                        }
-                                    }
-                                } else {
-                                    jQuery('.formSending').hide();
-                                    jQuery('.sitePopup__content__thankU').addClass('active');
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        $.ajax({
+            type: "POST",
+            url: $(_this).attr("action"),
+            data: $(_this).serialize(),
+            headers:
+            {
+                "Accept": "application/json"
+            },
+            success: function (response) {
+                jQuery('.formSending').hide();
+                jQuery('.sitePopup__content__thankU').addClass('active');
+                $('#subForm')[0].reset();
+            },
+        });
     }
     jQuery('.closeAfterSending').click(() => {
         jQuery('.sitePopup__content__thankU').removeClass('active');
@@ -144,7 +112,7 @@ import validate from "jquery-validation"; {
         }
         return null;
     }
-    jQuery('#brochureInput').click(function() {
+    jQuery('#brochureInput').click(function () {
         let valueYes = jQuery(this).attr('data-yes'),
             valueNo = jQuery(this).attr('data-no'),
             valueCurrent = jQuery(this).val();
@@ -154,4 +122,16 @@ import validate from "jquery-validation"; {
             jQuery(this).val(valueYes);
         }
     });
+    jQuery('#addMailListingInput').click(function () {
+        let valueYes = 'Yes',
+            valueNo = 'No',
+            valueCurrent = jQuery(this).val();
+        if (valueCurrent == valueYes) {
+            jQuery(this).val(valueNo);
+        } else {
+            jQuery(this).val(valueYes);
+        }
+    });
+
+
 }
