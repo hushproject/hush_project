@@ -96,8 +96,11 @@ import validate from "jquery-validation";
         }
 
         if (isHttp === -1) {
-            data.replace('https%3A', 'https:');
+            data = data.replace('https%3A', 'https:');
         }
+
+        console.log(data);
+
 
         $.ajax({
             type: "POST",
