@@ -85,6 +85,7 @@ import validate from "jquery-validation";
         let data = $(_this).serialize();
         let isBrochure = data.search("please-send-me-a-brochure");
         let isMailingList = data.search("please-add-me-to-your-mailing-list");
+        let isHttp = data.search("https%3A");
 
         if (isBrochure === -1) {
             data = data.replace('&message', '&please-send-me-a-brochure=no&message');
@@ -92,6 +93,10 @@ import validate from "jquery-validation";
 
         if (isMailingList === -1) {
             data = data.replace('&form-version', '&please-add-me-to-your-mailing-list=no&form-version');
+        }
+
+        if (isHttp === -1) {
+            data.replace('https%3A', 'https:');
         }
 
         $.ajax({
