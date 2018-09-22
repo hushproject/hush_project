@@ -91,9 +91,9 @@ import validate from "jquery-validation";
                 "Accept": "application/json"
             },
             success: function (response) {
-                console.log(response);
                 jQuery('.formSending').hide();
                 jQuery('.sitePopup__content__thankU').addClass('active');
+                $('#subForm')[0].reset();
             },
         });
     }
