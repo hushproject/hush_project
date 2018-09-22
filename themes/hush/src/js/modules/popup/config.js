@@ -123,8 +123,8 @@ import validate from "jquery-validation";
         }
     });
     jQuery('#addMailListingInput').click(function () {
-        let valueYes = 'Yes',
-            valueNo = 'No',
+        let valueYes = 'yes',
+            valueNo = 'no',
             valueCurrent = jQuery(this).val();
 
         if (valueCurrent == 'on') {
