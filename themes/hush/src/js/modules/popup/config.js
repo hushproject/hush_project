@@ -82,10 +82,22 @@ import validate from "jquery-validation";
 
 
     function sendForm(_this) {
+        let data = $(_this).serialize();
+        let isBrochure = data.search("please-send-me-a-brochure");
+        let isMailingList = data.search("please-add-me-to-your-mailing-list");
+
+        if (isBrochure === -1) {
+            data = data.replace('&message', '&please-send-me-a-brochure=no&message');
+        }
+
+        if (isMailingList === -1) {
+            data = data.replace('&form-version', '&please-add-me-to-your-mailing-list=no&form-version');
+        }
+
         $.ajax({
             type: "POST",
             url: $(_this).attr("action"),
-            data: $(_this).serialize(),
+            data: data,
             headers:
             {
                 "Accept": "application/json"
@@ -126,10 +138,6 @@ import validate from "jquery-validation";
         let valueYes = 'yes',
             valueNo = 'no',
             valueCurrent = jQuery(this).val();
-
-        if (valueCurrent == 'on') {
-            jQuery(this).val(valueYes);
-        }
 
         if (valueCurrent == valueYes) {
             jQuery(this).val(valueNo);
