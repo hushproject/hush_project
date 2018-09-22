@@ -32,10 +32,10 @@ import validate from "jquery-validation";
     showHideForm();
     jQuery('#subForm').submit(function (e) {
         e.preventDefault();
-        let val1 = jQuery('input[name=cm-name]').val(),
-            val2 = jQuery('input[name=cm-fvktd-fvktd]').val(),
-            val3 = jQuery('select[name=cm-fo-vjldkt]').val(),
-            val4 = jQuery('select[name=cm-fo-vjldkh]').val(),
+        let val1 = jQuery('input[name=name]').val(),
+            val2 = jQuery('input[name=email]').val(),
+            val3 = jQuery('select[name=how-many-people]').val(),
+            val4 = jQuery('select[name=when-are-you-thinking]').val(),
             email = /\S+@\S+\.\S+/.test(val2);
         if (val1.length > 2 && email === true && val3 !== null && val4 !== null) {
             var getPosition = function () {
@@ -59,32 +59,29 @@ import validate from "jquery-validation";
             }
         }
         if (val1.length < 2) {
-            jQuery('input[name=cm-name]').addClass('error');
+            jQuery('input[name=name]').addClass('error');
         } else {
-            jQuery('input[name=cm-name]').removeClass('error');
+            jQuery('input[name=name]').removeClass('error');
         }
         if (!email) {
-            jQuery('input[name=cm-fvktd-fvktd]').addClass('error');
+            jQuery('input[name=email]').addClass('error');
         } else {
-            jQuery('input[name=cm-fvktd-fvktd]').removeClass('error');
+            jQuery('input[name=email]').removeClass('error');
         }
         if (val3 === null) {
-            jQuery('select[name=cm-fo-vjldkt]').addClass('error');
+            jQuery('select[name=how-many-people]').addClass('error');
         } else {
-            jQuery('select[name=cm-fo-vjldkt]').removeClass('error');
+            jQuery('select[name=how-many-people]').removeClass('error');
         }
         if (val4 === null) {
-            jQuery('select[name=cm-fo-vjldkh]').addClass('error');
+            jQuery('select[name=when-are-you-thinking]').addClass('error');
         } else {
-            jQuery('select[name=cm-fo-vjldkh]').removeClass('error');
+            jQuery('select[name=when-are-you-thinking]').removeClass('error');
         }
     });
 
 
     function sendForm(_this) {
-        console.log($(_this).attr("action"));
-        console.log($(_this).serialize());
-
         $.ajax({
             type: "POST",
             url: $(_this).attr("action"),
@@ -125,4 +122,16 @@ import validate from "jquery-validation";
             jQuery(this).val(valueYes);
         }
     });
+    jQuery('#addMailListingInput').click(function () {
+        let valueYes = 'Yes',
+            valueNo = 'No',
+            valueCurrent = jQuery(this).val();
+        if (valueCurrent == valueYes) {
+            jQuery(this).val(valueNo);
+        } else {
+            jQuery(this).val(valueYes);
+        }
+    });
+
+
 }
