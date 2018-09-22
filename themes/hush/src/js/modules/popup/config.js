@@ -126,6 +126,11 @@ import validate from "jquery-validation";
         let valueYes = 'Yes',
             valueNo = 'No',
             valueCurrent = jQuery(this).val();
+
+        if (valueCurrent == 'on') {
+            jQuery(this).val(valueYes);
+        }
+
         if (valueCurrent == valueYes) {
             jQuery(this).val(valueNo);
         } else {
