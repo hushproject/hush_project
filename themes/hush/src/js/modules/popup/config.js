@@ -96,7 +96,7 @@ import validate from "jquery-validation";
         }
 
         if (isHttp === -1) {
-            data = data.replace('https%3A', 'https:');
+            data = data.replace('https%253A%2F%2F', '');
         }
 
         console.log(data);
